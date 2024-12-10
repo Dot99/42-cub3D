@@ -1,0 +1,69 @@
+\doxysection{src\+\_\+bonus/utils\+\_\+bonus/enemy\+\_\+utils\+\_\+bonus.c File Reference}
+\hypertarget{enemy__utils__bonus_8c}{}\label{enemy__utils__bonus_8c}\index{src\_bonus/utils\_bonus/enemy\_utils\_bonus.c@{src\_bonus/utils\_bonus/enemy\_utils\_bonus.c}}
+
+
+Auxiliary functions to handle enemies.  
+
+
+{\ttfamily \#include "{}cub3d\+\_\+bonus.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{enemy__utils__bonus_8c_a6a9937e78f69347e7cd3a9d65a6415e4}{is\+\_\+valid\+\_\+position}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, double x, double y)
+\begin{DoxyCompactList}\small\item\em Check if the position is valid. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{enemy__utils__bonus_8c_aabab01277010a4907f6d7bfe0b048aaa}{is\+\_\+path\+\_\+clear}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i)
+\begin{DoxyCompactList}\small\item\em Check if the path is clear. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Auxiliary functions to handle enemies. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{enemy__utils__bonus_8c_aabab01277010a4907f6d7bfe0b048aaa}\index{enemy\_utils\_bonus.c@{enemy\_utils\_bonus.c}!is\_path\_clear@{is\_path\_clear}}
+\index{is\_path\_clear@{is\_path\_clear}!enemy\_utils\_bonus.c@{enemy\_utils\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{is\_path\_clear()}{is\_path\_clear()}}
+{\footnotesize\ttfamily \label{enemy__utils__bonus_8c_aabab01277010a4907f6d7bfe0b048aaa} 
+bool is\+\_\+path\+\_\+clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Check if the path is clear. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em i} & Index of the enemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Path is clear 
+
+false Path is not clear 
+\end{DoxyReturn}
+\Hypertarget{enemy__utils__bonus_8c_a6a9937e78f69347e7cd3a9d65a6415e4}\index{enemy\_utils\_bonus.c@{enemy\_utils\_bonus.c}!is\_valid\_position@{is\_valid\_position}}
+\index{is\_valid\_position@{is\_valid\_position}!enemy\_utils\_bonus.c@{enemy\_utils\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_position()}{is\_valid\_position()}}
+{\footnotesize\ttfamily \label{enemy__utils__bonus_8c_a6a9937e78f69347e7cd3a9d65a6415e4} 
+bool is\+\_\+valid\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{double}]{x}{, }\item[{double}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Check if the position is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em x} & X position \\
+\hline
+{\em y} & Y position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Position is valid 
+
+false Position is not valid 
+\end{DoxyReturn}

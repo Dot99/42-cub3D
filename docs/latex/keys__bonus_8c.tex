@@ -1,0 +1,90 @@
+\doxysection{src\+\_\+bonus/controls\+\_\+bonus/keys\+\_\+bonus.c File Reference}
+\hypertarget{keys__bonus_8c}{}\label{keys__bonus_8c}\index{src\_bonus/controls\_bonus/keys\_bonus.c@{src\_bonus/controls\_bonus/keys\_bonus.c}}
+
+
+Handle key press and release events.  
+
+
+{\ttfamily \#include "{}cub3d\+\_\+bonus.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{group__mandatory_gaf6a41c631a3c40c4234bde40d7829db5}{handle\+\_\+key\+\_\+press}} (int keycode, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handle key press event. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga0b8e0aec9d72f945d59175eade4c1254}{handle\+\_\+key\+\_\+release}} (int keycode, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handle key release event. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{keys__bonus_8c_a112608f7678422deccee0fa374094948}{handle\+\_\+mouse}} (int x, int y, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handle mouse movement event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{keys__bonus_8c_a760cf93a4df7c8fe28ee367be95e7bcd}{handle\+\_\+mouse\+\_\+click2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continuation handle mouse click event. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{keys__bonus_8c_acaffc34359760b2cd26782bc9179e78c}{handle\+\_\+mouse\+\_\+click}} (int button, int x, int y, void \texorpdfstring{$\ast$}{*}param)
+\begin{DoxyCompactList}\small\item\em Handle mouse click event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handle key press and release events. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{keys__bonus_8c_a112608f7678422deccee0fa374094948}\index{keys\_bonus.c@{keys\_bonus.c}!handle\_mouse@{handle\_mouse}}
+\index{handle\_mouse@{handle\_mouse}!keys\_bonus.c@{keys\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{handle\_mouse()}{handle\_mouse()}}
+{\footnotesize\ttfamily \label{keys__bonus_8c_a112608f7678422deccee0fa374094948} 
+int handle\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Handle mouse movement event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+{\em game} & The game structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 
+\end{DoxyReturn}
+\Hypertarget{keys__bonus_8c_acaffc34359760b2cd26782bc9179e78c}\index{keys\_bonus.c@{keys\_bonus.c}!handle\_mouse\_click@{handle\_mouse\_click}}
+\index{handle\_mouse\_click@{handle\_mouse\_click}!keys\_bonus.c@{keys\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{handle\_mouse\_click()}{handle\_mouse\_click()}}
+{\footnotesize\ttfamily \label{keys__bonus_8c_acaffc34359760b2cd26782bc9179e78c} 
+int handle\+\_\+mouse\+\_\+click (\begin{DoxyParamCaption}\item[{int}]{button}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+
+
+Handle mouse click event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The button that was clicked \\
+\hline
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+{\em param} & The game structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 
+\end{DoxyReturn}
+\Hypertarget{keys__bonus_8c_a760cf93a4df7c8fe28ee367be95e7bcd}\index{keys\_bonus.c@{keys\_bonus.c}!handle\_mouse\_click2@{handle\_mouse\_click2}}
+\index{handle\_mouse\_click2@{handle\_mouse\_click2}!keys\_bonus.c@{keys\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{handle\_mouse\_click2()}{handle\_mouse\_click2()}}
+{\footnotesize\ttfamily \label{keys__bonus_8c_a760cf93a4df7c8fe28ee367be95e7bcd} 
+void handle\+\_\+mouse\+\_\+click2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continuation handle mouse click event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game structure \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,57 @@
+\doxysection{src\+\_\+bonus/controls\+\_\+bonus/door\+\_\+controls\+\_\+bonus.c File Reference}
+\hypertarget{door__controls__bonus_8c}{}\label{door__controls__bonus_8c}\index{src\_bonus/controls\_bonus/door\_controls\_bonus.c@{src\_bonus/controls\_bonus/door\_controls\_bonus.c}}
+
+
+Functions to control doors in the game.  
+
+
+{\ttfamily \#include "{}cub3d\+\_\+bonus.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{door__controls__bonus_8c_a4ece051c8b9248bcc925b4764c405a63}{toggle\+\_\+door}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int door\+\_\+x, int door\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Toggle the state of a door. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{door__controls__bonus_8c_ab2a6f538ca7f18c841d32335363f058f}{interact\+\_\+with\+\_\+door}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the player is interacting with a door. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions to control doors in the game. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{door__controls__bonus_8c_ab2a6f538ca7f18c841d32335363f058f}\index{door\_controls\_bonus.c@{door\_controls\_bonus.c}!interact\_with\_door@{interact\_with\_door}}
+\index{interact\_with\_door@{interact\_with\_door}!door\_controls\_bonus.c@{door\_controls\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{interact\_with\_door()}{interact\_with\_door()}}
+{\footnotesize\ttfamily \label{door__controls__bonus_8c_ab2a6f538ca7f18c841d32335363f058f} 
+void interact\+\_\+with\+\_\+door (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check if the player is interacting with a door. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{door__controls__bonus_8c_a4ece051c8b9248bcc925b4764c405a63}\index{door\_controls\_bonus.c@{door\_controls\_bonus.c}!toggle\_door@{toggle\_door}}
+\index{toggle\_door@{toggle\_door}!door\_controls\_bonus.c@{door\_controls\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{toggle\_door()}{toggle\_door()}}
+{\footnotesize\ttfamily \label{door__controls__bonus_8c_a4ece051c8b9248bcc925b4764c405a63} 
+void toggle\+\_\+door (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{door\+\_\+x}{, }\item[{int}]{door\+\_\+y}{}\end{DoxyParamCaption})}
+
+
+
+Toggle the state of a door. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em door\+\_\+x} & X coordinate of the door. \\
+\hline
+{\em door\+\_\+y} & Y coordinate of the door. \\
+\hline
+\end{DoxyParams}

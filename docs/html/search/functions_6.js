@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['init_5fbitmap_0',['init_bitmap',['../group__bonus.html#gaa7ca5508906eed4efd95e4e8e807f3ef',1,'init_bitmap(t_game *game):&#160;init_bitmap_bonus.c'],['../group__bonus.html#gaa7ca5508906eed4efd95e4e8e807f3ef',1,'init_bitmap(t_game *game):&#160;init_bitmap_bonus.c']]],
+  ['init_5fbitmap2_1',['init_bitmap2',['../group__bonus.html#ga5ccc27c945428637266ee5248c97dd48',1,'init_bitmap_bonus.c']]],
+  ['init_5fbitmap3_2',['init_bitmap3',['../group__bonus.html#gad07b094d1806081e8e5d270e005de5f8',1,'init_bitmap_bonus.c']]],
+  ['init_5fbitmap4_3',['init_bitmap4',['../group__bonus.html#ga996a6ab9a5ec8ff7771832950dc31903',1,'init_bitmap_bonus.c']]],
+  ['init_5fbitmap5_4',['init_bitmap5',['../group__bonus.html#gaec168a22a09284e4cbe519b1e1905579',1,'init_bitmap_bonus.c']]],
+  ['init_5fdoor_5',['init_door',['../group__bonus.html#ga5a9a45c7d73b4ce56ac8bff33fb85864',1,'init_door(t_game *game):&#160;init2_bonus.c'],['../group__bonus.html#ga5a9a45c7d73b4ce56ac8bff33fb85864',1,'init_door(t_game *game):&#160;init2_bonus.c']]],
+  ['init_5fdoor_5fmap_6',['init_door_map',['../group__bonus.html#gad634e7adcff3c2c68cc04072dda0a973',1,'init_bonus.c']]],
+  ['init_5fenemy_7',['init_enemy',['../group__bonus.html#gae1d799641cf861cb2829e80f23f9a0b9',1,'init_enemy(t_game *game):&#160;init2_bonus.c'],['../group__bonus.html#gae1d799641cf861cb2829e80f23f9a0b9',1,'init_enemy(t_game *game):&#160;init2_bonus.c']]],
+  ['init_5fenemy2_8',['init_enemy2',['../group__bonus.html#ga6e1c10c405239ad7c9b516a9bf053ce6',1,'init2_bonus.c']]],
+  ['init_5ffog_9',['init_fog',['../group__bonus.html#ga654f671540cab3b453b81120aea1086f',1,'init_fog(t_game *game):&#160;init3_bonus.c'],['../group__bonus.html#ga654f671540cab3b453b81120aea1086f',1,'init_fog(t_game *game):&#160;init3_bonus.c']]],
+  ['init_5ffps_10',['init_fps',['../group__bonus.html#gab330f8b2fa0b1f71a63ccfb8da687b06',1,'init3_bonus.c']]],
+  ['init_5fimg_11',['init_img',['../group__mandatory.html#ga2293ef2b23c95e07eda30d66456f74f6',1,'init_img(t_game *game):&#160;init.c'],['../group__mandatory.html#ga2293ef2b23c95e07eda30d66456f74f6',1,'init_img(t_game *game):&#160;init.c'],['../group__bonus.html#ga2293ef2b23c95e07eda30d66456f74f6',1,'init_img(t_game *game):&#160;init_bonus.c']]],
+  ['init_5fminimap_12',['init_minimap',['../group__bonus.html#ga83da6c8723d2c609554d3df816dbcf02',1,'init_minimap(t_game *game):&#160;init2_bonus.c'],['../group__bonus.html#ga83da6c8723d2c609554d3df816dbcf02',1,'init_minimap(t_game *game):&#160;init2_bonus.c']]],
+  ['init_5fraycasting_13',['init_raycasting',['../group__mandatory.html#ga021dbd35065828d0292707e82e15744e',1,'init_raycasting(t_game *game, int x):&#160;raycasting.c'],['../group__mandatory.html#ga021dbd35065828d0292707e82e15744e',1,'init_raycasting(t_game *game, int x):&#160;raycasting.c'],['../group__bonus.html#ga021dbd35065828d0292707e82e15744e',1,'init_raycasting(t_game *game, int x):&#160;init2_bonus.c']]],
+  ['init_5fstatus_14',['init_status',['../group__mandatory.html#ga67eef528b2e6304c831410335f7dce9d',1,'init_status(t_game *game):&#160;init.c'],['../group__bonus.html#ga67eef528b2e6304c831410335f7dce9d',1,'init_status(t_game *game):&#160;init_bonus.c']]],
+  ['init_5fstatus2_15',['init_status2',['../group__mandatory.html#ga61517937b1a92f8b59fcf59a17897ba1',1,'init_status2(t_game *game):&#160;init.c'],['../group__bonus.html#ga61517937b1a92f8b59fcf59a17897ba1',1,'init_status2(t_game *game):&#160;init_bonus.c']]],
+  ['init_5fweapon_16',['init_weapon',['../group__bonus.html#ga972855b2916f9a6b384c023ddc03a39b',1,'init_weapon(t_game *game):&#160;init3_bonus.c'],['../group__bonus.html#ga972855b2916f9a6b384c023ddc03a39b',1,'init_weapon(t_game *game):&#160;init3_bonus.c']]],
+  ['initializations_17',['initializations',['../group__bonus.html#gaf8bae02ab60dbe8fa5cbbcf0b855f1af',1,'initializations(t_game *game):&#160;init_bonus.c'],['../group__bonus.html#gaf8bae02ab60dbe8fa5cbbcf0b855f1af',1,'initializations(t_game *game):&#160;init_bonus.c']]],
+  ['interact_5fwith_5fdoor_18',['interact_with_door',['../cub3d__bonus_8h.html#ab2a6f538ca7f18c841d32335363f058f',1,'interact_with_door(t_game *game):&#160;door_controls_bonus.c'],['../door__controls__bonus_8c.html#ab2a6f538ca7f18c841d32335363f058f',1,'interact_with_door(t_game *game):&#160;door_controls_bonus.c']]],
+  ['is_5fdir_19',['is_dir',['../group__mandatory.html#gad0c4ea0de84558ea787dc2d36b0dd55a',1,'is_dir(char *file):&#160;file_utils.c'],['../group__bonus.html#gad0c4ea0de84558ea787dc2d36b0dd55a',1,'is_dir(char *file):&#160;file_utils_bonus.c']]],
+  ['is_5fpath_5fclear_20',['is_path_clear',['../cub3d__bonus_8h.html#aabab01277010a4907f6d7bfe0b048aaa',1,'is_path_clear(t_game *game, int i):&#160;enemy_utils_bonus.c'],['../enemy__utils__bonus_8c.html#aabab01277010a4907f6d7bfe0b048aaa',1,'is_path_clear(t_game *game, int i):&#160;enemy_utils_bonus.c']]],
+  ['is_5ftexture_21',['is_texture',['../group__mandatory.html#ga1472f61cabe8a75ff18717aa1b13227f',1,'is_texture(char *line):&#160;file_content.c'],['../group__bonus.html#ga1472f61cabe8a75ff18717aa1b13227f',1,'is_texture(char *line):&#160;file_content_bonus.c']]],
+  ['is_5fvalid_5fposition_22',['is_valid_position',['../enemy__utils__bonus_8c.html#a6a9937e78f69347e7cd3a9d65a6415e4',1,'enemy_utils_bonus.c']]],
+  ['is_5fxpm_23',['is_xpm',['../group__mandatory.html#ga921ae8bc9c67e41bd794b26469892d95',1,'is_xpm(char *file):&#160;file_utils.c'],['../group__bonus.html#ga921ae8bc9c67e41bd794b26469892d95',1,'is_xpm(char *file):&#160;file_utils_bonus.c']]]
+];

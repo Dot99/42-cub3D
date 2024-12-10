@@ -1,0 +1,2206 @@
+\doxysection{Bonus}
+\hypertarget{group__bonus}{}\label{group__bonus}\index{Bonus@{Bonus}}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{ft__lstadd__back_8c}{ft\+\_\+lstadd\+\_\+back.\+c}}
+\begin{DoxyCompactList}\small\item\em Adds the node ’new’ at the end of the list. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{ft__lstadd__front_8c}{ft\+\_\+lstadd\+\_\+front.\+c}}
+\begin{DoxyCompactList}\small\item\em Adds the node ’new’ at the beginning of the list. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{ft__lstclear_8c}{ft\+\_\+lstclear.\+c}}
+\begin{DoxyCompactList}\small\item\em Deletes and frees the given node and every successor of that node, using the function ’del’ and free(3). Finally, the pointer to the list must be set to NULL. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{ft__lstdelone_8c}{ft\+\_\+lstdelone.\+c}}
+\begin{DoxyCompactList}\small\item\em Takes as a parameter a node and frees the memory of the node’s content using the function ’del’ given as a parameter and free the node. The memory of ’next’ must not be freed. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{ft__lstiter_8c}{ft\+\_\+lstiter.\+c}}
+\begin{DoxyCompactList}\small\item\em Iterates the list ’lst’ and applies the function ’f’ on the content of each node. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{ft__lstlast_8c}{ft\+\_\+lstlast.\+c}}
+\begin{DoxyCompactList}\small\item\em Returns the last node of the list. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{ft__lstmap_8c}{ft\+\_\+lstmap.\+c}}
+\begin{DoxyCompactList}\small\item\em Iterates the list ’lst’ and applies the function ’f’ on the content of each node. Creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of a node if needed. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{ft__lstnew_8c}{ft\+\_\+lstnew.\+c}}
+\begin{DoxyCompactList}\small\item\em Allocates (with malloc(3)) and returns a new node. The member variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{ft__lstsize_8c}{ft\+\_\+lstsize.\+c}}
+\begin{DoxyCompactList}\small\item\em Counts the number of nodes in a list. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{attack__bonus_8c}{attack\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Attack animation functions. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{enem__frame_8c}{enem\+\_\+frame.\+c}}
+\begin{DoxyCompactList}\small\item\em Enemy frame update functions. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{weapon__bonus_8c}{weapon\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Weapon functions. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{main__bonus_8c}{main\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Main file of the project. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{file__content_8c}{file\+\_\+content.\+c}}
+\begin{DoxyCompactList}\small\item\em Check the order of the file and if there is any random content. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{map__content_8c}{map\+\_\+content.\+c}}
+\begin{DoxyCompactList}\small\item\em Check the map content. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{map__validation_8c}{map\+\_\+validation.\+c}}
+\begin{DoxyCompactList}\small\item\em Map validation functions. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{parse_8c}{parse.\+c}}
+\begin{DoxyCompactList}\small\item\em Parsing functions. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{read__map_8c}{read\+\_\+map.\+c}}
+\begin{DoxyCompactList}\small\item\em Read the map from the file and store it in the game struct. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{read__textures_8c}{read\+\_\+textures.\+c}}
+\begin{DoxyCompactList}\small\item\em Functions to read the textures from the file. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{draw__bonus_8c}{draw\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Functions to draw the walls and textures. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{enemy__bonus_8c}{enemy\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Enemy functions. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{enemy__math__bonus_8c}{enemy\+\_\+math\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Enemy math calculations. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{fps__bonus_8c}{fps\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Handle the FPS counter. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{minimap__bonus_8c}{minimap\+\_\+bonus.\+c}}
+\item 
+file \mbox{\hyperlink{player__face__bonus_8c}{player\+\_\+face\+\_\+bonus.\+c}}
+\item 
+file \mbox{\hyperlink{raycasting__bonus_8c}{raycasting\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Raycasting functions. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{file__utils__bonus_8c}{file\+\_\+utils\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Checks for file extensions and directories. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{init2__bonus_8c}{init2\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Continue the initialization of the game structure. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{init3__bonus_8c}{init3\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Continue the initialization of the game structure. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{init__bitmap__bonus_8c}{init\+\_\+bitmap\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Initializes the bitmap for the fps counter. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{init__bonus_8c}{init\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Initialize the game status. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{map__utils__bonus_8c}{map\+\_\+utils\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Map utilities functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__bonus_ga4c10e88fffc3c9467eb16e6debd227a4}{ft\+\_\+lstadd\+\_\+back}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}new)
+\begin{DoxyCompactList}\small\item\em Adds a new node to the end of the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga0195e4eb88fad15717ed90524ac15771}{ft\+\_\+lstadd\+\_\+front}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}new)
+\begin{DoxyCompactList}\small\item\em Adds a new node to the start of the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga6e900cfaea2857bbf490f3105e38da93}{ft\+\_\+lstclear}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lst, void(\texorpdfstring{$\ast$}{*}del)(void \texorpdfstring{$\ast$}{*}))
+\begin{DoxyCompactList}\small\item\em Removes a node and the sucessors of it. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gac2b881501f9ee2f3ed5718f6d9ebee7c}{ft\+\_\+lstdelone}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst, void(\texorpdfstring{$\ast$}{*}del)(void \texorpdfstring{$\ast$}{*}))
+\begin{DoxyCompactList}\small\item\em Delete a node from a list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga1888c62a89ec3d206f2ed4590f4a021d}{ft\+\_\+lstiter}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst, void(\texorpdfstring{$\ast$}{*}f)(void \texorpdfstring{$\ast$}{*}))
+\begin{DoxyCompactList}\small\item\em Iterate a list and apply f function. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__bonus_gaed5f9b5ecc45235a7b7cf9d4b24e43dc}{ft\+\_\+lstlast}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst)
+\begin{DoxyCompactList}\small\item\em Returns if list is on last node. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__bonus_ga8198d1837ffbba05823f5e85afebf9c6}{ft\+\_\+lstmap}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst, void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*}f)(void \texorpdfstring{$\ast$}{*}), void(\texorpdfstring{$\ast$}{*}del)(void \texorpdfstring{$\ast$}{*}))
+\begin{DoxyCompactList}\small\item\em Iterates the list and applies the \textquotesingle{}f\textquotesingle{} function. Uses \textquotesingle{}del\textquotesingle{} if needed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__bonus_ga8fe4ea6f56f5a2a75ee13d97416b60ed}{ft\+\_\+lstnew}} (void \texorpdfstring{$\ast$}{*}content)
+\begin{DoxyCompactList}\small\item\em Creates a new node. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga9da614988ac99446db9df99d2c773fc1}{ft\+\_\+lstsize}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst)
+\begin{DoxyCompactList}\small\item\em Counts the number of nodes in a list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaef217df92a4cf867226dc204c70a3172}{update\+\_\+enemy\+\_\+frame\+\_\+attack2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i)
+\begin{DoxyCompactList}\small\item\em Continue updating the enemy attack animation frames. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa9d056d78cf1ee852d801db651f4f597}{update\+\_\+enemy\+\_\+frame\+\_\+attack}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, \mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}} \texorpdfstring{$\ast$}{*}timer, double curr\+\_\+time, int i)
+\begin{DoxyCompactList}\small\item\em Update the enemy attack animation frames. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa54482104fade0394fbd7421278d2a40}{update\+\_\+enemy\+\_\+frame\+\_\+mov}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, double curr\+\_\+time, int i)
+\begin{DoxyCompactList}\small\item\em Update enemy frame when enemy is moving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gace33f6507ac5df97313c872d1238e6fc}{update\+\_\+enemy\+\_\+frame\+\_\+death2}} (\mbox{\hyperlink{cub3d__bonus_8h_aaabe059852166f7b2d4b4e78e090d264}{t\+\_\+enemy}} \texorpdfstring{$\ast$}{*}enemy)
+\begin{DoxyCompactList}\small\item\em Continuation of update\+\_\+enemy\+\_\+frame\+\_\+death function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga3d3b21f9d596d82f3c431e5ab3203fac}{update\+\_\+enemy\+\_\+frame\+\_\+death}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, double curr\+\_\+time, int i)
+\begin{DoxyCompactList}\small\item\em Update enemy frame when enemy is dying. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gab0a90a99567c2fa3550f256d70c407d1}{update\+\_\+enemy\+\_\+frame}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, \mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}} \texorpdfstring{$\ast$}{*}timer, double curr\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Update enemy frame. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_gabb7875de575cf4f09110115d5e8ec57c}{get\+\_\+color\+\_\+weapon}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Get the color weapon object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga0aaa1469cf1e9ac2ab5acebf480b5e10}{update\+\_\+weapon\+\_\+frame}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, \mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}} \texorpdfstring{$\ast$}{*}timer, double curr\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Update the weapon frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga1ca087fd7e14d482b17121c516112974}{render\+\_\+weapon2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int frame\+\_\+x)
+\begin{DoxyCompactList}\small\item\em Continue initializing the weapon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga1eddb5178c3a8914079fb30a464bb895}{render\+\_\+weapon}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the weapon on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gab1fd7216b6f308b5ad61085752bb0ed6}{mlx\+\_\+functions}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Graphic rendering function. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv)
+\begin{DoxyCompactList}\small\item\em Main function of the project. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga1472f61cabe8a75ff18717aa1b13227f}{is\+\_\+texture}} (char \texorpdfstring{$\ast$}{*}line)
+\begin{DoxyCompactList}\small\item\em Check if the line is a texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga8f615b6eb34f842f94ed952de92bf461}{check\+\_\+order2}} (int fd, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check the order of the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga171e6c9e5ef15fb3495f97ac27efa3ec}{check\+\_\+random2}} (int fd, char \texorpdfstring{$\ast$}{*}tmp)
+\begin{DoxyCompactList}\small\item\em Continue checking for random content. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gab3ce91e7af3f1c80c32dabb962be977a}{check\+\_\+random}} (int fd, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if there is any random content in the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga971f7d823d371859485d572c446b30da}{check\+\_\+order}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check the order of the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga803de97b2f8a64d82377f947c8fc876a}{check\+\_\+holes}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map)
+\begin{DoxyCompactList}\small\item\em Check if there are holes in the map. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__bonus_ga97ef7806b88c2bde3bb35cb043c85712}{flood\+\_\+fill}} (bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Flood fill algorithm to check if the map is closed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__bonus_ga297e5f6975741687cf145692caf9f699}{check\+\_\+map\+\_\+extremities2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continuation of checking map extremities. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__bonus_ga1c6c73e53be29282c98b8ee5b6369df4}{check\+\_\+map\+\_\+extremities}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check the map extremities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gae600fbcdf50884fe019499de9eef8673}{map\+\_\+content\+\_\+validation}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Map content validation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga50fe9429feaabfdb4b597ca3f606fdaa}{check\+\_\+colors}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the colors are valid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga0f6f7a760f459fda68f48d0ca0028ae9}{check\+\_\+textures}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga38370bf4e9b7841bc5846ea297712b44}{player\+\_\+direction}} (char pos, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Player direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga8c275ae4a3d06228671699986b854663}{define\+\_\+coords}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Define player coordinates and direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga89dd8ca4a7194440f333b24960ec04ae}{check\+\_\+map\+\_\+content}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the map content is valid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga56418b22479ed7d258b4759d6474b90e}{parse}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Parsing the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa899aa515ba1c9df54243b4e8c5fc5e8}{count\+\_\+endmap2}} (char \texorpdfstring{$\ast$}{*}temp, int fd, int \texorpdfstring{$\ast$}{*}i)
+\begin{DoxyCompactList}\small\item\em Continue counting the end of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaba3a1e62cd58c60514a25702b484ceba}{count\+\_\+endmap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int fd)
+\begin{DoxyCompactList}\small\item\em Find the end of the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_gad3a46455dc950d08d5732a69fa7b39df}{count\+\_\+lines}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Count the number of lines in the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga078b18d6bd7a624fae69fadd2b27c321}{fill\+\_\+map}} (int fd, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Fill the map with the content of the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gad3041b29958b42ef7a6ce0e9ab3d9f1f}{read\+\_\+map}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Read the map from the file and store it in the game struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga02a5d2ca1e7cfa63180e7a9cdf956005}{check\+\_\+dup2}} (int \texorpdfstring{$\ast$}{*}arr, int fd, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}temp)
+\begin{DoxyCompactList}\small\item\em Continuation of check for duplicate textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga6d7ffba680ba4357e7dd5d4f0a568ff9}{check\+\_\+dup}} (int fd, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int \texorpdfstring{$\ast$}{*}arr)
+\begin{DoxyCompactList}\small\item\em Check for duplicate textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga28f30c2f8e7a180e2b0840288c30177a}{read\+\_\+textures3}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}temp, int \texorpdfstring{$\ast$}{*}i, int fd)
+\begin{DoxyCompactList}\small\item\em Continuation of texture reading. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga672270713ab903439881739bb5c3d980}{read\+\_\+textures2}} (int fd, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continuation of texture reading. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga027b0b805fb3e52b0f83595e6e82e481}{read\+\_\+textures}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Read the textures from the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga65f098a7a1e6d2d17628771d173699c0}{draw}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int texture)
+\begin{DoxyCompactList}\small\item\em Draw the pixel in the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaaf3c462b4c0a71853609d418099d0c33}{what\+\_\+draw}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x)
+\begin{DoxyCompactList}\small\item\em Define what to draw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga5822fc7fb51dc3a230a69d92d0da7052}{define\+\_\+texture}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int start, int line\+\_\+height)
+\begin{DoxyCompactList}\small\item\em Define the texture to draw. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_gab55248adf7bc3f5a0278f9c46bf6b6a7}{set\+\_\+column\+\_\+size}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int line\+\_\+height)
+\begin{DoxyCompactList}\small\item\em Set the column size object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga514f257d4e050c747eeb1fa1ba1eb2d1}{draw\+\_\+column}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x)
+\begin{DoxyCompactList}\small\item\em Draw the column of the wall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gac8f6b44728b6435b4b0db9dbcf9e10d7}{check\+\_\+enemy1\+\_\+5}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i)
+\begin{DoxyCompactList}\small\item\em Continue checking if the enemy can move. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gad5c396c7072757780301dc8566d37769}{check\+\_\+enemy}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i)
+\begin{DoxyCompactList}\small\item\em Check if the enemy can move. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga23cc63017a9e382f7a3529acfa0c252d}{sort\+\_\+enemies\+\_\+by\+\_\+distance}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Sort enemies by distance to player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga74f9b434669f8513b9e9fe73016b2e7d}{render\+\_\+enemy}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i, \mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group__mandatory_ga2099492c85969a8dfc0c85b9d2cbd8df}{render}})
+\begin{DoxyCompactList}\small\item\em Render the enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga8a3bfcd11623df8364fc6f9b51c43b81}{handle\+\_\+enemy}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handle the enemy logic. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga3e0ea5e6d10160cfe33ee8f177f62e16}{calculate\+\_\+enemy\+\_\+tex}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, \mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group__mandatory_ga2099492c85969a8dfc0c85b9d2cbd8df}{render}}, int y, int i)
+\begin{DoxyCompactList}\small\item\em Calculate the textures of the enemy. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga1a95edd8acc442f75fdbe6fba4e2bbc9}{calculate\+\_\+tex\+\_\+x}} (\mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group__mandatory_ga2099492c85969a8dfc0c85b9d2cbd8df}{render}}, int x)
+\begin{DoxyCompactList}\small\item\em Calculate the x coordinate of the texture. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga2b5ee03e6933b0eb15afb671b9c5a962}{should\+\_\+render\+\_\+pixel}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i, int x)
+\begin{DoxyCompactList}\small\item\em Check if the pixel should be rendered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga7188849e195d11c0cc433c1fafda677c}{calculate\+\_\+tranform}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i)
+\begin{DoxyCompactList}\small\item\em Calculate the transformation of the enemy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gab1625d7c9bc19d3d3c2bf1078247a60f}{enemy\+\_\+math}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i, \mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group__mandatory_ga2099492c85969a8dfc0c85b9d2cbd8df}{render}})
+\begin{DoxyCompactList}\small\item\em Enemy math calculations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga8ea8b4b4e1358e34106764fbb20f8de6}{put\+\_\+pixel\+\_\+to\+\_\+image}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int color)
+\begin{DoxyCompactList}\small\item\em Put a pixel to the image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaf69d59169fafbe4f941e209854a216da}{draw\+\_\+filled\+\_\+rectangle}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int width)
+\begin{DoxyCompactList}\small\item\em Draw a filled rectangle to the image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga8f9aa06034d6cb08b74ced313722cd07}{draw\+\_\+char\+\_\+to\+\_\+image}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, char c, int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw a character to the image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga5c5eaaeb2c55c0b16f528ff6e623e16a}{update\+\_\+fps}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Update the FPS counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga7bacc07b6b7cdfd407e2e32393c32243}{render\+\_\+fps}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render the FPS counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga15546c5187f8665b8aa226a5f9db942a}{draw\+\_\+minimap\+\_\+square}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int color)
+\begin{DoxyCompactList}\small\item\em Draw a square to the minimap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga56066c0382e12a51d44cc3e1f20fcf1e}{render\+\_\+player\+\_\+on\+\_\+minimap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render the player on the minimap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga9bfb08edb3d0f303d30d65d5318a3f98}{render\+\_\+minimap2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Continue rendering of minimap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga62faecc7d378acb6f7f42dfc5da0b9ed}{render\+\_\+minimap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render the minimap. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga55698da8b0719632cd71ece22327d3ee}{get\+\_\+color\+\_\+player}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int i)
+\begin{DoxyCompactList}\small\item\em Get the color of the player face. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gad8b1cd8a1cd1e8cbfcb2ce3c9434f408}{put\+\_\+pixel\+\_\+player}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int color)
+\begin{DoxyCompactList}\small\item\em Put a pixel on the player face. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga27900d0769bfccf8a7424e5fd4e68b92}{clear\+\_\+player\+\_\+face}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Clear the player face on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa631dc458fcd84fee2d7f75c54d40616}{put\+\_\+player\+\_\+face2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continue to put the player face on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga4fd7c444fbc9595037cf2e402f935982}{put\+\_\+player\+\_\+face}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Put the player face on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga400c978c9b67b5e3f2eb047933454cc4}{wall\+\_\+stuff2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int \texorpdfstring{$\ast$}{*}wall)
+\begin{DoxyCompactList}\small\item\em Continue the raycasting process. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa580b8d7c2c926fa01f96bdb57eba636}{wall\+\_\+stuff}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the ray hit a wall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga0faf93fd759c047ab8f1dc15e4a3e37c}{get\+\_\+step}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Get the step object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gab7e7d1b2b9ab3dd16a0a54c1ca75643d}{get\+\_\+distance}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Get distance to wall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga1d4d9338e056ee6875c6b89c1b796a40}{raycasting}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Raycasting function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga93e1a6b7a1f41474d9f5075b540efc35}{check\+\_\+extension}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Check if the file has the .cub extension. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__bonus_gad0c4ea0de84558ea787dc2d36b0dd55a}{is\+\_\+dir}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Check if the file is a directory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__bonus_ga921ae8bc9c67e41bd794b26469892d95}{is\+\_\+xpm}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Check if the file is a xpm file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga226b0cae848546bb366be027d2525758}{check\+\_\+duplicate\+\_\+text}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the textures are duplicated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga8fc9d6f5c977b7b15c244939de0bfbde}{check\+\_\+file}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the file is a valid texture file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga5a9a45c7d73b4ce56ac8bff33fb85864}{init\+\_\+door}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the door structure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga6e1c10c405239ad7c9b516a9bf053ce6}{init\+\_\+enemy2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continue the initialization of the enemy structure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gae1d799641cf861cb2829e80f23f9a0b9}{init\+\_\+enemy}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the enemy structure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga021dbd35065828d0292707e82e15744e}{init\+\_\+raycasting}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x)
+\begin{DoxyCompactList}\small\item\em Initialize the raycasting variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga83da6c8723d2c609554d3df816dbcf02}{init\+\_\+minimap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the minimap image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga972855b2916f9a6b384c023ddc03a39b}{init\+\_\+weapon}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the weapon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gab330f8b2fa0b1f71a63ccfb8da687b06}{init\+\_\+fps}} (\mbox{\hyperlink{cub3d__bonus_8h_a848c1794c634729465d73bf5ece80b28}{t\+\_\+fps}} \texorpdfstring{$\ast$}{*}fps)
+\begin{DoxyCompactList}\small\item\em Initialize the fps structure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga559a761d13c6fbc3165d5d1a4c06e9e7}{xpm\+\_\+img}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Transform xpm file to image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga654f671540cab3b453b81120aea1086f}{init\+\_\+fog}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the fog variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaec168a22a09284e4cbe519b1e1905579}{init\+\_\+bitmap5}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continue initialization of the bitmap for the fps counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga996a6ab9a5ec8ff7771832950dc31903}{init\+\_\+bitmap4}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continue initialization of the bitmap for the fps counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gad07b094d1806081e8e5d270e005de5f8}{init\+\_\+bitmap3}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continue initialization of the bitmap for the fps counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga5ccc27c945428637266ee5248c97dd48}{init\+\_\+bitmap2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continue initialization of the bitmap for the fps counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa7ca5508906eed4efd95e4e8e807f3ef}{init\+\_\+bitmap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the bitmap for the fps counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga61517937b1a92f8b59fcf59a17897ba1}{init\+\_\+status2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Continue initialization of the game status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga67eef528b2e6304c831410335f7dce9d}{init\+\_\+status}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the game status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gad634e7adcff3c2c68cc04072dda0a973}{init\+\_\+door\+\_\+map}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the door map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga2293ef2b23c95e07eda30d66456f74f6}{init\+\_\+img}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the images. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaf8bae02ab60dbe8fa5cbbcf0b855f1af}{initializations}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the game status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gad2ab9f963d22196c8f142ab51e4c8137}{free\+\_\+map}} (bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map)
+\begin{DoxyCompactList}\small\item\em Free the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gafeea14b015e227d0fb70806e3c5c4198}{get\+\_\+map\+\_\+width}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Get the width of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga614e1831e06d26b72a8b3cdec9c6e40b}{check\+\_\+doors2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map, int i, int j)
+\begin{DoxyCompactList}\small\item\em Continuation of the check of the doors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaefd047da2d4178312836ed04cf84ff5c}{check\+\_\+doors}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map)
+\begin{DoxyCompactList}\small\item\em Check if the doors are correctly placed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__bonus_ga3e0ea5e6d10160cfe33ee8f177f62e16}\index{Bonus@{Bonus}!calculate\_enemy\_tex@{calculate\_enemy\_tex}}
+\index{calculate\_enemy\_tex@{calculate\_enemy\_tex}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{calculate\_enemy\_tex()}{calculate\_enemy\_tex()}}
+{\footnotesize\ttfamily \label{group__bonus_ga3e0ea5e6d10160cfe33ee8f177f62e16} 
+void calculate\+\_\+enemy\+\_\+tex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{\mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}}]{render}{, }\item[{int}]{y}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Calculate the textures of the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to game \\
+\hline
+{\em render} & Render struct \\
+\hline
+{\em y} & Y coordinate of the pixel \\
+\hline
+{\em i} & Index of enemy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga1a95edd8acc442f75fdbe6fba4e2bbc9}\index{Bonus@{Bonus}!calculate\_tex\_x@{calculate\_tex\_x}}
+\index{calculate\_tex\_x@{calculate\_tex\_x}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{calculate\_tex\_x()}{calculate\_tex\_x()}}
+{\footnotesize\ttfamily \label{group__bonus_ga1a95edd8acc442f75fdbe6fba4e2bbc9} 
+int calculate\+\_\+tex\+\_\+x (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}}]{render}{, }\item[{int}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Calculate the x coordinate of the texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em render} & Render struct \\
+\hline
+{\em x} & X coordinate of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+X coordinate of the texture 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga7188849e195d11c0cc433c1fafda677c}\index{Bonus@{Bonus}!calculate\_tranform@{calculate\_tranform}}
+\index{calculate\_tranform@{calculate\_tranform}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{calculate\_tranform()}{calculate\_tranform()}}
+{\footnotesize\ttfamily \label{group__bonus_ga7188849e195d11c0cc433c1fafda677c} 
+void calculate\+\_\+tranform (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Calculate the transformation of the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to game \\
+\hline
+{\em i} & Index of enemy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga50fe9429feaabfdb4b597ca3f606fdaa}\index{Bonus@{Bonus}!check\_colors@{check\_colors}}
+\index{check\_colors@{check\_colors}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_colors()}{check\_colors()}}
+{\footnotesize\ttfamily \label{group__bonus_ga50fe9429feaabfdb4b597ca3f606fdaa} 
+void check\+\_\+colors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check if the colors are valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct with game information \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaefd047da2d4178312836ed04cf84ff5c}\index{Bonus@{Bonus}!check\_doors@{check\_doors}}
+\index{check\_doors@{check\_doors}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_doors()}{check\_doors()}}
+{\footnotesize\ttfamily \label{group__bonus_gaefd047da2d4178312836ed04cf84ff5c} 
+void check\+\_\+doors (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{map}{}\end{DoxyParamCaption})}
+
+
+
+Check if the doors are correctly placed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Game structure \\
+\hline
+{\em map} & Map structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga614e1831e06d26b72a8b3cdec9c6e40b}\index{Bonus@{Bonus}!check\_doors2@{check\_doors2}}
+\index{check\_doors2@{check\_doors2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_doors2()}{check\_doors2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga614e1831e06d26b72a8b3cdec9c6e40b} 
+void check\+\_\+doors2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{map}{, }\item[{int}]{i}{, }\item[{int}]{j}{}\end{DoxyParamCaption})}
+
+
+
+Continuation of the check of the doors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em map} & Map Array \\
+\hline
+{\em i} & Index i \\
+\hline
+{\em j} & Index j \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga6d7ffba680ba4357e7dd5d4f0a568ff9}\index{Bonus@{Bonus}!check\_dup@{check\_dup}}
+\index{check\_dup@{check\_dup}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_dup()}{check\_dup()}}
+{\footnotesize\ttfamily \label{group__bonus_ga6d7ffba680ba4357e7dd5d4f0a568ff9} 
+void check\+\_\+dup (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{arr}{}\end{DoxyParamCaption})}
+
+
+
+Check for duplicate textures. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File Descriptor. \\
+\hline
+{\em game} & Struct to store the game data. \\
+\hline
+{\em arr} & Array to store the number of textures. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga02a5d2ca1e7cfa63180e7a9cdf956005}\index{Bonus@{Bonus}!check\_dup2@{check\_dup2}}
+\index{check\_dup2@{check\_dup2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_dup2()}{check\_dup2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga02a5d2ca1e7cfa63180e7a9cdf956005} 
+void check\+\_\+dup2 (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{arr}{, }\item[{int}]{fd}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{temp}{}\end{DoxyParamCaption})}
+
+
+
+Continuation of check for duplicate textures. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & Array to store the number of textures. \\
+\hline
+{\em game} & Struct to store the game data. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga226b0cae848546bb366be027d2525758}\index{Bonus@{Bonus}!check\_duplicate\_text@{check\_duplicate\_text}}
+\index{check\_duplicate\_text@{check\_duplicate\_text}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_duplicate\_text()}{check\_duplicate\_text()}}
+{\footnotesize\ttfamily \label{group__bonus_ga226b0cae848546bb366be027d2525758} 
+void check\+\_\+duplicate\+\_\+text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check if the textures are duplicated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad5c396c7072757780301dc8566d37769}\index{Bonus@{Bonus}!check\_enemy@{check\_enemy}}
+\index{check\_enemy@{check\_enemy}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_enemy()}{check\_enemy()}}
+{\footnotesize\ttfamily \label{group__bonus_gad5c396c7072757780301dc8566d37769} 
+void check\+\_\+enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Check if the enemy can move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em i} & Index of the enemy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gac8f6b44728b6435b4b0db9dbcf9e10d7}\index{Bonus@{Bonus}!check\_enemy1\_5@{check\_enemy1\_5}}
+\index{check\_enemy1\_5@{check\_enemy1\_5}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_enemy1\_5()}{check\_enemy1\_5()}}
+{\footnotesize\ttfamily \label{group__bonus_gac8f6b44728b6435b4b0db9dbcf9e10d7} 
+void check\+\_\+enemy1\+\_\+5 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Continue checking if the enemy can move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em i} & Index of the enemy \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga93e1a6b7a1f41474d9f5075b540efc35}\index{Bonus@{Bonus}!check\_extension@{check\_extension}}
+\index{check\_extension@{check\_extension}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_extension()}{check\_extension()}}
+{\footnotesize\ttfamily \label{group__bonus_ga93e1a6b7a1f41474d9f5075b540efc35} 
+void check\+\_\+extension (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Check if the file has the .cub extension. 
+
+Check if the file has the correct extension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file to check \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga8fc9d6f5c977b7b15c244939de0bfbde}\index{Bonus@{Bonus}!check\_file@{check\_file}}
+\index{check\_file@{check\_file}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_file()}{check\_file()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8fc9d6f5c977b7b15c244939de0bfbde} 
+void check\+\_\+file (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check if the file is a valid texture file. 
+
+Check if the file is a valid texture.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file to check \\
+\hline
+{\em game} & The game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga803de97b2f8a64d82377f947c8fc876a}\index{Bonus@{Bonus}!check\_holes@{check\_holes}}
+\index{check\_holes@{check\_holes}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_holes()}{check\_holes()}}
+{\footnotesize\ttfamily \label{group__bonus_ga803de97b2f8a64d82377f947c8fc876a} 
+void check\+\_\+holes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{map}{}\end{DoxyParamCaption})}
+
+
+
+Check if there are holes in the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct with the game information. \\
+\hline
+{\em map} & Map to check. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga89dd8ca4a7194440f333b24960ec04ae}\index{Bonus@{Bonus}!check\_map\_content@{check\_map\_content}}
+\index{check\_map\_content@{check\_map\_content}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_map\_content()}{check\_map\_content()}}
+{\footnotesize\ttfamily \label{group__bonus_ga89dd8ca4a7194440f333b24960ec04ae} 
+void check\+\_\+map\+\_\+content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check if the map content is valid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct containing game elements \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga1c6c73e53be29282c98b8ee5b6369df4}\index{Bonus@{Bonus}!check\_map\_extremities@{check\_map\_extremities}}
+\index{check\_map\_extremities@{check\_map\_extremities}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_map\_extremities()}{check\_map\_extremities()}}
+{\footnotesize\ttfamily \label{group__bonus_ga1c6c73e53be29282c98b8ee5b6369df4} 
+bool check\+\_\+map\+\_\+extremities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check the map extremities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct with the game information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the map is closed. 
+
+false If the map is not closed. 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga297e5f6975741687cf145692caf9f699}\index{Bonus@{Bonus}!check\_map\_extremities2@{check\_map\_extremities2}}
+\index{check\_map\_extremities2@{check\_map\_extremities2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_map\_extremities2()}{check\_map\_extremities2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga297e5f6975741687cf145692caf9f699} 
+bool check\+\_\+map\+\_\+extremities2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continuation of checking map extremities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct with the game information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the map is closed. 
+
+false If the map is not closed. 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga971f7d823d371859485d572c446b30da}\index{Bonus@{Bonus}!check\_order@{check\_order}}
+\index{check\_order@{check\_order}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_order()}{check\_order()}}
+{\footnotesize\ttfamily \label{group__bonus_ga971f7d823d371859485d572c446b30da} 
+void check\+\_\+order (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check the order of the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to check. \\
+\hline
+{\em game} & Struct with the game information. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga8f615b6eb34f842f94ed952de92bf461}\index{Bonus@{Bonus}!check\_order2@{check\_order2}}
+\index{check\_order2@{check\_order2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_order2()}{check\_order2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8f615b6eb34f842f94ed952de92bf461} 
+void check\+\_\+order2 (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check the order of the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File descriptor. \\
+\hline
+{\em game} & Struct with the game information. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gab3ce91e7af3f1c80c32dabb962be977a}\index{Bonus@{Bonus}!check\_random@{check\_random}}
+\index{check\_random@{check\_random}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_random()}{check\_random()}}
+{\footnotesize\ttfamily \label{group__bonus_gab3ce91e7af3f1c80c32dabb962be977a} 
+void check\+\_\+random (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check if there is any random content in the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File descriptor. \\
+\hline
+{\em game} & Struct with the game information. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga171e6c9e5ef15fb3495f97ac27efa3ec}\index{Bonus@{Bonus}!check\_random2@{check\_random2}}
+\index{check\_random2@{check\_random2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_random2()}{check\_random2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga171e6c9e5ef15fb3495f97ac27efa3ec} 
+void check\+\_\+random2 (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{tmp}{}\end{DoxyParamCaption})}
+
+
+
+Continue checking for random content. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File descriptor. \\
+\hline
+{\em tmp} & Temporary string. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga0f6f7a760f459fda68f48d0ca0028ae9}\index{Bonus@{Bonus}!check\_textures@{check\_textures}}
+\index{check\_textures@{check\_textures}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_textures()}{check\_textures()}}
+{\footnotesize\ttfamily \label{group__bonus_ga0f6f7a760f459fda68f48d0ca0028ae9} 
+void check\+\_\+textures (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check textures. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct with game information \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga27900d0769bfccf8a7424e5fd4e68b92}\index{Bonus@{Bonus}!clear\_player\_face@{clear\_player\_face}}
+\index{clear\_player\_face@{clear\_player\_face}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{clear\_player\_face()}{clear\_player\_face()}}
+{\footnotesize\ttfamily \label{group__bonus_ga27900d0769bfccf8a7424e5fd4e68b92} 
+void clear\+\_\+player\+\_\+face (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Clear the player face on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaba3a1e62cd58c60514a25702b484ceba}\index{Bonus@{Bonus}!count\_endmap@{count\_endmap}}
+\index{count\_endmap@{count\_endmap}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{count\_endmap()}{count\_endmap()}}
+{\footnotesize\ttfamily \label{group__bonus_gaba3a1e62cd58c60514a25702b484ceba} 
+void count\+\_\+endmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{fd}{}\end{DoxyParamCaption})}
+
+
+
+Find the end of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct to store the map. \\
+\hline
+{\em fd} & File descriptor. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaa899aa515ba1c9df54243b4e8c5fc5e8}\index{Bonus@{Bonus}!count\_endmap2@{count\_endmap2}}
+\index{count\_endmap2@{count\_endmap2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{count\_endmap2()}{count\_endmap2()}}
+{\footnotesize\ttfamily \label{group__bonus_gaa899aa515ba1c9df54243b4e8c5fc5e8} 
+void count\+\_\+endmap2 (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{temp}{, }\item[{int}]{fd}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Continue counting the end of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temp} & Temporary string to store the line. \\
+\hline
+{\em fd} & File descriptor. \\
+\hline
+{\em i} & Index to store the number of lines. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad3a46455dc950d08d5732a69fa7b39df}\index{Bonus@{Bonus}!count\_lines@{count\_lines}}
+\index{count\_lines@{count\_lines}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{count\_lines()}{count\_lines()}}
+{\footnotesize\ttfamily \label{group__bonus_gad3a46455dc950d08d5732a69fa7b39df} 
+int count\+\_\+lines (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Count the number of lines in the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to count the lines. \\
+\hline
+{\em game} & Struct to store the map. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Number of lines in the file. 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga8c275ae4a3d06228671699986b854663}\index{Bonus@{Bonus}!define\_coords@{define\_coords}}
+\index{define\_coords@{define\_coords}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{define\_coords()}{define\_coords()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8c275ae4a3d06228671699986b854663} 
+void define\+\_\+coords (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Define player coordinates and direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct with game information \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga5822fc7fb51dc3a230a69d92d0da7052}\index{Bonus@{Bonus}!define\_texture@{define\_texture}}
+\index{define\_texture@{define\_texture}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{define\_texture()}{define\_texture()}}
+{\footnotesize\ttfamily \label{group__bonus_ga5822fc7fb51dc3a230a69d92d0da7052} 
+void define\+\_\+texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{start}{, }\item[{int}]{line\+\_\+height}{}\end{DoxyParamCaption})}
+
+
+
+Define the texture to draw. 
+
+Define the texture of the wall.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em start} & Start of the wall. \\
+\hline
+{\em line\+\_\+height} & Line height of the wall. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga65f098a7a1e6d2d17628771d173699c0}\index{Bonus@{Bonus}!draw@{draw}}
+\index{draw@{draw}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{group__bonus_ga65f098a7a1e6d2d17628771d173699c0} 
+void draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{texture}{}\end{DoxyParamCaption})}
+
+
+
+Draw the pixel in the screen. 
+
+Draw the wall on the screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em x} & X coordinate of the pixel. \\
+\hline
+{\em texture} & Texture to draw. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga8f9aa06034d6cb08b74ced313722cd07}\index{Bonus@{Bonus}!draw\_char\_to\_image@{draw\_char\_to\_image}}
+\index{draw\_char\_to\_image@{draw\_char\_to\_image}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{draw\_char\_to\_image()}{draw\_char\_to\_image()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8f9aa06034d6cb08b74ced313722cd07} 
+void draw\+\_\+char\+\_\+to\+\_\+image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{char}]{c}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Draw a character to the image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em c} & Character to draw. \\
+\hline
+{\em x} & X position. \\
+\hline
+{\em y} & Y position. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga514f257d4e050c747eeb1fa1ba1eb2d1}\index{Bonus@{Bonus}!draw\_column@{draw\_column}}
+\index{draw\_column@{draw\_column}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{draw\_column()}{draw\_column()}}
+{\footnotesize\ttfamily \label{group__bonus_ga514f257d4e050c747eeb1fa1ba1eb2d1} 
+void draw\+\_\+column (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Draw the column of the wall. 
+
+Draw the walls on the screen.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em x} & X coordinate of the column. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaf69d59169fafbe4f941e209854a216da}\index{Bonus@{Bonus}!draw\_filled\_rectangle@{draw\_filled\_rectangle}}
+\index{draw\_filled\_rectangle@{draw\_filled\_rectangle}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{draw\_filled\_rectangle()}{draw\_filled\_rectangle()}}
+{\footnotesize\ttfamily \label{group__bonus_gaf69d59169fafbe4f941e209854a216da} 
+void draw\+\_\+filled\+\_\+rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{width}{}\end{DoxyParamCaption})}
+
+
+
+Draw a filled rectangle to the image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em x} & X position. \\
+\hline
+{\em y} & Y position. \\
+\hline
+{\em width} & Width of the rectangle. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga15546c5187f8665b8aa226a5f9db942a}\index{Bonus@{Bonus}!draw\_minimap\_square@{draw\_minimap\_square}}
+\index{draw\_minimap\_square@{draw\_minimap\_square}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{draw\_minimap\_square()}{draw\_minimap\_square()}}
+{\footnotesize\ttfamily \label{group__bonus_ga15546c5187f8665b8aa226a5f9db942a} 
+void draw\+\_\+minimap\+\_\+square (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Draw a square to the minimap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em x} & X position. \\
+\hline
+{\em y} & Y position. \\
+\hline
+{\em color} & Color of the square. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gab1625d7c9bc19d3d3c2bf1078247a60f}\index{Bonus@{Bonus}!enemy\_math@{enemy\_math}}
+\index{enemy\_math@{enemy\_math}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{enemy\_math()}{enemy\_math()}}
+{\footnotesize\ttfamily \label{group__bonus_gab1625d7c9bc19d3d3c2bf1078247a60f} 
+void enemy\+\_\+math (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{i}{, }\item[{\mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}}]{render}{}\end{DoxyParamCaption})}
+
+
+
+Enemy math calculations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to game \\
+\hline
+{\em i} & Index of enemy \\
+\hline
+{\em render} & Render struct \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga078b18d6bd7a624fae69fadd2b27c321}\index{Bonus@{Bonus}!fill\_map@{fill\_map}}
+\index{fill\_map@{fill\_map}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{fill\_map()}{fill\_map()}}
+{\footnotesize\ttfamily \label{group__bonus_ga078b18d6bd7a624fae69fadd2b27c321} 
+void fill\+\_\+map (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Fill the map with the content of the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File descriptor. \\
+\hline
+{\em game} & Struct to store the map. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga97ef7806b88c2bde3bb35cb043c85712}\index{Bonus@{Bonus}!flood\_fill@{flood\_fill}}
+\index{flood\_fill@{flood\_fill}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{flood\_fill()}{flood\_fill()}}
+{\footnotesize\ttfamily \label{group__bonus_ga97ef7806b88c2bde3bb35cb043c85712} 
+bool flood\+\_\+fill (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{map}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Flood fill algorithm to check if the map is closed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Map to check. \\
+\hline
+{\em game} & Struct with the game information. \\
+\hline
+{\em x} & X position. \\
+\hline
+{\em y} & Y position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the map is closed. 
+
+false If the map is not closed. 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_gad2ab9f963d22196c8f142ab51e4c8137}\index{Bonus@{Bonus}!free\_map@{free\_map}}
+\index{free\_map@{free\_map}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{free\_map()}{free\_map()}}
+{\footnotesize\ttfamily \label{group__bonus_gad2ab9f963d22196c8f142ab51e4c8137} 
+void free\+\_\+map (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{map}{}\end{DoxyParamCaption})}
+
+
+
+Free the map. 
+
+Free the map allocated memory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Map Array \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga4c10e88fffc3c9467eb16e6debd227a4}\index{Bonus@{Bonus}!ft\_lstadd\_back@{ft\_lstadd\_back}}
+\index{ft\_lstadd\_back@{ft\_lstadd\_back}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_lstadd\_back()}{ft\_lstadd\_back()}}
+{\footnotesize\ttfamily \label{group__bonus_ga4c10e88fffc3c9467eb16e6debd227a4} 
+void ft\+\_\+lstadd\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{new}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new node to the end of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & List \\
+\hline
+{\em new} & new node \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga0195e4eb88fad15717ed90524ac15771}\index{Bonus@{Bonus}!ft\_lstadd\_front@{ft\_lstadd\_front}}
+\index{ft\_lstadd\_front@{ft\_lstadd\_front}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_lstadd\_front()}{ft\_lstadd\_front()}}
+{\footnotesize\ttfamily \label{group__bonus_ga0195e4eb88fad15717ed90524ac15771} 
+void ft\+\_\+lstadd\+\_\+front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{new}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new node to the start of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & List \\
+\hline
+{\em new} & New Node \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga6e900cfaea2857bbf490f3105e38da93}\index{Bonus@{Bonus}!ft\_lstclear@{ft\_lstclear}}
+\index{ft\_lstclear@{ft\_lstclear}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_lstclear()}{ft\_lstclear()}}
+{\footnotesize\ttfamily \label{group__bonus_ga6e900cfaea2857bbf490f3105e38da93} 
+void ft\+\_\+lstclear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{void(\texorpdfstring{$\ast$}{*}}]{del~}{)(void \texorpdfstring{$\ast$}{*})}\end{DoxyParamCaption})}
+
+
+
+Removes a node and the sucessors of it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & List \\
+\hline
+{\em del} & Function to delete a node \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gac2b881501f9ee2f3ed5718f6d9ebee7c}\index{Bonus@{Bonus}!ft\_lstdelone@{ft\_lstdelone}}
+\index{ft\_lstdelone@{ft\_lstdelone}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_lstdelone()}{ft\_lstdelone()}}
+{\footnotesize\ttfamily \label{group__bonus_gac2b881501f9ee2f3ed5718f6d9ebee7c} 
+void ft\+\_\+lstdelone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{void(\texorpdfstring{$\ast$}{*}}]{del~}{)(void \texorpdfstring{$\ast$}{*})}\end{DoxyParamCaption})}
+
+
+
+Delete a node from a list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & List \\
+\hline
+{\em del} & Function to delete node \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga1888c62a89ec3d206f2ed4590f4a021d}\index{Bonus@{Bonus}!ft\_lstiter@{ft\_lstiter}}
+\index{ft\_lstiter@{ft\_lstiter}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_lstiter()}{ft\_lstiter()}}
+{\footnotesize\ttfamily \label{group__bonus_ga1888c62a89ec3d206f2ed4590f4a021d} 
+void ft\+\_\+lstiter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{void(\texorpdfstring{$\ast$}{*}}]{f~}{)(void \texorpdfstring{$\ast$}{*})}\end{DoxyParamCaption})}
+
+
+
+Iterate a list and apply f function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & List \\
+\hline
+{\em f} & Function to apply on each node \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaed5f9b5ecc45235a7b7cf9d4b24e43dc}\index{Bonus@{Bonus}!ft\_lstlast@{ft\_lstlast}}
+\index{ft\_lstlast@{ft\_lstlast}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_lstlast()}{ft\_lstlast()}}
+{\footnotesize\ttfamily \label{group__bonus_gaed5f9b5ecc45235a7b7cf9d4b24e43dc} 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} ft\+\_\+lstlast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
+
+
+
+Returns if list is on last node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & List \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+t\+\_\+list\texorpdfstring{$\ast$}{*} Last node or not 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga8198d1837ffbba05823f5e85afebf9c6}\index{Bonus@{Bonus}!ft\_lstmap@{ft\_lstmap}}
+\index{ft\_lstmap@{ft\_lstmap}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_lstmap()}{ft\_lstmap()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8198d1837ffbba05823f5e85afebf9c6} 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} ft\+\_\+lstmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*}}]{f~}{)(void \texorpdfstring{$\ast$}{*}), }\item[{void(\texorpdfstring{$\ast$}{*}}]{del~}{)(void \texorpdfstring{$\ast$}{*})}\end{DoxyParamCaption})}
+
+
+
+Iterates the list and applies the \textquotesingle{}f\textquotesingle{} function. Uses \textquotesingle{}del\textquotesingle{} if needed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & List \\
+\hline
+{\em f} & Function to apply on content of each node \\
+\hline
+{\em del} & Delete content of node if needed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+t\+\_\+list\texorpdfstring{$\ast$}{*} new list 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga8fe4ea6f56f5a2a75ee13d97416b60ed}\index{Bonus@{Bonus}!ft\_lstnew@{ft\_lstnew}}
+\index{ft\_lstnew@{ft\_lstnew}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_lstnew()}{ft\_lstnew()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8fe4ea6f56f5a2a75ee13d97416b60ed} 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} ft\+\_\+lstnew (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Creates a new node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em content} & Content of node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+t\+\_\+list\texorpdfstring{$\ast$}{*} List 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga9da614988ac99446db9df99d2c773fc1}\index{Bonus@{Bonus}!ft\_lstsize@{ft\_lstsize}}
+\index{ft\_lstsize@{ft\_lstsize}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_lstsize()}{ft\_lstsize()}}
+{\footnotesize\ttfamily \label{group__bonus_ga9da614988ac99446db9df99d2c773fc1} 
+int ft\+\_\+lstsize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
+
+
+
+Counts the number of nodes in a list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & List \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int List Size 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga55698da8b0719632cd71ece22327d3ee}\index{Bonus@{Bonus}!get\_color\_player@{get\_color\_player}}
+\index{get\_color\_player@{get\_color\_player}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{get\_color\_player()}{get\_color\_player()}}
+{\footnotesize\ttfamily \label{group__bonus_ga55698da8b0719632cd71ece22327d3ee} 
+int get\+\_\+color\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Get the color of the player face. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure of the game \\
+\hline
+{\em x} & X coordinate \\
+\hline
+{\em y} & Y coordinate \\
+\hline
+{\em i} & Index of the player face \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Color of the pixel 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_gabb7875de575cf4f09110115d5e8ec57c}\index{Bonus@{Bonus}!get\_color\_weapon@{get\_color\_weapon}}
+\index{get\_color\_weapon@{get\_color\_weapon}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{get\_color\_weapon()}{get\_color\_weapon()}}
+{\footnotesize\ttfamily \label{group__bonus_gabb7875de575cf4f09110115d5e8ec57c} 
+int get\+\_\+color\+\_\+weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Get the color weapon object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em x} & X coordinate \\
+\hline
+{\em y} & Y coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Return the color of the weapon object 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_gab7e7d1b2b9ab3dd16a0a54c1ca75643d}\index{Bonus@{Bonus}!get\_distance@{get\_distance}}
+\index{get\_distance@{get\_distance}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{get\_distance()}{get\_distance()}}
+{\footnotesize\ttfamily \label{group__bonus_gab7e7d1b2b9ab3dd16a0a54c1ca75643d} 
+void get\+\_\+distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Get distance to wall. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure t\+\_\+game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gafeea14b015e227d0fb70806e3c5c4198}\index{Bonus@{Bonus}!get\_map\_width@{get\_map\_width}}
+\index{get\_map\_width@{get\_map\_width}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{get\_map\_width()}{get\_map\_width()}}
+{\footnotesize\ttfamily \label{group__bonus_gafeea14b015e227d0fb70806e3c5c4198} 
+void get\+\_\+map\+\_\+width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Get the width of the map. 
+
+Get the map width object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga0faf93fd759c047ab8f1dc15e4a3e37c}\index{Bonus@{Bonus}!get\_step@{get\_step}}
+\index{get\_step@{get\_step}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{get\_step()}{get\_step()}}
+{\footnotesize\ttfamily \label{group__bonus_ga0faf93fd759c047ab8f1dc15e4a3e37c} 
+void get\+\_\+step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Get the step object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure t\+\_\+game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga8a3bfcd11623df8364fc6f9b51c43b81}\index{Bonus@{Bonus}!handle\_enemy@{handle\_enemy}}
+\index{handle\_enemy@{handle\_enemy}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{handle\_enemy()}{handle\_enemy()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8a3bfcd11623df8364fc6f9b51c43b81} 
+void handle\+\_\+enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Handle the enemy logic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaa7ca5508906eed4efd95e4e8e807f3ef}\index{Bonus@{Bonus}!init\_bitmap@{init\_bitmap}}
+\index{init\_bitmap@{init\_bitmap}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_bitmap()}{init\_bitmap()}}
+{\footnotesize\ttfamily \label{group__bonus_gaa7ca5508906eed4efd95e4e8e807f3ef} 
+void init\+\_\+bitmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the bitmap for the fps counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga5ccc27c945428637266ee5248c97dd48}\index{Bonus@{Bonus}!init\_bitmap2@{init\_bitmap2}}
+\index{init\_bitmap2@{init\_bitmap2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_bitmap2()}{init\_bitmap2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga5ccc27c945428637266ee5248c97dd48} 
+void init\+\_\+bitmap2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continue initialization of the bitmap for the fps counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad07b094d1806081e8e5d270e005de5f8}\index{Bonus@{Bonus}!init\_bitmap3@{init\_bitmap3}}
+\index{init\_bitmap3@{init\_bitmap3}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_bitmap3()}{init\_bitmap3()}}
+{\footnotesize\ttfamily \label{group__bonus_gad07b094d1806081e8e5d270e005de5f8} 
+void init\+\_\+bitmap3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continue initialization of the bitmap for the fps counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga996a6ab9a5ec8ff7771832950dc31903}\index{Bonus@{Bonus}!init\_bitmap4@{init\_bitmap4}}
+\index{init\_bitmap4@{init\_bitmap4}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_bitmap4()}{init\_bitmap4()}}
+{\footnotesize\ttfamily \label{group__bonus_ga996a6ab9a5ec8ff7771832950dc31903} 
+void init\+\_\+bitmap4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continue initialization of the bitmap for the fps counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaec168a22a09284e4cbe519b1e1905579}\index{Bonus@{Bonus}!init\_bitmap5@{init\_bitmap5}}
+\index{init\_bitmap5@{init\_bitmap5}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_bitmap5()}{init\_bitmap5()}}
+{\footnotesize\ttfamily \label{group__bonus_gaec168a22a09284e4cbe519b1e1905579} 
+void init\+\_\+bitmap5 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continue initialization of the bitmap for the fps counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga5a9a45c7d73b4ce56ac8bff33fb85864}\index{Bonus@{Bonus}!init\_door@{init\_door}}
+\index{init\_door@{init\_door}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_door()}{init\_door()}}
+{\footnotesize\ttfamily \label{group__bonus_ga5a9a45c7d73b4ce56ac8bff33fb85864} 
+void init\+\_\+door (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the door structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad634e7adcff3c2c68cc04072dda0a973}\index{Bonus@{Bonus}!init\_door\_map@{init\_door\_map}}
+\index{init\_door\_map@{init\_door\_map}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_door\_map()}{init\_door\_map()}}
+{\footnotesize\ttfamily \label{group__bonus_gad634e7adcff3c2c68cc04072dda0a973} 
+void init\+\_\+door\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the door map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gae1d799641cf861cb2829e80f23f9a0b9}\index{Bonus@{Bonus}!init\_enemy@{init\_enemy}}
+\index{init\_enemy@{init\_enemy}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_enemy()}{init\_enemy()}}
+{\footnotesize\ttfamily \label{group__bonus_gae1d799641cf861cb2829e80f23f9a0b9} 
+void init\+\_\+enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the enemy structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga6e1c10c405239ad7c9b516a9bf053ce6}\index{Bonus@{Bonus}!init\_enemy2@{init\_enemy2}}
+\index{init\_enemy2@{init\_enemy2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_enemy2()}{init\_enemy2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga6e1c10c405239ad7c9b516a9bf053ce6} 
+void init\+\_\+enemy2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continue the initialization of the enemy structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga654f671540cab3b453b81120aea1086f}\index{Bonus@{Bonus}!init\_fog@{init\_fog}}
+\index{init\_fog@{init\_fog}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_fog()}{init\_fog()}}
+{\footnotesize\ttfamily \label{group__bonus_ga654f671540cab3b453b81120aea1086f} 
+void init\+\_\+fog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the fog variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gab330f8b2fa0b1f71a63ccfb8da687b06}\index{Bonus@{Bonus}!init\_fps@{init\_fps}}
+\index{init\_fps@{init\_fps}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_fps()}{init\_fps()}}
+{\footnotesize\ttfamily \label{group__bonus_gab330f8b2fa0b1f71a63ccfb8da687b06} 
+void init\+\_\+fps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cub3d__bonus_8h_a848c1794c634729465d73bf5ece80b28}{t\+\_\+fps}} \texorpdfstring{$\ast$}{*}}]{fps}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the fps structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fps} & Pointer to the fps structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga2293ef2b23c95e07eda30d66456f74f6}\index{Bonus@{Bonus}!init\_img@{init\_img}}
+\index{init\_img@{init\_img}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_img()}{init\_img()}}
+{\footnotesize\ttfamily \label{group__bonus_ga2293ef2b23c95e07eda30d66456f74f6} 
+void init\+\_\+img (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the images. 
+
+Initializes the mlx images.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga83da6c8723d2c609554d3df816dbcf02}\index{Bonus@{Bonus}!init\_minimap@{init\_minimap}}
+\index{init\_minimap@{init\_minimap}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_minimap()}{init\_minimap()}}
+{\footnotesize\ttfamily \label{group__bonus_ga83da6c8723d2c609554d3df816dbcf02} 
+void init\+\_\+minimap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the minimap image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga021dbd35065828d0292707e82e15744e}\index{Bonus@{Bonus}!init\_raycasting@{init\_raycasting}}
+\index{init\_raycasting@{init\_raycasting}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_raycasting()}{init\_raycasting()}}
+{\footnotesize\ttfamily \label{group__bonus_ga021dbd35065828d0292707e82e15744e} 
+void init\+\_\+raycasting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the raycasting variables. 
+
+Initialize raycasting variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em x} & The x coordinate of the screen. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga67eef528b2e6304c831410335f7dce9d}\index{Bonus@{Bonus}!init\_status@{init\_status}}
+\index{init\_status@{init\_status}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_status()}{init\_status()}}
+{\footnotesize\ttfamily \label{group__bonus_ga67eef528b2e6304c831410335f7dce9d} 
+void init\+\_\+status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the game status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga61517937b1a92f8b59fcf59a17897ba1}\index{Bonus@{Bonus}!init\_status2@{init\_status2}}
+\index{init\_status2@{init\_status2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_status2()}{init\_status2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga61517937b1a92f8b59fcf59a17897ba1} 
+void init\+\_\+status2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continue initialization of the game status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga972855b2916f9a6b384c023ddc03a39b}\index{Bonus@{Bonus}!init\_weapon@{init\_weapon}}
+\index{init\_weapon@{init\_weapon}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_weapon()}{init\_weapon()}}
+{\footnotesize\ttfamily \label{group__bonus_ga972855b2916f9a6b384c023ddc03a39b} 
+void init\+\_\+weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the weapon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaf8bae02ab60dbe8fa5cbbcf0b855f1af}\index{Bonus@{Bonus}!initializations@{initializations}}
+\index{initializations@{initializations}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{initializations()}{initializations()}}
+{\footnotesize\ttfamily \label{group__bonus_gaf8bae02ab60dbe8fa5cbbcf0b855f1af} 
+void initializations (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initialize the game status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad0c4ea0de84558ea787dc2d36b0dd55a}\index{Bonus@{Bonus}!is\_dir@{is\_dir}}
+\index{is\_dir@{is\_dir}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{is\_dir()}{is\_dir()}}
+{\footnotesize\ttfamily \label{group__bonus_gad0c4ea0de84558ea787dc2d36b0dd55a} 
+bool is\+\_\+dir (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Check if the file is a directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the file is a directory 
+
+false If the file is not a directory 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga1472f61cabe8a75ff18717aa1b13227f}\index{Bonus@{Bonus}!is\_texture@{is\_texture}}
+\index{is\_texture@{is\_texture}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{is\_texture()}{is\_texture()}}
+{\footnotesize\ttfamily \label{group__bonus_ga1472f61cabe8a75ff18717aa1b13227f} 
+int is\+\_\+texture (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{line}{}\end{DoxyParamCaption})}
+
+
+
+Check if the line is a texture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & Line to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Return 1 if the line is a texture, 0 otherwise. 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga921ae8bc9c67e41bd794b26469892d95}\index{Bonus@{Bonus}!is\_xpm@{is\_xpm}}
+\index{is\_xpm@{is\_xpm}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{is\_xpm()}{is\_xpm()}}
+{\footnotesize\ttfamily \label{group__bonus_ga921ae8bc9c67e41bd794b26469892d95} 
+bool is\+\_\+xpm (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Check if the file is a xpm file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the file is a xpm file 
+
+false If the file is not a xpm file 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga3c04138a5bfe5d72780bb7e82a18e627}\index{Bonus@{Bonus}!main@{main}}
+\index{main@{main}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{group__bonus_ga3c04138a5bfe5d72780bb7e82a18e627} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{}\end{DoxyParamCaption})}
+
+
+
+Main function of the project. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of arguments \\
+\hline
+{\em argv} & Arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Exit status 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_gae600fbcdf50884fe019499de9eef8673}\index{Bonus@{Bonus}!map\_content\_validation@{map\_content\_validation}}
+\index{map\_content\_validation@{map\_content\_validation}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{map\_content\_validation()}{map\_content\_validation()}}
+{\footnotesize\ttfamily \label{group__bonus_gae600fbcdf50884fe019499de9eef8673} 
+void map\+\_\+content\+\_\+validation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Map content validation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct with the game information. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gab1fd7216b6f308b5ad61085752bb0ed6}\index{Bonus@{Bonus}!mlx\_functions@{mlx\_functions}}
+\index{mlx\_functions@{mlx\_functions}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{mlx\_functions()}{mlx\_functions()}}
+{\footnotesize\ttfamily \label{group__bonus_gab1fd7216b6f308b5ad61085752bb0ed6} 
+void mlx\+\_\+functions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Graphic rendering function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct with game information \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga56418b22479ed7d258b4759d6474b90e}\index{Bonus@{Bonus}!parse@{parse}}
+\index{parse@{parse}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{group__bonus_ga56418b22479ed7d258b4759d6474b90e} 
+void parse (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Parsing the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argv} & Argument vector \\
+\hline
+{\em game} & Struct with game information \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga38370bf4e9b7841bc5846ea297712b44}\index{Bonus@{Bonus}!player\_direction@{player\_direction}}
+\index{player\_direction@{player\_direction}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{player\_direction()}{player\_direction()}}
+{\footnotesize\ttfamily \label{group__bonus_ga38370bf4e9b7841bc5846ea297712b44} 
+void player\+\_\+direction (\begin{DoxyParamCaption}\item[{char}]{pos}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Player direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Player direction \\
+\hline
+{\em game} & Struct with game information \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad8b1cd8a1cd1e8cbfcb2ce3c9434f408}\index{Bonus@{Bonus}!put\_pixel\_player@{put\_pixel\_player}}
+\index{put\_pixel\_player@{put\_pixel\_player}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{put\_pixel\_player()}{put\_pixel\_player()}}
+{\footnotesize\ttfamily \label{group__bonus_gad8b1cd8a1cd1e8cbfcb2ce3c9434f408} 
+void put\+\_\+pixel\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Put a pixel on the player face. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure of the game \\
+\hline
+{\em x} & X coordinate \\
+\hline
+{\em y} & Y coordinate \\
+\hline
+{\em color} & Color of the pixel \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga8ea8b4b4e1358e34106764fbb20f8de6}\index{Bonus@{Bonus}!put\_pixel\_to\_image@{put\_pixel\_to\_image}}
+\index{put\_pixel\_to\_image@{put\_pixel\_to\_image}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{put\_pixel\_to\_image()}{put\_pixel\_to\_image()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8ea8b4b4e1358e34106764fbb20f8de6} 
+void put\+\_\+pixel\+\_\+to\+\_\+image (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+
+
+Put a pixel to the image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em x} & X position. \\
+\hline
+{\em y} & Y position. \\
+\hline
+{\em color} & Color of the pixel. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga4fd7c444fbc9595037cf2e402f935982}\index{Bonus@{Bonus}!put\_player\_face@{put\_player\_face}}
+\index{put\_player\_face@{put\_player\_face}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{put\_player\_face()}{put\_player\_face()}}
+{\footnotesize\ttfamily \label{group__bonus_ga4fd7c444fbc9595037cf2e402f935982} 
+void put\+\_\+player\+\_\+face (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Put the player face on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaa631dc458fcd84fee2d7f75c54d40616}\index{Bonus@{Bonus}!put\_player\_face2@{put\_player\_face2}}
+\index{put\_player\_face2@{put\_player\_face2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{put\_player\_face2()}{put\_player\_face2()}}
+{\footnotesize\ttfamily \label{group__bonus_gaa631dc458fcd84fee2d7f75c54d40616} 
+void put\+\_\+player\+\_\+face2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continue to put the player face on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga1d4d9338e056ee6875c6b89c1b796a40}\index{Bonus@{Bonus}!raycasting@{raycasting}}
+\index{raycasting@{raycasting}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{raycasting()}{raycasting()}}
+{\footnotesize\ttfamily \label{group__bonus_ga1d4d9338e056ee6875c6b89c1b796a40} 
+void raycasting (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Raycasting function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure t\+\_\+game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad3041b29958b42ef7a6ce0e9ab3d9f1f}\index{Bonus@{Bonus}!read\_map@{read\_map}}
+\index{read\_map@{read\_map}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{read\_map()}{read\_map()}}
+{\footnotesize\ttfamily \label{group__bonus_gad3041b29958b42ef7a6ce0e9ab3d9f1f} 
+void read\+\_\+map (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Read the map from the file and store it in the game struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to read the map from. \\
+\hline
+{\em game} & Struct to store the map. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga027b0b805fb3e52b0f83595e6e82e481}\index{Bonus@{Bonus}!read\_textures@{read\_textures}}
+\index{read\_textures@{read\_textures}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{read\_textures()}{read\_textures()}}
+{\footnotesize\ttfamily \label{group__bonus_ga027b0b805fb3e52b0f83595e6e82e481} 
+void read\+\_\+textures (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Read the textures from the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & File to read the textures from. \\
+\hline
+{\em game} & Struct to store the game data. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga672270713ab903439881739bb5c3d980}\index{Bonus@{Bonus}!read\_textures2@{read\_textures2}}
+\index{read\_textures2@{read\_textures2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{read\_textures2()}{read\_textures2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga672270713ab903439881739bb5c3d980} 
+void read\+\_\+textures2 (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Continuation of texture reading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File descriptor. \\
+\hline
+{\em game} & Struct to store the game data. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga28f30c2f8e7a180e2b0840288c30177a}\index{Bonus@{Bonus}!read\_textures3@{read\_textures3}}
+\index{read\_textures3@{read\_textures3}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{read\_textures3()}{read\_textures3()}}
+{\footnotesize\ttfamily \label{group__bonus_ga28f30c2f8e7a180e2b0840288c30177a} 
+void read\+\_\+textures3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{temp}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{i}{, }\item[{int}]{fd}{}\end{DoxyParamCaption})}
+
+
+
+Continuation of texture reading. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct to store the game data. \\
+\hline
+{\em temp} & Temporary string. \\
+\hline
+{\em i} & Index. \\
+\hline
+{\em fd} & File descriptor. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga74f9b434669f8513b9e9fe73016b2e7d}\index{Bonus@{Bonus}!render\_enemy@{render\_enemy}}
+\index{render\_enemy@{render\_enemy}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_enemy()}{render\_enemy()}}
+{\footnotesize\ttfamily \label{group__bonus_ga74f9b434669f8513b9e9fe73016b2e7d} 
+void render\+\_\+enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{i}{, }\item[{\mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}}]{render}{}\end{DoxyParamCaption})}
+
+
+
+Render the enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em i} & Index of the enemy \\
+\hline
+{\em render} & Pointer to the render structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga7bacc07b6b7cdfd407e2e32393c32243}\index{Bonus@{Bonus}!render\_fps@{render\_fps}}
+\index{render\_fps@{render\_fps}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_fps()}{render\_fps()}}
+{\footnotesize\ttfamily \label{group__bonus_ga7bacc07b6b7cdfd407e2e32393c32243} 
+void render\+\_\+fps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Render the FPS counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga62faecc7d378acb6f7f42dfc5da0b9ed}\index{Bonus@{Bonus}!render\_minimap@{render\_minimap}}
+\index{render\_minimap@{render\_minimap}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_minimap()}{render\_minimap()}}
+{\footnotesize\ttfamily \label{group__bonus_ga62faecc7d378acb6f7f42dfc5da0b9ed} 
+void render\+\_\+minimap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Render the minimap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga9bfb08edb3d0f303d30d65d5318a3f98}\index{Bonus@{Bonus}!render\_minimap2@{render\_minimap2}}
+\index{render\_minimap2@{render\_minimap2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_minimap2()}{render\_minimap2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga9bfb08edb3d0f303d30d65d5318a3f98} 
+void render\+\_\+minimap2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Continue rendering of minimap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em x} & X position. \\
+\hline
+{\em y} & Y position. \\
+\hline
+{\em color} & Color of the square. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga56066c0382e12a51d44cc3e1f20fcf1e}\index{Bonus@{Bonus}!render\_player\_on\_minimap@{render\_player\_on\_minimap}}
+\index{render\_player\_on\_minimap@{render\_player\_on\_minimap}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_player\_on\_minimap()}{render\_player\_on\_minimap()}}
+{\footnotesize\ttfamily \label{group__bonus_ga56066c0382e12a51d44cc3e1f20fcf1e} 
+void render\+\_\+player\+\_\+on\+\_\+minimap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Render the player on the minimap. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga1eddb5178c3a8914079fb30a464bb895}\index{Bonus@{Bonus}!render\_weapon@{render\_weapon}}
+\index{render\_weapon@{render\_weapon}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_weapon()}{render\_weapon()}}
+{\footnotesize\ttfamily \label{group__bonus_ga1eddb5178c3a8914079fb30a464bb895} 
+void render\+\_\+weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Renders the weapon on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga1ca087fd7e14d482b17121c516112974}\index{Bonus@{Bonus}!render\_weapon2@{render\_weapon2}}
+\index{render\_weapon2@{render\_weapon2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_weapon2()}{render\_weapon2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga1ca087fd7e14d482b17121c516112974} 
+void render\+\_\+weapon2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{frame\+\_\+x}{}\end{DoxyParamCaption})}
+
+
+
+Continue initializing the weapon. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em x} & X coordinate \\
+\hline
+{\em y} & Y coordinate \\
+\hline
+{\em frame\+\_\+x} & Frame X coordinate \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gab55248adf7bc3f5a0278f9c46bf6b6a7}\index{Bonus@{Bonus}!set\_column\_size@{set\_column\_size}}
+\index{set\_column\_size@{set\_column\_size}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{set\_column\_size()}{set\_column\_size()}}
+{\footnotesize\ttfamily \label{group__bonus_gab55248adf7bc3f5a0278f9c46bf6b6a7} 
+int set\+\_\+column\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{line\+\_\+height}{}\end{DoxyParamCaption})}
+
+
+
+Set the column size object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em line\+\_\+height} & Line height of the column. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns the line height. 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga2b5ee03e6933b0eb15afb671b9c5a962}\index{Bonus@{Bonus}!should\_render\_pixel@{should\_render\_pixel}}
+\index{should\_render\_pixel@{should\_render\_pixel}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{should\_render\_pixel()}{should\_render\_pixel()}}
+{\footnotesize\ttfamily \label{group__bonus_ga2b5ee03e6933b0eb15afb671b9c5a962} 
+int should\+\_\+render\+\_\+pixel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{i}{, }\item[{int}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Check if the pixel should be rendered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to game \\
+\hline
+{\em i} & Index of enemy \\
+\hline
+{\em x} & X coordinate of the pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the pixel should be rendered, 0 otherwise 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga23cc63017a9e382f7a3529acfa0c252d}\index{Bonus@{Bonus}!sort\_enemies\_by\_distance@{sort\_enemies\_by\_distance}}
+\index{sort\_enemies\_by\_distance@{sort\_enemies\_by\_distance}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{sort\_enemies\_by\_distance()}{sort\_enemies\_by\_distance()}}
+{\footnotesize\ttfamily \label{group__bonus_ga23cc63017a9e382f7a3529acfa0c252d} 
+void sort\+\_\+enemies\+\_\+by\+\_\+distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Sort enemies by distance to player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gab0a90a99567c2fa3550f256d70c407d1}\index{Bonus@{Bonus}!update\_enemy\_frame@{update\_enemy\_frame}}
+\index{update\_enemy\_frame@{update\_enemy\_frame}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{update\_enemy\_frame()}{update\_enemy\_frame()}}
+{\footnotesize\ttfamily \label{group__bonus_gab0a90a99567c2fa3550f256d70c407d1} 
+void update\+\_\+enemy\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{\mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}} \texorpdfstring{$\ast$}{*}}]{timer}{, }\item[{double}]{curr\+\_\+time}{}\end{DoxyParamCaption})}
+
+
+
+Update enemy frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em timer} & Pointer to the timer structure. \\
+\hline
+{\em curr\+\_\+time} & Current time. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaa9d056d78cf1ee852d801db651f4f597}\index{Bonus@{Bonus}!update\_enemy\_frame\_attack@{update\_enemy\_frame\_attack}}
+\index{update\_enemy\_frame\_attack@{update\_enemy\_frame\_attack}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{update\_enemy\_frame\_attack()}{update\_enemy\_frame\_attack()}}
+{\footnotesize\ttfamily \label{group__bonus_gaa9d056d78cf1ee852d801db651f4f597} 
+void update\+\_\+enemy\+\_\+frame\+\_\+attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{\mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}} \texorpdfstring{$\ast$}{*}}]{timer}{, }\item[{double}]{curr\+\_\+time}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Update the enemy attack animation frames. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em timer} & Pointer to the timer structure. \\
+\hline
+{\em curr\+\_\+time} & Current time. \\
+\hline
+{\em i} & Enemy index. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaef217df92a4cf867226dc204c70a3172}\index{Bonus@{Bonus}!update\_enemy\_frame\_attack2@{update\_enemy\_frame\_attack2}}
+\index{update\_enemy\_frame\_attack2@{update\_enemy\_frame\_attack2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{update\_enemy\_frame\_attack2()}{update\_enemy\_frame\_attack2()}}
+{\footnotesize\ttfamily \label{group__bonus_gaef217df92a4cf867226dc204c70a3172} 
+void update\+\_\+enemy\+\_\+frame\+\_\+attack2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Continue updating the enemy attack animation frames. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em i} & Index of the enemy. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga3d3b21f9d596d82f3c431e5ab3203fac}\index{Bonus@{Bonus}!update\_enemy\_frame\_death@{update\_enemy\_frame\_death}}
+\index{update\_enemy\_frame\_death@{update\_enemy\_frame\_death}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{update\_enemy\_frame\_death()}{update\_enemy\_frame\_death()}}
+{\footnotesize\ttfamily \label{group__bonus_ga3d3b21f9d596d82f3c431e5ab3203fac} 
+void update\+\_\+enemy\+\_\+frame\+\_\+death (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{double}]{curr\+\_\+time}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Update enemy frame when enemy is dying. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em curr\+\_\+time} & Current time. \\
+\hline
+{\em i} & Index of the enemy. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gace33f6507ac5df97313c872d1238e6fc}\index{Bonus@{Bonus}!update\_enemy\_frame\_death2@{update\_enemy\_frame\_death2}}
+\index{update\_enemy\_frame\_death2@{update\_enemy\_frame\_death2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{update\_enemy\_frame\_death2()}{update\_enemy\_frame\_death2()}}
+{\footnotesize\ttfamily \label{group__bonus_gace33f6507ac5df97313c872d1238e6fc} 
+void update\+\_\+enemy\+\_\+frame\+\_\+death2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{cub3d__bonus_8h_aaabe059852166f7b2d4b4e78e090d264}{t\+\_\+enemy}} \texorpdfstring{$\ast$}{*}}]{enemy}{}\end{DoxyParamCaption})}
+
+
+
+Continuation of update\+\_\+enemy\+\_\+frame\+\_\+death function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enemy} & Pointer to the enemy structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaa54482104fade0394fbd7421278d2a40}\index{Bonus@{Bonus}!update\_enemy\_frame\_mov@{update\_enemy\_frame\_mov}}
+\index{update\_enemy\_frame\_mov@{update\_enemy\_frame\_mov}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{update\_enemy\_frame\_mov()}{update\_enemy\_frame\_mov()}}
+{\footnotesize\ttfamily \label{group__bonus_gaa54482104fade0394fbd7421278d2a40} 
+void update\+\_\+enemy\+\_\+frame\+\_\+mov (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{double}]{curr\+\_\+time}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Update enemy frame when enemy is moving. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em timer} & Pointer to the timer structure. \\
+\hline
+{\em curr\+\_\+time} & Current time. \\
+\hline
+{\em i} & Index of the enemy. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga5c5eaaeb2c55c0b16f528ff6e623e16a}\index{Bonus@{Bonus}!update\_fps@{update\_fps}}
+\index{update\_fps@{update\_fps}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{update\_fps()}{update\_fps()}}
+{\footnotesize\ttfamily \label{group__bonus_ga5c5eaaeb2c55c0b16f528ff6e623e16a} 
+void update\+\_\+fps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Update the FPS counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga0aaa1469cf1e9ac2ab5acebf480b5e10}\index{Bonus@{Bonus}!update\_weapon\_frame@{update\_weapon\_frame}}
+\index{update\_weapon\_frame@{update\_weapon\_frame}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{update\_weapon\_frame()}{update\_weapon\_frame()}}
+{\footnotesize\ttfamily \label{group__bonus_ga0aaa1469cf1e9ac2ab5acebf480b5e10} 
+void update\+\_\+weapon\+\_\+frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{\mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}} \texorpdfstring{$\ast$}{*}}]{timer}{, }\item[{double}]{curr\+\_\+time}{}\end{DoxyParamCaption})}
+
+
+
+Update the weapon frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em timer} & Timer structure \\
+\hline
+{\em curr\+\_\+time} & Current time \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaa580b8d7c2c926fa01f96bdb57eba636}\index{Bonus@{Bonus}!wall\_stuff@{wall\_stuff}}
+\index{wall\_stuff@{wall\_stuff}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{wall\_stuff()}{wall\_stuff()}}
+{\footnotesize\ttfamily \label{group__bonus_gaa580b8d7c2c926fa01f96bdb57eba636} 
+void wall\+\_\+stuff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check if the ray hit a wall. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure t\+\_\+game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga400c978c9b67b5e3f2eb047933454cc4}\index{Bonus@{Bonus}!wall\_stuff2@{wall\_stuff2}}
+\index{wall\_stuff2@{wall\_stuff2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{wall\_stuff2()}{wall\_stuff2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga400c978c9b67b5e3f2eb047933454cc4} 
+void wall\+\_\+stuff2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{wall}{}\end{DoxyParamCaption})}
+
+
+
+Continue the raycasting process. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure t\+\_\+game \\
+\hline
+{\em wall} & Wall hit flag \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaaf3c462b4c0a71853609d418099d0c33}\index{Bonus@{Bonus}!what\_draw@{what\_draw}}
+\index{what\_draw@{what\_draw}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{what\_draw()}{what\_draw()}}
+{\footnotesize\ttfamily \label{group__bonus_gaaf3c462b4c0a71853609d418099d0c33} 
+void what\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Define what to draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+{\em x} & X coordinate of the column. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga559a761d13c6fbc3165d5d1a4c06e9e7}\index{Bonus@{Bonus}!xpm\_img@{xpm\_img}}
+\index{xpm\_img@{xpm\_img}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{xpm\_img()}{xpm\_img()}}
+{\footnotesize\ttfamily \label{group__bonus_ga559a761d13c6fbc3165d5d1a4c06e9e7} 
+void xpm\+\_\+img (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Transform xpm file to image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}

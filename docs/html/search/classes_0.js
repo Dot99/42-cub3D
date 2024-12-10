@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['s_5fcol_5fname_0',['s_col_name',['../structs__col__name.html',1,'']]],
+  ['s_5fdoor_1',['s_door',['../structs__door.html',1,'']]],
+  ['s_5fenemy_2',['s_enemy',['../structs__enemy.html',1,'']]],
+  ['s_5fevent_5flist_3',['s_event_list',['../structs__event__list.html',1,'']]],
+  ['s_5ffps_4',['s_fps',['../structs__fps.html',1,'']]],
+  ['s_5fgame_5',['s_game',['../structs__game.html',1,'']]],
+  ['s_5fimg_6',['s_img',['../structs__img.html',1,'']]],
+  ['s_5flist_7',['s_list',['../structs__list.html',1,'']]],
+  ['s_5fplayer_8',['s_player',['../structs__player.html',1,'']]],
+  ['s_5frender_9',['s_render',['../structs__render.html',1,'']]],
+  ['s_5ftextr_10',['s_textr',['../structs__textr.html',1,'']]],
+  ['s_5ftimer_11',['s_timer',['../structs__timer.html',1,'']]],
+  ['s_5fweapon_12',['s_weapon',['../structs__weapon.html',1,'']]],
+  ['s_5fwin_5flist_13',['s_win_list',['../structs__win__list.html',1,'']]],
+  ['s_5fxpm_5fcol_14',['s_xpm_col',['../structs__xpm__col.html',1,'']]],
+  ['s_5fxvar_15',['s_xvar',['../structs__xvar.html',1,'']]]
+];

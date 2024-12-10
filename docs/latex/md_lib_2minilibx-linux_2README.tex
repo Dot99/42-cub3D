@@ -1,0 +1,69 @@
+\chapter{README}
+\hypertarget{md_lib_2minilibx-linux_2README}{}\label{md_lib_2minilibx-linux_2README}\index{README@{README}}
+\href{https://github.com/42Paris/minilibx-linux/actions/workflows/ci.yml}{\texttt{ }}
+
+This is the MinilibX, a simple X-\/\+Window (X11\+R6) programming API in C, designed for students, suitable for X-\/beginners.
+
+Contents
+
+
+\begin{DoxyItemize}
+\item source code in C to create the mlx library
+\item man pages (in man/ directory)
+\item a test program (in test/ directory) is built with the library
+\item a public include file \doxylink{mlx_8h}{mlx.\+h}
+\item a tiny configure script to generate an appropriate Makefile.\+gen
+\end{DoxyItemize}
+
+Requirements for Linux
+
+
+\begin{DoxyItemize}
+\item MinilibX only support True\+Color visual type (8,15,16,24 or 32 bits depth)
+\item gcc
+\item make
+\item X11 include files (package xorg)
+\item XShm extension must be present (package libxext-\/dev)
+\item Utility functions from BSD systems -\/ development files (package libbsd-\/dev)
+\item {\bfseries{e.\+g. {\itshape sudo apt-\/get install gcc make xorg libxext-\/dev libbsd-\/dev} (Debian/\+Ubuntu)}}
+\end{DoxyItemize}
+
+Requirements for Mac\+OS
+\begin{DoxyItemize}
+\item \href{https://www.xquartz.org/}{\texttt{ Xquartz}}
+\end{DoxyItemize}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{➜\ \ \string~\ Brew\ install\ Xquartz}
+\DoxyCodeLine{➜\ \ \string~\ reboot}
+\DoxyCodeLine{➜\ \ \string~\ xeyes\ \#\ run\ an\ hello\ world\ X11\ app}
+
+\end{DoxyCode}
+
+
+MlX Color Opacity / Transparency / Alpha (32 bits depth)
+\begin{DoxyItemize}
+\item 0x\+FF (fully transparent) or 0x00 (fully opaque)
+\end{DoxyItemize}
+
+Compile MinilibX
+
+
+\begin{DoxyItemize}
+\item run ./configure or make both will make a few tests, create Makefile.\+gen and then automatically run make on this generated Makefile.\+gen . libmlx.\+a and libmlx\+\_\+\$(\+HOSTTYPE).a are created. test/mlx-\/test binary is also created.
+\end{DoxyItemize}
+
+Install MinilibX
+
+
+\begin{DoxyItemize}
+\item no installation script is provided. You may want to install
+\begin{DoxyItemize}
+\item libmlx.\+a and/or libmlx\+\_\+\$(\+HOSTTYPE).a in /usr/\+X11/lib or /usr/local/lib
+\item \doxylink{mlx_8h}{mlx.\+h} in /usr/\+X11/include or /usr/local/include
+\item man/man3/mlx\texorpdfstring{$\ast$}{*}.1 in /usr/\+X11/man/man3 or /usr/local/man/man3
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Olivier CROUZET -\/ 2014-\/01-\/06 -\/ 

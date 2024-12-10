@@ -1,0 +1,97 @@
+\doxysection{src\+\_\+bonus/render\+\_\+bonus/render\+\_\+bonus.c File Reference}
+\hypertarget{render__bonus_8c}{}\label{render__bonus_8c}\index{src\_bonus/render\_bonus/render\_bonus.c@{src\_bonus/render\_bonus/render\_bonus.c}}
+
+
+Functions to render the game.  
+
+
+{\ttfamily \#include "{}cub3d\+\_\+bonus.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{render__bonus_8c_a739194e730d86b930a77fc845dc986d3}{put\+\_\+pixel\+\_\+bg}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int type)
+\begin{DoxyCompactList}\small\item\em Put pixel in the screen for background. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{render__bonus_8c_a0e9ec92952a577d0f02d1c3545940b6c}{render\+\_\+background}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render background. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{render__bonus_8c_a08143b045201b13346ffe38b47665ba6}{check\+\_\+victory}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if player won or lost. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{render__bonus_8c_a4c88c13740e729fc0dee0e6d801d4197}{mlx\+\_\+put\+\_\+img}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Put images to window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga2099492c85969a8dfc0c85b9d2cbd8df}{render}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render main function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+
+\doxysubsection{Detailed Description}
+Functions to render the game. 
+
+@defgrop bonus Bonus 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{render__bonus_8c_a08143b045201b13346ffe38b47665ba6}\index{render\_bonus.c@{render\_bonus.c}!check\_victory@{check\_victory}}
+\index{check\_victory@{check\_victory}!render\_bonus.c@{render\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{check\_victory()}{check\_victory()}}
+{\footnotesize\ttfamily \label{render__bonus_8c_a08143b045201b13346ffe38b47665ba6} 
+void check\+\_\+victory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check if player won or lost. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure t\+\_\+game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{render__bonus_8c_a4c88c13740e729fc0dee0e6d801d4197}\index{render\_bonus.c@{render\_bonus.c}!mlx\_put\_img@{mlx\_put\_img}}
+\index{mlx\_put\_img@{mlx\_put\_img}!render\_bonus.c@{render\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{mlx\_put\_img()}{mlx\_put\_img()}}
+{\footnotesize\ttfamily \label{render__bonus_8c_a4c88c13740e729fc0dee0e6d801d4197} 
+void mlx\+\_\+put\+\_\+img (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Put images to window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure t\+\_\+game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{render__bonus_8c_a739194e730d86b930a77fc845dc986d3}\index{render\_bonus.c@{render\_bonus.c}!put\_pixel\_bg@{put\_pixel\_bg}}
+\index{put\_pixel\_bg@{put\_pixel\_bg}!render\_bonus.c@{render\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{put\_pixel\_bg()}{put\_pixel\_bg()}}
+{\footnotesize\ttfamily \label{render__bonus_8c_a739194e730d86b930a77fc845dc986d3} 
+void put\+\_\+pixel\+\_\+bg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Put pixel in the screen for background. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure t\+\_\+game \\
+\hline
+{\em x} & X coordinate \\
+\hline
+{\em y} & Y coordinate \\
+\hline
+{\em color} & Color in hex \\
+\hline
+\end{DoxyParams}
+\Hypertarget{render__bonus_8c_a0e9ec92952a577d0f02d1c3545940b6c}\index{render\_bonus.c@{render\_bonus.c}!render\_background@{render\_background}}
+\index{render\_background@{render\_background}!render\_bonus.c@{render\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{render\_background()}{render\_background()}}
+{\footnotesize\ttfamily \label{render__bonus_8c_a0e9ec92952a577d0f02d1c3545940b6c} 
+void render\+\_\+background (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Render background. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to structure t\+\_\+game \\
+\hline
+\end{DoxyParams}

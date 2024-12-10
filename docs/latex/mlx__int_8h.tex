@@ -1,0 +1,279 @@
+\doxysection{lib/minilibx-\/linux/mlx\+\_\+int.h File Reference}
+\hypertarget{mlx__int_8h}{}\label{mlx__int_8h}\index{lib/minilibx-\/linux/mlx\_int.h@{lib/minilibx-\/linux/mlx\_int.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$sys/mman.\+h$>$}\newline
+{\ttfamily \#include $<$X11/\+Xlib.\+h$>$}\newline
+{\ttfamily \#include $<$X11/\+Xutil.\+h$>$}\newline
+{\ttfamily \#include $<$sys/ipc.\+h$>$}\newline
+{\ttfamily \#include $<$sys/shm.\+h$>$}\newline
+{\ttfamily \#include $<$X11/extensions/\+XShm.\+h$>$}\newline
+{\ttfamily \#include $<$X11/\+XKBlib.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs__xpm__col}{s\+\_\+xpm\+\_\+col}}
+\item 
+struct \mbox{\hyperlink{structs__col__name}{s\+\_\+col\+\_\+name}}
+\item 
+struct \mbox{\hyperlink{structs__event__list}{s\+\_\+event\+\_\+list}}
+\item 
+struct \mbox{\hyperlink{structs__win__list}{s\+\_\+win\+\_\+list}}
+\item 
+struct \mbox{\hyperlink{structs__img}{s\+\_\+img}}
+\begin{DoxyCompactList}\small\item\em Struct for image data. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs__xvar}{s\+\_\+xvar}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{mlx__int_8h_a95e9acdf20214aa7d36a68a3171e619c}{MLX\+\_\+\+TYPE\+\_\+\+SHM\+\_\+\+PIXMAP}}~3
+\item 
+\#define \mbox{\hyperlink{mlx__int_8h_aac77e0bbee3c109698c937c71b41955c}{MLX\+\_\+\+TYPE\+\_\+\+SHM}}~2
+\item 
+\#define \mbox{\hyperlink{mlx__int_8h_a4a639d96c690afc0eca054d69501103c}{MLX\+\_\+\+TYPE\+\_\+\+XIMAGE}}~1
+\item 
+\#define \mbox{\hyperlink{mlx__int_8h_abd398e8b73d8cbaf292e75c8d682b21c}{MLX\+\_\+\+MAX\+\_\+\+EVENT}}~LASTEvent
+\item 
+\#define \mbox{\hyperlink{mlx__int_8h_a6f1475abb244e1868fd515a8dc84f0c2}{ENV\+\_\+\+DISPLAY}}~"{}DISPLAY"{}
+\item 
+\#define \mbox{\hyperlink{mlx__int_8h_acfc12278a87672861e438f8841a7a713}{LOCALHOST}}~"{}localhost"{}
+\item 
+\#define \mbox{\hyperlink{mlx__int_8h_ab60cf452b47b9b600c048a088548bb51}{ERR\+\_\+\+NO\+\_\+\+TRUECOLOR}}~"{}MinilibX Error \+: No True\+Color Visual available.\textbackslash{}n"{}
+\item 
+\#define \mbox{\hyperlink{mlx__int_8h_a5b696938dcfd42409bdf47ed095fad88}{WARN\+\_\+\+SHM\+\_\+\+ATTACH}}~"{}MinilibX Warning \+: X server can\textquotesingle{}t attach shared memory.\textbackslash{}n"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structs__xpm__col}{s\+\_\+xpm\+\_\+col}} \mbox{\hyperlink{mlx__int_8h_a9fcb1dde1b0a7f2e34348a7215f39a0d}{t\+\_\+xpm\+\_\+col}}
+\item 
+typedef struct \mbox{\hyperlink{structs__event__list}{s\+\_\+event\+\_\+list}} \mbox{\hyperlink{mlx__int_8h_abc8e684f7ff350ba24529e52dae3097a}{t\+\_\+event\+\_\+list}}
+\item 
+typedef struct \mbox{\hyperlink{structs__win__list}{s\+\_\+win\+\_\+list}} \mbox{\hyperlink{mlx__int_8h_ad664bed0ff2c2f92a34121d1f0de841b}{t\+\_\+win\+\_\+list}}
+\item 
+typedef struct \mbox{\hyperlink{structs__img}{s\+\_\+img}} \mbox{\hyperlink{mlx__int_8h_aa2823d71a465849891fd044a6371f982}{t\+\_\+img}}
+\item 
+typedef struct \mbox{\hyperlink{structs__xvar}{s\+\_\+xvar}} \mbox{\hyperlink{mlx__int_8h_a6c95418887a306ef3815706720aa2169}{t\+\_\+xvar}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mlx__int_8h_a13647130978a6d5a31f9a8dbfdd54d4f}{mlx\+\_\+int\+\_\+do\+\_\+nothing}} ()
+\item 
+int \mbox{\hyperlink{mlx__int_8h_a0e9159c5e45648e9894f700002c57fca}{mlx\+\_\+get\+\_\+color\+\_\+value}} ()
+\item 
+int \mbox{\hyperlink{mlx__int_8h_a25f658ae580792d4435fb7030ff8f8cf}{mlx\+\_\+int\+\_\+get\+\_\+good\+\_\+color}} ()
+\item 
+int \mbox{\hyperlink{mlx__int_8h_a656874d6d7d7ace875d42a05a543e728}{mlx\+\_\+int\+\_\+find\+\_\+in\+\_\+pcm}} ()
+\item 
+int \mbox{\hyperlink{mlx__int_8h_a67e9bf554e114c1794689fd92eacb534}{mlx\+\_\+int\+\_\+anti\+\_\+resize\+\_\+win}} ()
+\item 
+int \mbox{\hyperlink{mlx__int_8h_a2497cf01e4995232f8f9445c2c41deb2}{mlx\+\_\+int\+\_\+wait\+\_\+first\+\_\+expose}} ()
+\item 
+int \mbox{\hyperlink{mlx__int_8h_af39027c1d9c084ba7e31d9d57bb9baca}{mlx\+\_\+int\+\_\+rgb\+\_\+conversion}} ()
+\item 
+int \mbox{\hyperlink{mlx__int_8h_af4bb8984f1217cc8199cd1e9aedb585e}{mlx\+\_\+int\+\_\+deal\+\_\+shm}} ()
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mlx__int_8h_a7f2ae5359ce2cf24c783db033e2c76d6}{mlx\+\_\+int\+\_\+new\+\_\+xshm\+\_\+image}} ()
+\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mlx__int_8h_a46343160a35712ce093f3ebcc88b8206}{mlx\+\_\+int\+\_\+str\+\_\+to\+\_\+wordtab}} ()
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mlx__int_8h_ac30a68e3fcb5ee97fed65ff8f6d48786}{mlx\+\_\+new\+\_\+image}} ()
+\item 
+int \mbox{\hyperlink{mlx__int_8h_a62c29a8aef4e6ebaff52b32cc3b2dce8}{shm\+\_\+att\+\_\+pb}} ()
+\item 
+int \mbox{\hyperlink{mlx__int_8h_a58570648fc9bb5126069cd045e69bab7}{mlx\+\_\+int\+\_\+get\+\_\+visual}} (\mbox{\hyperlink{mlx__int_8h_a6c95418887a306ef3815706720aa2169}{t\+\_\+xvar}} \texorpdfstring{$\ast$}{*}xvar)
+\item 
+int \mbox{\hyperlink{mlx__int_8h_afd16cc2a99ead5f2aac970c9f5ff6eba}{mlx\+\_\+int\+\_\+set\+\_\+win\+\_\+event\+\_\+mask}} (\mbox{\hyperlink{mlx__int_8h_a6c95418887a306ef3815706720aa2169}{t\+\_\+xvar}} \texorpdfstring{$\ast$}{*}xvar)
+\item 
+int \mbox{\hyperlink{mlx__int_8h_af44c1175a7a5e0dfd7e9cf1a12810937}{mlx\+\_\+int\+\_\+str\+\_\+str\+\_\+cote}} (char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}find, int len)
+\item 
+int \mbox{\hyperlink{mlx__int_8h_a9af47c696524837d5503c28789f9275b}{mlx\+\_\+int\+\_\+str\+\_\+str}} (char \texorpdfstring{$\ast$}{*}str, char \texorpdfstring{$\ast$}{*}find, int len)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{mlx__int_8h_a6f1475abb244e1868fd515a8dc84f0c2}\index{mlx\_int.h@{mlx\_int.h}!ENV\_DISPLAY@{ENV\_DISPLAY}}
+\index{ENV\_DISPLAY@{ENV\_DISPLAY}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{ENV\_DISPLAY}{ENV\_DISPLAY}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a6f1475abb244e1868fd515a8dc84f0c2} 
+\#define ENV\+\_\+\+DISPLAY~"{}DISPLAY"{}}
+
+\Hypertarget{mlx__int_8h_ab60cf452b47b9b600c048a088548bb51}\index{mlx\_int.h@{mlx\_int.h}!ERR\_NO\_TRUECOLOR@{ERR\_NO\_TRUECOLOR}}
+\index{ERR\_NO\_TRUECOLOR@{ERR\_NO\_TRUECOLOR}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{ERR\_NO\_TRUECOLOR}{ERR\_NO\_TRUECOLOR}}
+{\footnotesize\ttfamily \label{mlx__int_8h_ab60cf452b47b9b600c048a088548bb51} 
+\#define ERR\+\_\+\+NO\+\_\+\+TRUECOLOR~"{}MinilibX Error \+: No True\+Color Visual available.\textbackslash{}n"{}}
+
+\Hypertarget{mlx__int_8h_acfc12278a87672861e438f8841a7a713}\index{mlx\_int.h@{mlx\_int.h}!LOCALHOST@{LOCALHOST}}
+\index{LOCALHOST@{LOCALHOST}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{LOCALHOST}{LOCALHOST}}
+{\footnotesize\ttfamily \label{mlx__int_8h_acfc12278a87672861e438f8841a7a713} 
+\#define LOCALHOST~"{}localhost"{}}
+
+\Hypertarget{mlx__int_8h_abd398e8b73d8cbaf292e75c8d682b21c}\index{mlx\_int.h@{mlx\_int.h}!MLX\_MAX\_EVENT@{MLX\_MAX\_EVENT}}
+\index{MLX\_MAX\_EVENT@{MLX\_MAX\_EVENT}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{MLX\_MAX\_EVENT}{MLX\_MAX\_EVENT}}
+{\footnotesize\ttfamily \label{mlx__int_8h_abd398e8b73d8cbaf292e75c8d682b21c} 
+\#define MLX\+\_\+\+MAX\+\_\+\+EVENT~LASTEvent}
+
+\Hypertarget{mlx__int_8h_aac77e0bbee3c109698c937c71b41955c}\index{mlx\_int.h@{mlx\_int.h}!MLX\_TYPE\_SHM@{MLX\_TYPE\_SHM}}
+\index{MLX\_TYPE\_SHM@{MLX\_TYPE\_SHM}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{MLX\_TYPE\_SHM}{MLX\_TYPE\_SHM}}
+{\footnotesize\ttfamily \label{mlx__int_8h_aac77e0bbee3c109698c937c71b41955c} 
+\#define MLX\+\_\+\+TYPE\+\_\+\+SHM~2}
+
+\Hypertarget{mlx__int_8h_a95e9acdf20214aa7d36a68a3171e619c}\index{mlx\_int.h@{mlx\_int.h}!MLX\_TYPE\_SHM\_PIXMAP@{MLX\_TYPE\_SHM\_PIXMAP}}
+\index{MLX\_TYPE\_SHM\_PIXMAP@{MLX\_TYPE\_SHM\_PIXMAP}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{MLX\_TYPE\_SHM\_PIXMAP}{MLX\_TYPE\_SHM\_PIXMAP}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a95e9acdf20214aa7d36a68a3171e619c} 
+\#define MLX\+\_\+\+TYPE\+\_\+\+SHM\+\_\+\+PIXMAP~3}
+
+\Hypertarget{mlx__int_8h_a4a639d96c690afc0eca054d69501103c}\index{mlx\_int.h@{mlx\_int.h}!MLX\_TYPE\_XIMAGE@{MLX\_TYPE\_XIMAGE}}
+\index{MLX\_TYPE\_XIMAGE@{MLX\_TYPE\_XIMAGE}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{MLX\_TYPE\_XIMAGE}{MLX\_TYPE\_XIMAGE}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a4a639d96c690afc0eca054d69501103c} 
+\#define MLX\+\_\+\+TYPE\+\_\+\+XIMAGE~1}
+
+\Hypertarget{mlx__int_8h_a5b696938dcfd42409bdf47ed095fad88}\index{mlx\_int.h@{mlx\_int.h}!WARN\_SHM\_ATTACH@{WARN\_SHM\_ATTACH}}
+\index{WARN\_SHM\_ATTACH@{WARN\_SHM\_ATTACH}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{WARN\_SHM\_ATTACH}{WARN\_SHM\_ATTACH}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a5b696938dcfd42409bdf47ed095fad88} 
+\#define WARN\+\_\+\+SHM\+\_\+\+ATTACH~"{}MinilibX Warning \+: X server can\textquotesingle{}t attach shared memory.\textbackslash{}n"{}}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{mlx__int_8h_abc8e684f7ff350ba24529e52dae3097a}\index{mlx\_int.h@{mlx\_int.h}!t\_event\_list@{t\_event\_list}}
+\index{t\_event\_list@{t\_event\_list}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{t\_event\_list}{t\_event\_list}}
+{\footnotesize\ttfamily \label{mlx__int_8h_abc8e684f7ff350ba24529e52dae3097a} 
+typedef struct \mbox{\hyperlink{structs__event__list}{s\+\_\+event\+\_\+list}} \mbox{\hyperlink{mlx__int_8h_abc8e684f7ff350ba24529e52dae3097a}{t\+\_\+event\+\_\+list}}}
+
+\Hypertarget{mlx__int_8h_aa2823d71a465849891fd044a6371f982}\index{mlx\_int.h@{mlx\_int.h}!t\_img@{t\_img}}
+\index{t\_img@{t\_img}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{t\_img}{t\_img}}
+{\footnotesize\ttfamily \label{mlx__int_8h_aa2823d71a465849891fd044a6371f982} 
+typedef struct \mbox{\hyperlink{structs__img}{s\+\_\+img}} \mbox{\hyperlink{group__mandatory_gaa2823d71a465849891fd044a6371f982}{t\+\_\+img}}}
+
+\Hypertarget{mlx__int_8h_ad664bed0ff2c2f92a34121d1f0de841b}\index{mlx\_int.h@{mlx\_int.h}!t\_win\_list@{t\_win\_list}}
+\index{t\_win\_list@{t\_win\_list}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{t\_win\_list}{t\_win\_list}}
+{\footnotesize\ttfamily \label{mlx__int_8h_ad664bed0ff2c2f92a34121d1f0de841b} 
+typedef struct \mbox{\hyperlink{structs__win__list}{s\+\_\+win\+\_\+list}} \mbox{\hyperlink{mlx__int_8h_ad664bed0ff2c2f92a34121d1f0de841b}{t\+\_\+win\+\_\+list}}}
+
+\Hypertarget{mlx__int_8h_a9fcb1dde1b0a7f2e34348a7215f39a0d}\index{mlx\_int.h@{mlx\_int.h}!t\_xpm\_col@{t\_xpm\_col}}
+\index{t\_xpm\_col@{t\_xpm\_col}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{t\_xpm\_col}{t\_xpm\_col}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a9fcb1dde1b0a7f2e34348a7215f39a0d} 
+typedef struct \mbox{\hyperlink{structs__xpm__col}{s\+\_\+xpm\+\_\+col}} \mbox{\hyperlink{mlx__int_8h_a9fcb1dde1b0a7f2e34348a7215f39a0d}{t\+\_\+xpm\+\_\+col}}}
+
+\Hypertarget{mlx__int_8h_a6c95418887a306ef3815706720aa2169}\index{mlx\_int.h@{mlx\_int.h}!t\_xvar@{t\_xvar}}
+\index{t\_xvar@{t\_xvar}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{t\_xvar}{t\_xvar}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a6c95418887a306ef3815706720aa2169} 
+typedef struct \mbox{\hyperlink{structs__xvar}{s\+\_\+xvar}} \mbox{\hyperlink{mlx__int_8h_a6c95418887a306ef3815706720aa2169}{t\+\_\+xvar}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mlx__int_8h_a0e9159c5e45648e9894f700002c57fca}\index{mlx\_int.h@{mlx\_int.h}!mlx\_get\_color\_value@{mlx\_get\_color\_value}}
+\index{mlx\_get\_color\_value@{mlx\_get\_color\_value}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_get\_color\_value()}{mlx\_get\_color\_value()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a0e9159c5e45648e9894f700002c57fca} 
+int mlx\+\_\+get\+\_\+color\+\_\+value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a67e9bf554e114c1794689fd92eacb534}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_anti\_resize\_win@{mlx\_int\_anti\_resize\_win}}
+\index{mlx\_int\_anti\_resize\_win@{mlx\_int\_anti\_resize\_win}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_anti\_resize\_win()}{mlx\_int\_anti\_resize\_win()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a67e9bf554e114c1794689fd92eacb534} 
+int mlx\+\_\+int\+\_\+anti\+\_\+resize\+\_\+win (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_af4bb8984f1217cc8199cd1e9aedb585e}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_deal\_shm@{mlx\_int\_deal\_shm}}
+\index{mlx\_int\_deal\_shm@{mlx\_int\_deal\_shm}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_deal\_shm()}{mlx\_int\_deal\_shm()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_af4bb8984f1217cc8199cd1e9aedb585e} 
+int mlx\+\_\+int\+\_\+deal\+\_\+shm (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a13647130978a6d5a31f9a8dbfdd54d4f}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_do\_nothing@{mlx\_int\_do\_nothing}}
+\index{mlx\_int\_do\_nothing@{mlx\_int\_do\_nothing}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_do\_nothing()}{mlx\_int\_do\_nothing()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a13647130978a6d5a31f9a8dbfdd54d4f} 
+int mlx\+\_\+int\+\_\+do\+\_\+nothing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a656874d6d7d7ace875d42a05a543e728}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_find\_in\_pcm@{mlx\_int\_find\_in\_pcm}}
+\index{mlx\_int\_find\_in\_pcm@{mlx\_int\_find\_in\_pcm}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_find\_in\_pcm()}{mlx\_int\_find\_in\_pcm()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a656874d6d7d7ace875d42a05a543e728} 
+int mlx\+\_\+int\+\_\+find\+\_\+in\+\_\+pcm (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a25f658ae580792d4435fb7030ff8f8cf}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_get\_good\_color@{mlx\_int\_get\_good\_color}}
+\index{mlx\_int\_get\_good\_color@{mlx\_int\_get\_good\_color}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_get\_good\_color()}{mlx\_int\_get\_good\_color()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a25f658ae580792d4435fb7030ff8f8cf} 
+int mlx\+\_\+int\+\_\+get\+\_\+good\+\_\+color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a58570648fc9bb5126069cd045e69bab7}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_get\_visual@{mlx\_int\_get\_visual}}
+\index{mlx\_int\_get\_visual@{mlx\_int\_get\_visual}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_get\_visual()}{mlx\_int\_get\_visual()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a58570648fc9bb5126069cd045e69bab7} 
+int mlx\+\_\+int\+\_\+get\+\_\+visual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mlx__int_8h_a6c95418887a306ef3815706720aa2169}{t\+\_\+xvar}} \texorpdfstring{$\ast$}{*}}]{xvar}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a7f2ae5359ce2cf24c783db033e2c76d6}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_new\_xshm\_image@{mlx\_int\_new\_xshm\_image}}
+\index{mlx\_int\_new\_xshm\_image@{mlx\_int\_new\_xshm\_image}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_new\_xshm\_image()}{mlx\_int\_new\_xshm\_image()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a7f2ae5359ce2cf24c783db033e2c76d6} 
+void \texorpdfstring{$\ast$}{*} mlx\+\_\+int\+\_\+new\+\_\+xshm\+\_\+image (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_af39027c1d9c084ba7e31d9d57bb9baca}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_rgb\_conversion@{mlx\_int\_rgb\_conversion}}
+\index{mlx\_int\_rgb\_conversion@{mlx\_int\_rgb\_conversion}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_rgb\_conversion()}{mlx\_int\_rgb\_conversion()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_af39027c1d9c084ba7e31d9d57bb9baca} 
+int mlx\+\_\+int\+\_\+rgb\+\_\+conversion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_afd16cc2a99ead5f2aac970c9f5ff6eba}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_set\_win\_event\_mask@{mlx\_int\_set\_win\_event\_mask}}
+\index{mlx\_int\_set\_win\_event\_mask@{mlx\_int\_set\_win\_event\_mask}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_set\_win\_event\_mask()}{mlx\_int\_set\_win\_event\_mask()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_afd16cc2a99ead5f2aac970c9f5ff6eba} 
+int mlx\+\_\+int\+\_\+set\+\_\+win\+\_\+event\+\_\+mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{mlx__int_8h_a6c95418887a306ef3815706720aa2169}{t\+\_\+xvar}} \texorpdfstring{$\ast$}{*}}]{xvar}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a9af47c696524837d5503c28789f9275b}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_str\_str@{mlx\_int\_str\_str}}
+\index{mlx\_int\_str\_str@{mlx\_int\_str\_str}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_str\_str()}{mlx\_int\_str\_str()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a9af47c696524837d5503c28789f9275b} 
+int mlx\+\_\+int\+\_\+str\+\_\+str (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{find}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_af44c1175a7a5e0dfd7e9cf1a12810937}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_str\_str\_cote@{mlx\_int\_str\_str\_cote}}
+\index{mlx\_int\_str\_str\_cote@{mlx\_int\_str\_str\_cote}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_str\_str\_cote()}{mlx\_int\_str\_str\_cote()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_af44c1175a7a5e0dfd7e9cf1a12810937} 
+int mlx\+\_\+int\+\_\+str\+\_\+str\+\_\+cote (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{find}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a46343160a35712ce093f3ebcc88b8206}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_str\_to\_wordtab@{mlx\_int\_str\_to\_wordtab}}
+\index{mlx\_int\_str\_to\_wordtab@{mlx\_int\_str\_to\_wordtab}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_str\_to\_wordtab()}{mlx\_int\_str\_to\_wordtab()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a46343160a35712ce093f3ebcc88b8206} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} mlx\+\_\+int\+\_\+str\+\_\+to\+\_\+wordtab (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a2497cf01e4995232f8f9445c2c41deb2}\index{mlx\_int.h@{mlx\_int.h}!mlx\_int\_wait\_first\_expose@{mlx\_int\_wait\_first\_expose}}
+\index{mlx\_int\_wait\_first\_expose@{mlx\_int\_wait\_first\_expose}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_int\_wait\_first\_expose()}{mlx\_int\_wait\_first\_expose()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a2497cf01e4995232f8f9445c2c41deb2} 
+int mlx\+\_\+int\+\_\+wait\+\_\+first\+\_\+expose (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_ac30a68e3fcb5ee97fed65ff8f6d48786}\index{mlx\_int.h@{mlx\_int.h}!mlx\_new\_image@{mlx\_new\_image}}
+\index{mlx\_new\_image@{mlx\_new\_image}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_new\_image()}{mlx\_new\_image()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_ac30a68e3fcb5ee97fed65ff8f6d48786} 
+void \texorpdfstring{$\ast$}{*} mlx\+\_\+new\+\_\+image (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx__int_8h_a62c29a8aef4e6ebaff52b32cc3b2dce8}\index{mlx\_int.h@{mlx\_int.h}!shm\_att\_pb@{shm\_att\_pb}}
+\index{shm\_att\_pb@{shm\_att\_pb}!mlx\_int.h@{mlx\_int.h}}
+\doxysubsubsection{\texorpdfstring{shm\_att\_pb()}{shm\_att\_pb()}}
+{\footnotesize\ttfamily \label{mlx__int_8h_a62c29a8aef4e6ebaff52b32cc3b2dce8} 
+int shm\+\_\+att\+\_\+pb (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+

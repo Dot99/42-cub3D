@@ -1,0 +1,145 @@
+\doxysection{mlx.\+h}
+\hypertarget{mlx_8h_source}{}\label{mlx_8h_source}\index{lib/minilibx-\/linux/mlx.h@{lib/minilibx-\/linux/mlx.h}}
+\mbox{\hyperlink{mlx_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ mlx.h\ for\ MinilibX\ in\ }}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ }}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Made\ by\ Charlie\ Root}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Login\ \ \ <ol@epitech.net>}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ }}
+\DoxyCodeLine{00007\ \textcolor{comment}{**\ Started\ on\ \ Mon\ Jul\ 31\ 16:37:50\ 2000\ Charlie\ Root}}
+\DoxyCodeLine{00008\ \textcolor{comment}{**\ Last\ update\ Tue\ May\ 15\ 16:23:28\ 2007\ Olivier\ Crouzet}}
+\DoxyCodeLine{00009\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00012\ \textcolor{comment}{**\ \ \ MinilibX\ -\/\ \ Please\ report\ bugs}}
+\DoxyCodeLine{00013\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00017\ \textcolor{comment}{**\ FR\ msg\ -\/\ FR\ msg\ -\/\ FR\ msg}}
+\DoxyCodeLine{00018\ \textcolor{comment}{**}}
+\DoxyCodeLine{00019\ \textcolor{comment}{**\ La\ MinilibX\ utilise\ 2\ librairies\ supplementaires\ qu'il}}
+\DoxyCodeLine{00020\ \textcolor{comment}{**\ \ \ \ \ \ est\ necessaire\ de\ rajouter\ a\ la\ compilation\ :}}
+\DoxyCodeLine{00021\ \textcolor{comment}{**\ \ \ -\/lmlx\ -\/lXext\ -\/lX11}}
+\DoxyCodeLine{00022\ \textcolor{comment}{**}}
+\DoxyCodeLine{00023\ \textcolor{comment}{**\ La\ MinilibX\ permet\ le\ chargement\ des\ images\ de\ type\ Xpm.}}
+\DoxyCodeLine{00024\ \textcolor{comment}{**\ Notez\ que\ cette\ implementation\ est\ incomplete.}}
+\DoxyCodeLine{00025\ \textcolor{comment}{**\ Merci\ de\ communiquer\ tout\ probleme\ de\ chargement\ d'image}}
+\DoxyCodeLine{00026\ \textcolor{comment}{**\ de\ ce\ type.}}
+\DoxyCodeLine{00027\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#ifndef\ MLX\_H}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ MLX\_H}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{void}\ \ \ \ *\mbox{\hyperlink{mlx_8h_ad0f5935031b5a64f1eb625190917ff19}{mlx\_init}}();}
+\DoxyCodeLine{00036\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00037\ \textcolor{comment}{**\ \ needed\ before\ everything\ else.}}
+\DoxyCodeLine{00038\ \textcolor{comment}{**\ \ return\ (void\ *)0\ if\ failed}}
+\DoxyCodeLine{00039\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00043\ \textcolor{comment}{**\ Basic\ actions}}
+\DoxyCodeLine{00044\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{void}\ \ \ \ *\mbox{\hyperlink{mlx_8h_a9db3d82110344980ee1357dba3e95416}{mlx\_new\_window}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{int}\ size\_x,\ \textcolor{keywordtype}{int}\ size\_y,\ \textcolor{keywordtype}{char}\ *title);}
+\DoxyCodeLine{00047\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00048\ \textcolor{comment}{**\ \ return\ void\ *0\ if\ failed}}
+\DoxyCodeLine{00049\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00050\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_ac02ca4795e1eb74602326f509b9aded3}{mlx\_clear\_window}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr);}
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a01d91395ff1481848ac0a0e8198fb749}{mlx\_pixel\_put}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00052\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00053\ \textcolor{comment}{**\ \ origin\ for\ x\ \&\ y\ is\ top\ left\ corner\ of\ the\ window}}
+\DoxyCodeLine{00054\ \textcolor{comment}{**\ \ y\ down\ is\ positive}}
+\DoxyCodeLine{00055\ \textcolor{comment}{**\ \ color\ is\ 0x00RRGGBB}}
+\DoxyCodeLine{00056\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00060\ \textcolor{comment}{**\ Image\ stuff}}
+\DoxyCodeLine{00061\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keywordtype}{void}\ \ \ \ *\mbox{\hyperlink{mlx__int_8h_ac30a68e3fcb5ee97fed65ff8f6d48786}{mlx\_new\_image}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\textcolor{keywordtype}{int}\ width,\textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00064\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00065\ \textcolor{comment}{**\ \ return\ void\ *0\ if\ failed}}
+\DoxyCodeLine{00066\ \textcolor{comment}{**\ \ obsolete\ :\ image2\ data\ is\ stored\ using\ bit\ planes}}
+\DoxyCodeLine{00067\ \textcolor{comment}{**\ \ void\ \ \ \ *mlx\_new\_image2(void\ *mlx\_ptr,int\ width,int\ height);}}
+\DoxyCodeLine{00068\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00069\ \textcolor{keywordtype}{char}\ \ \ \ *\mbox{\hyperlink{mlx_8h_a644454135180fe7d1aa29b96b02d52af}{mlx\_get\_data\_addr}}(\textcolor{keywordtype}{void}\ *img\_ptr,\ \textcolor{keywordtype}{int}\ *bits\_per\_pixel,}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *size\_line,\ \textcolor{keywordtype}{int}\ *endian);}
+\DoxyCodeLine{00071\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00072\ \textcolor{comment}{**\ \ endian\ :\ 0\ =\ sever\ X\ is\ little\ endian,\ 1\ =\ big\ endian}}
+\DoxyCodeLine{00073\ \textcolor{comment}{**\ \ for\ mlx\_new\_image2,\ 2nd\ arg\ of\ mlx\_get\_data\_addr\ is\ number\_of\_planes}}
+\DoxyCodeLine{00074\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00075\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a1ad7b1f9c61bda35cb1facec1815ba08}{mlx\_put\_image\_to\_window}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{void}\ *img\_ptr,}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00077\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx__int_8h_a0e9159c5e45648e9894f700002c57fca}{mlx\_get\_color\_value}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{int}\ color);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00081\ \textcolor{comment}{**\ dealing\ with\ Events}}
+\DoxyCodeLine{00082\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_ad94744a95fdd1e36505471bdb68c57b7}{mlx\_mouse\_hook}}\ (\textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{int}\ (*funct\_ptr)(),\ \textcolor{keywordtype}{void}\ *param);}
+\DoxyCodeLine{00085\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a042ad2539d71ad5417b4fc39b19b0458}{mlx\_key\_hook}}\ (\textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{int}\ (*funct\_ptr)(),\ \textcolor{keywordtype}{void}\ *param);}
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a41d31a2e3a4f46d2d1e938448a5bab38}{mlx\_expose\_hook}}\ (\textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{int}\ (*funct\_ptr)(),\ \textcolor{keywordtype}{void}\ *param);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a5cd9b1b66195c5e1b8196cad36f67b6b}{mlx\_loop\_hook}}\ (\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{int}\ (*funct\_ptr)(),\ \textcolor{keywordtype}{void}\ *param);}
+\DoxyCodeLine{00089\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a39851648cc307ca6a357c5068075c59b}{mlx\_loop}}\ (\textcolor{keywordtype}{void}\ *mlx\_ptr);}
+\DoxyCodeLine{00090\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_af67709333f03d092fb437ebe6e9350d2}{mlx\_loop\_end}}\ (\textcolor{keywordtype}{void}\ *mlx\_ptr);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00093\ \textcolor{comment}{**\ \ hook\ funct\ are\ called\ as\ follow\ :}}
+\DoxyCodeLine{00094\ \textcolor{comment}{**}}
+\DoxyCodeLine{00095\ \textcolor{comment}{**\ \ \ expose\_hook(void\ *param);}}
+\DoxyCodeLine{00096\ \textcolor{comment}{**\ \ \ key\_hook(int\ keycode,\ void\ *param);}}
+\DoxyCodeLine{00097\ \textcolor{comment}{**\ \ \ mouse\_hook(int\ button,\ int\ x,int\ y,\ void\ *param);}}
+\DoxyCodeLine{00098\ \textcolor{comment}{**\ \ \ loop\_hook(void\ *param);}}
+\DoxyCodeLine{00099\ \textcolor{comment}{**}}
+\DoxyCodeLine{00100\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00104\ \textcolor{comment}{**\ \ Usually\ asked...}}
+\DoxyCodeLine{00105\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_ac1a8c69575d470e3a69d03bb690884b0}{mlx\_string\_put}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ color,}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00109\ \textcolor{keywordtype}{void}\ \ \ \ \mbox{\hyperlink{mlx_8h_a060c27854d7a13229b821148d18b4d27}{mlx\_set\_font}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00110\ \textcolor{keywordtype}{void}\ \ \ \ *\mbox{\hyperlink{mlx_8h_a2cd82875214ce24bb49ffd5269536b10}{mlx\_xpm\_to\_image}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{char}\ **xpm\_data,}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *width,\ \textcolor{keywordtype}{int}\ *height);}
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{void}\ \ \ \ *\mbox{\hyperlink{mlx_8h_a7fb8f596921d8c47f835976073fd4a96}{mlx\_xpm\_file\_to\_image}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{char}\ *filename,}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ *width,\ \textcolor{keywordtype}{int}\ *height);}
+\DoxyCodeLine{00114\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_ae1b984580610900ad36dd61b8ddf68b7}{mlx\_destroy\_window}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a55a0bb5848159483529773b18b1f4b40}{mlx\_destroy\_image}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *img\_ptr);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a024d46804e89a3646c61b536fbffd0e7}{mlx\_destroy\_display}}(\textcolor{keywordtype}{void}\ *mlx\_ptr);}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00121\ \textcolor{comment}{**\ \ generic\ hook\ system\ for\ all\ events,\ and\ minilibX\ functions\ that}}
+\DoxyCodeLine{00122\ \textcolor{comment}{**\ \ \ \ can\ be\ hooked.\ Some\ macro\ and\ defines\ from\ X11/X.h\ are\ needed\ here.}}
+\DoxyCodeLine{00123\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_ad0677c77b61840e4ddfa8b20d5fa2821}{mlx\_hook}}(\textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{int}\ x\_event,\ \textcolor{keywordtype}{int}\ x\_mask,}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ (*funct)(),\ \textcolor{keywordtype}{void}\ *param);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a72565ce6b4c0622af6bbf1e2e8eb2130}{mlx\_do\_key\_autorepeatoff}}(\textcolor{keywordtype}{void}\ *mlx\_ptr);}
+\DoxyCodeLine{00129\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a6a2fbcc60883a2b3792ad22106f1ce0c}{mlx\_do\_key\_autorepeaton}}(\textcolor{keywordtype}{void}\ *mlx\_ptr);}
+\DoxyCodeLine{00130\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_ad04814fbce28281535d8d0e85befd357}{mlx\_do\_sync}}(\textcolor{keywordtype}{void}\ *mlx\_ptr);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00132\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_ada60368c42d7c98dadf44f88a859fa3c}{mlx\_mouse\_get\_pos}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{int}\ *x,\ \textcolor{keywordtype}{int}\ *y);}
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_a777928fe458f956702700bd3258fd474}{mlx\_mouse\_move}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00134\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_ad46f872dc5fe1e0e697b476adc373f77}{mlx\_mouse\_hide}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr);}
+\DoxyCodeLine{00135\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_af8a46856f2f513ba65d1a874bf301168}{mlx\_mouse\_show}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{void}\ *win\_ptr);}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00137\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{mlx_8h_ae5dd7e70b8757062a63330679e2d2243}{mlx\_get\_screen\_size}}(\textcolor{keywordtype}{void}\ *mlx\_ptr,\ \textcolor{keywordtype}{int}\ *sizex,\ \textcolor{keywordtype}{int}\ *sizey);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ MLX\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

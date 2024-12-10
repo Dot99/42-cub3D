@@ -1,0 +1,248 @@
+\doxysection{lib/minilibx-\/linux/mlx.h File Reference}
+\hypertarget{mlx_8h}{}\label{mlx_8h}\index{lib/minilibx-\/linux/mlx.h@{lib/minilibx-\/linux/mlx.h}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mlx_8h_ad0f5935031b5a64f1eb625190917ff19}{mlx\+\_\+init}} ()
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mlx_8h_a9db3d82110344980ee1357dba3e95416}{mlx\+\_\+new\+\_\+window}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, int size\+\_\+x, int size\+\_\+y, char \texorpdfstring{$\ast$}{*}title)
+\item 
+int \mbox{\hyperlink{mlx_8h_ac02ca4795e1eb74602326f509b9aded3}{mlx\+\_\+clear\+\_\+window}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_a01d91395ff1481848ac0a0e8198fb749}{mlx\+\_\+pixel\+\_\+put}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, int x, int y, int color)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mlx_8h_aa0db483641f08d7bb0b062aa697893bb}{mlx\+\_\+new\+\_\+image}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, int width, int height)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mlx_8h_a644454135180fe7d1aa29b96b02d52af}{mlx\+\_\+get\+\_\+data\+\_\+addr}} (void \texorpdfstring{$\ast$}{*}img\+\_\+ptr, int \texorpdfstring{$\ast$}{*}bits\+\_\+per\+\_\+pixel, int \texorpdfstring{$\ast$}{*}size\+\_\+line, int \texorpdfstring{$\ast$}{*}endian)
+\item 
+int \mbox{\hyperlink{mlx_8h_a1ad7b1f9c61bda35cb1facec1815ba08}{mlx\+\_\+put\+\_\+image\+\_\+to\+\_\+window}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, void \texorpdfstring{$\ast$}{*}img\+\_\+ptr, int x, int y)
+\item 
+int \mbox{\hyperlink{mlx_8h_a62ccc192ca11ac429c482235d4b98fff}{mlx\+\_\+get\+\_\+color\+\_\+value}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, int color)
+\item 
+int \mbox{\hyperlink{mlx_8h_ad94744a95fdd1e36505471bdb68c57b7}{mlx\+\_\+mouse\+\_\+hook}} (void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, int(\texorpdfstring{$\ast$}{*}funct\+\_\+ptr)(), void \texorpdfstring{$\ast$}{*}param)
+\item 
+int \mbox{\hyperlink{mlx_8h_a042ad2539d71ad5417b4fc39b19b0458}{mlx\+\_\+key\+\_\+hook}} (void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, int(\texorpdfstring{$\ast$}{*}funct\+\_\+ptr)(), void \texorpdfstring{$\ast$}{*}param)
+\item 
+int \mbox{\hyperlink{mlx_8h_a41d31a2e3a4f46d2d1e938448a5bab38}{mlx\+\_\+expose\+\_\+hook}} (void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, int(\texorpdfstring{$\ast$}{*}funct\+\_\+ptr)(), void \texorpdfstring{$\ast$}{*}param)
+\item 
+int \mbox{\hyperlink{mlx_8h_a5cd9b1b66195c5e1b8196cad36f67b6b}{mlx\+\_\+loop\+\_\+hook}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, int(\texorpdfstring{$\ast$}{*}funct\+\_\+ptr)(), void \texorpdfstring{$\ast$}{*}param)
+\item 
+int \mbox{\hyperlink{mlx_8h_a39851648cc307ca6a357c5068075c59b}{mlx\+\_\+loop}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_af67709333f03d092fb437ebe6e9350d2}{mlx\+\_\+loop\+\_\+end}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_ac1a8c69575d470e3a69d03bb690884b0}{mlx\+\_\+string\+\_\+put}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, int x, int y, int color, char \texorpdfstring{$\ast$}{*}string)
+\item 
+void \mbox{\hyperlink{mlx_8h_a060c27854d7a13229b821148d18b4d27}{mlx\+\_\+set\+\_\+font}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, char \texorpdfstring{$\ast$}{*}name)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mlx_8h_a2cd82875214ce24bb49ffd5269536b10}{mlx\+\_\+xpm\+\_\+to\+\_\+image}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}xpm\+\_\+data, int \texorpdfstring{$\ast$}{*}width, int \texorpdfstring{$\ast$}{*}height)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{mlx_8h_a7fb8f596921d8c47f835976073fd4a96}{mlx\+\_\+xpm\+\_\+file\+\_\+to\+\_\+image}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, char \texorpdfstring{$\ast$}{*}filename, int \texorpdfstring{$\ast$}{*}width, int \texorpdfstring{$\ast$}{*}height)
+\item 
+int \mbox{\hyperlink{mlx_8h_ae1b984580610900ad36dd61b8ddf68b7}{mlx\+\_\+destroy\+\_\+window}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_a55a0bb5848159483529773b18b1f4b40}{mlx\+\_\+destroy\+\_\+image}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}img\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_a024d46804e89a3646c61b536fbffd0e7}{mlx\+\_\+destroy\+\_\+display}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_ad0677c77b61840e4ddfa8b20d5fa2821}{mlx\+\_\+hook}} (void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, int x\+\_\+event, int x\+\_\+mask, int(\texorpdfstring{$\ast$}{*}funct)(), void \texorpdfstring{$\ast$}{*}param)
+\item 
+int \mbox{\hyperlink{mlx_8h_a72565ce6b4c0622af6bbf1e2e8eb2130}{mlx\+\_\+do\+\_\+key\+\_\+autorepeatoff}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_a6a2fbcc60883a2b3792ad22106f1ce0c}{mlx\+\_\+do\+\_\+key\+\_\+autorepeaton}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_ad04814fbce28281535d8d0e85befd357}{mlx\+\_\+do\+\_\+sync}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_ada60368c42d7c98dadf44f88a859fa3c}{mlx\+\_\+mouse\+\_\+get\+\_\+pos}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, int \texorpdfstring{$\ast$}{*}x, int \texorpdfstring{$\ast$}{*}y)
+\item 
+int \mbox{\hyperlink{mlx_8h_a777928fe458f956702700bd3258fd474}{mlx\+\_\+mouse\+\_\+move}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr, int x, int y)
+\item 
+int \mbox{\hyperlink{mlx_8h_ad46f872dc5fe1e0e697b476adc373f77}{mlx\+\_\+mouse\+\_\+hide}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_af8a46856f2f513ba65d1a874bf301168}{mlx\+\_\+mouse\+\_\+show}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, void \texorpdfstring{$\ast$}{*}win\+\_\+ptr)
+\item 
+int \mbox{\hyperlink{mlx_8h_ae5dd7e70b8757062a63330679e2d2243}{mlx\+\_\+get\+\_\+screen\+\_\+size}} (void \texorpdfstring{$\ast$}{*}mlx\+\_\+ptr, int \texorpdfstring{$\ast$}{*}sizex, int \texorpdfstring{$\ast$}{*}sizey)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mlx_8h_ac02ca4795e1eb74602326f509b9aded3}\index{mlx.h@{mlx.h}!mlx\_clear\_window@{mlx\_clear\_window}}
+\index{mlx\_clear\_window@{mlx\_clear\_window}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_clear\_window()}{mlx\_clear\_window()}}
+{\footnotesize\ttfamily \label{mlx_8h_ac02ca4795e1eb74602326f509b9aded3} 
+int mlx\+\_\+clear\+\_\+window (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a024d46804e89a3646c61b536fbffd0e7}\index{mlx.h@{mlx.h}!mlx\_destroy\_display@{mlx\_destroy\_display}}
+\index{mlx\_destroy\_display@{mlx\_destroy\_display}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_destroy\_display()}{mlx\_destroy\_display()}}
+{\footnotesize\ttfamily \label{mlx_8h_a024d46804e89a3646c61b536fbffd0e7} 
+int mlx\+\_\+destroy\+\_\+display (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a55a0bb5848159483529773b18b1f4b40}\index{mlx.h@{mlx.h}!mlx\_destroy\_image@{mlx\_destroy\_image}}
+\index{mlx\_destroy\_image@{mlx\_destroy\_image}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_destroy\_image()}{mlx\_destroy\_image()}}
+{\footnotesize\ttfamily \label{mlx_8h_a55a0bb5848159483529773b18b1f4b40} 
+int mlx\+\_\+destroy\+\_\+image (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{img\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_ae1b984580610900ad36dd61b8ddf68b7}\index{mlx.h@{mlx.h}!mlx\_destroy\_window@{mlx\_destroy\_window}}
+\index{mlx\_destroy\_window@{mlx\_destroy\_window}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_destroy\_window()}{mlx\_destroy\_window()}}
+{\footnotesize\ttfamily \label{mlx_8h_ae1b984580610900ad36dd61b8ddf68b7} 
+int mlx\+\_\+destroy\+\_\+window (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a72565ce6b4c0622af6bbf1e2e8eb2130}\index{mlx.h@{mlx.h}!mlx\_do\_key\_autorepeatoff@{mlx\_do\_key\_autorepeatoff}}
+\index{mlx\_do\_key\_autorepeatoff@{mlx\_do\_key\_autorepeatoff}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_do\_key\_autorepeatoff()}{mlx\_do\_key\_autorepeatoff()}}
+{\footnotesize\ttfamily \label{mlx_8h_a72565ce6b4c0622af6bbf1e2e8eb2130} 
+int mlx\+\_\+do\+\_\+key\+\_\+autorepeatoff (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a6a2fbcc60883a2b3792ad22106f1ce0c}\index{mlx.h@{mlx.h}!mlx\_do\_key\_autorepeaton@{mlx\_do\_key\_autorepeaton}}
+\index{mlx\_do\_key\_autorepeaton@{mlx\_do\_key\_autorepeaton}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_do\_key\_autorepeaton()}{mlx\_do\_key\_autorepeaton()}}
+{\footnotesize\ttfamily \label{mlx_8h_a6a2fbcc60883a2b3792ad22106f1ce0c} 
+int mlx\+\_\+do\+\_\+key\+\_\+autorepeaton (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_ad04814fbce28281535d8d0e85befd357}\index{mlx.h@{mlx.h}!mlx\_do\_sync@{mlx\_do\_sync}}
+\index{mlx\_do\_sync@{mlx\_do\_sync}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_do\_sync()}{mlx\_do\_sync()}}
+{\footnotesize\ttfamily \label{mlx_8h_ad04814fbce28281535d8d0e85befd357} 
+int mlx\+\_\+do\+\_\+sync (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a41d31a2e3a4f46d2d1e938448a5bab38}\index{mlx.h@{mlx.h}!mlx\_expose\_hook@{mlx\_expose\_hook}}
+\index{mlx\_expose\_hook@{mlx\_expose\_hook}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_expose\_hook()}{mlx\_expose\_hook()}}
+{\footnotesize\ttfamily \label{mlx_8h_a41d31a2e3a4f46d2d1e938448a5bab38} 
+int mlx\+\_\+expose\+\_\+hook (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{int(\texorpdfstring{$\ast$}{*}}]{funct\+\_\+ptr~}{)(), }\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a62ccc192ca11ac429c482235d4b98fff}\index{mlx.h@{mlx.h}!mlx\_get\_color\_value@{mlx\_get\_color\_value}}
+\index{mlx\_get\_color\_value@{mlx\_get\_color\_value}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_get\_color\_value()}{mlx\_get\_color\_value()}}
+{\footnotesize\ttfamily \label{mlx_8h_a62ccc192ca11ac429c482235d4b98fff} 
+int mlx\+\_\+get\+\_\+color\+\_\+value (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a644454135180fe7d1aa29b96b02d52af}\index{mlx.h@{mlx.h}!mlx\_get\_data\_addr@{mlx\_get\_data\_addr}}
+\index{mlx\_get\_data\_addr@{mlx\_get\_data\_addr}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_get\_data\_addr()}{mlx\_get\_data\_addr()}}
+{\footnotesize\ttfamily \label{mlx_8h_a644454135180fe7d1aa29b96b02d52af} 
+char \texorpdfstring{$\ast$}{*} mlx\+\_\+get\+\_\+data\+\_\+addr (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{img\+\_\+ptr}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{bits\+\_\+per\+\_\+pixel}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{size\+\_\+line}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{endian}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_ae5dd7e70b8757062a63330679e2d2243}\index{mlx.h@{mlx.h}!mlx\_get\_screen\_size@{mlx\_get\_screen\_size}}
+\index{mlx\_get\_screen\_size@{mlx\_get\_screen\_size}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_get\_screen\_size()}{mlx\_get\_screen\_size()}}
+{\footnotesize\ttfamily \label{mlx_8h_ae5dd7e70b8757062a63330679e2d2243} 
+int mlx\+\_\+get\+\_\+screen\+\_\+size (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{sizex}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{sizey}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_ad0677c77b61840e4ddfa8b20d5fa2821}\index{mlx.h@{mlx.h}!mlx\_hook@{mlx\_hook}}
+\index{mlx\_hook@{mlx\_hook}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_hook()}{mlx\_hook()}}
+{\footnotesize\ttfamily \label{mlx_8h_ad0677c77b61840e4ddfa8b20d5fa2821} 
+int mlx\+\_\+hook (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{int}]{x\+\_\+event}{, }\item[{int}]{x\+\_\+mask}{, }\item[{int(\texorpdfstring{$\ast$}{*}}]{funct~}{)(), }\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_ad0f5935031b5a64f1eb625190917ff19}\index{mlx.h@{mlx.h}!mlx\_init@{mlx\_init}}
+\index{mlx\_init@{mlx\_init}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_init()}{mlx\_init()}}
+{\footnotesize\ttfamily \label{mlx_8h_ad0f5935031b5a64f1eb625190917ff19} 
+void \texorpdfstring{$\ast$}{*} mlx\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a042ad2539d71ad5417b4fc39b19b0458}\index{mlx.h@{mlx.h}!mlx\_key\_hook@{mlx\_key\_hook}}
+\index{mlx\_key\_hook@{mlx\_key\_hook}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_key\_hook()}{mlx\_key\_hook()}}
+{\footnotesize\ttfamily \label{mlx_8h_a042ad2539d71ad5417b4fc39b19b0458} 
+int mlx\+\_\+key\+\_\+hook (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{int(\texorpdfstring{$\ast$}{*}}]{funct\+\_\+ptr~}{)(), }\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a39851648cc307ca6a357c5068075c59b}\index{mlx.h@{mlx.h}!mlx\_loop@{mlx\_loop}}
+\index{mlx\_loop@{mlx\_loop}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_loop()}{mlx\_loop()}}
+{\footnotesize\ttfamily \label{mlx_8h_a39851648cc307ca6a357c5068075c59b} 
+int mlx\+\_\+loop (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_af67709333f03d092fb437ebe6e9350d2}\index{mlx.h@{mlx.h}!mlx\_loop\_end@{mlx\_loop\_end}}
+\index{mlx\_loop\_end@{mlx\_loop\_end}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_loop\_end()}{mlx\_loop\_end()}}
+{\footnotesize\ttfamily \label{mlx_8h_af67709333f03d092fb437ebe6e9350d2} 
+int mlx\+\_\+loop\+\_\+end (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a5cd9b1b66195c5e1b8196cad36f67b6b}\index{mlx.h@{mlx.h}!mlx\_loop\_hook@{mlx\_loop\_hook}}
+\index{mlx\_loop\_hook@{mlx\_loop\_hook}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_loop\_hook()}{mlx\_loop\_hook()}}
+{\footnotesize\ttfamily \label{mlx_8h_a5cd9b1b66195c5e1b8196cad36f67b6b} 
+int mlx\+\_\+loop\+\_\+hook (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{int(\texorpdfstring{$\ast$}{*}}]{funct\+\_\+ptr~}{)(), }\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_ada60368c42d7c98dadf44f88a859fa3c}\index{mlx.h@{mlx.h}!mlx\_mouse\_get\_pos@{mlx\_mouse\_get\_pos}}
+\index{mlx\_mouse\_get\_pos@{mlx\_mouse\_get\_pos}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_mouse\_get\_pos()}{mlx\_mouse\_get\_pos()}}
+{\footnotesize\ttfamily \label{mlx_8h_ada60368c42d7c98dadf44f88a859fa3c} 
+int mlx\+\_\+mouse\+\_\+get\+\_\+pos (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{x}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_ad46f872dc5fe1e0e697b476adc373f77}\index{mlx.h@{mlx.h}!mlx\_mouse\_hide@{mlx\_mouse\_hide}}
+\index{mlx\_mouse\_hide@{mlx\_mouse\_hide}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_mouse\_hide()}{mlx\_mouse\_hide()}}
+{\footnotesize\ttfamily \label{mlx_8h_ad46f872dc5fe1e0e697b476adc373f77} 
+int mlx\+\_\+mouse\+\_\+hide (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_ad94744a95fdd1e36505471bdb68c57b7}\index{mlx.h@{mlx.h}!mlx\_mouse\_hook@{mlx\_mouse\_hook}}
+\index{mlx\_mouse\_hook@{mlx\_mouse\_hook}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_mouse\_hook()}{mlx\_mouse\_hook()}}
+{\footnotesize\ttfamily \label{mlx_8h_ad94744a95fdd1e36505471bdb68c57b7} 
+int mlx\+\_\+mouse\+\_\+hook (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{int(\texorpdfstring{$\ast$}{*}}]{funct\+\_\+ptr~}{)(), }\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a777928fe458f956702700bd3258fd474}\index{mlx.h@{mlx.h}!mlx\_mouse\_move@{mlx\_mouse\_move}}
+\index{mlx\_mouse\_move@{mlx\_mouse\_move}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_mouse\_move()}{mlx\_mouse\_move()}}
+{\footnotesize\ttfamily \label{mlx_8h_a777928fe458f956702700bd3258fd474} 
+int mlx\+\_\+mouse\+\_\+move (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_af8a46856f2f513ba65d1a874bf301168}\index{mlx.h@{mlx.h}!mlx\_mouse\_show@{mlx\_mouse\_show}}
+\index{mlx\_mouse\_show@{mlx\_mouse\_show}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_mouse\_show()}{mlx\_mouse\_show()}}
+{\footnotesize\ttfamily \label{mlx_8h_af8a46856f2f513ba65d1a874bf301168} 
+int mlx\+\_\+mouse\+\_\+show (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_aa0db483641f08d7bb0b062aa697893bb}\index{mlx.h@{mlx.h}!mlx\_new\_image@{mlx\_new\_image}}
+\index{mlx\_new\_image@{mlx\_new\_image}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_new\_image()}{mlx\_new\_image()}}
+{\footnotesize\ttfamily \label{mlx_8h_aa0db483641f08d7bb0b062aa697893bb} 
+void \texorpdfstring{$\ast$}{*} mlx\+\_\+new\+\_\+image (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a9db3d82110344980ee1357dba3e95416}\index{mlx.h@{mlx.h}!mlx\_new\_window@{mlx\_new\_window}}
+\index{mlx\_new\_window@{mlx\_new\_window}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_new\_window()}{mlx\_new\_window()}}
+{\footnotesize\ttfamily \label{mlx_8h_a9db3d82110344980ee1357dba3e95416} 
+void \texorpdfstring{$\ast$}{*} mlx\+\_\+new\+\_\+window (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{int}]{size\+\_\+x}{, }\item[{int}]{size\+\_\+y}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{title}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a01d91395ff1481848ac0a0e8198fb749}\index{mlx.h@{mlx.h}!mlx\_pixel\_put@{mlx\_pixel\_put}}
+\index{mlx\_pixel\_put@{mlx\_pixel\_put}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_pixel\_put()}{mlx\_pixel\_put()}}
+{\footnotesize\ttfamily \label{mlx_8h_a01d91395ff1481848ac0a0e8198fb749} 
+int mlx\+\_\+pixel\+\_\+put (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a1ad7b1f9c61bda35cb1facec1815ba08}\index{mlx.h@{mlx.h}!mlx\_put\_image\_to\_window@{mlx\_put\_image\_to\_window}}
+\index{mlx\_put\_image\_to\_window@{mlx\_put\_image\_to\_window}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_put\_image\_to\_window()}{mlx\_put\_image\_to\_window()}}
+{\footnotesize\ttfamily \label{mlx_8h_a1ad7b1f9c61bda35cb1facec1815ba08} 
+int mlx\+\_\+put\+\_\+image\+\_\+to\+\_\+window (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{img\+\_\+ptr}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a060c27854d7a13229b821148d18b4d27}\index{mlx.h@{mlx.h}!mlx\_set\_font@{mlx\_set\_font}}
+\index{mlx\_set\_font@{mlx\_set\_font}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_set\_font()}{mlx\_set\_font()}}
+{\footnotesize\ttfamily \label{mlx_8h_a060c27854d7a13229b821148d18b4d27} 
+void mlx\+\_\+set\+\_\+font (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_ac1a8c69575d470e3a69d03bb690884b0}\index{mlx.h@{mlx.h}!mlx\_string\_put@{mlx\_string\_put}}
+\index{mlx\_string\_put@{mlx\_string\_put}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_string\_put()}{mlx\_string\_put()}}
+{\footnotesize\ttfamily \label{mlx_8h_ac1a8c69575d470e3a69d03bb690884b0} 
+int mlx\+\_\+string\+\_\+put (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{win\+\_\+ptr}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{color}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{string}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a7fb8f596921d8c47f835976073fd4a96}\index{mlx.h@{mlx.h}!mlx\_xpm\_file\_to\_image@{mlx\_xpm\_file\_to\_image}}
+\index{mlx\_xpm\_file\_to\_image@{mlx\_xpm\_file\_to\_image}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_xpm\_file\_to\_image()}{mlx\_xpm\_file\_to\_image()}}
+{\footnotesize\ttfamily \label{mlx_8h_a7fb8f596921d8c47f835976073fd4a96} 
+void \texorpdfstring{$\ast$}{*} mlx\+\_\+xpm\+\_\+file\+\_\+to\+\_\+image (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{filename}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{width}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{height}{}\end{DoxyParamCaption})}
+
+\Hypertarget{mlx_8h_a2cd82875214ce24bb49ffd5269536b10}\index{mlx.h@{mlx.h}!mlx\_xpm\_to\_image@{mlx\_xpm\_to\_image}}
+\index{mlx\_xpm\_to\_image@{mlx\_xpm\_to\_image}!mlx.h@{mlx.h}}
+\doxysubsubsection{\texorpdfstring{mlx\_xpm\_to\_image()}{mlx\_xpm\_to\_image()}}
+{\footnotesize\ttfamily \label{mlx_8h_a2cd82875214ce24bb49ffd5269536b10} 
+void \texorpdfstring{$\ast$}{*} mlx\+\_\+xpm\+\_\+to\+\_\+image (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{mlx\+\_\+ptr}{, }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{xpm\+\_\+data}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{width}{, }\item[{int \texorpdfstring{$\ast$}{*}}]{height}{}\end{DoxyParamCaption})}
+

@@ -1,0 +1,628 @@
+\doxysection{includes/cub3d\+\_\+bonus.h File Reference}
+\hypertarget{cub3d__bonus_8h}{}\label{cub3d__bonus_8h}\index{includes/cub3d\_bonus.h@{includes/cub3d\_bonus.h}}
+{\ttfamily \#include "{}libft.\+h"{}}\newline
+{\ttfamily \#include "{}mlx.\+h"{}}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$sys/types.\+h$>$}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$X11/keysym.\+h$>$}\newline
+{\ttfamily \#include $<$X11/\+X.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs__img}{s\+\_\+img}}
+\begin{DoxyCompactList}\small\item\em Struct for image data. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs__textr}{s\+\_\+textr}}
+\begin{DoxyCompactList}\small\item\em Struct for textures. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs__player}{s\+\_\+player}}
+\begin{DoxyCompactList}\small\item\em Struct for player data. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs__weapon}{s\+\_\+weapon}}
+\item 
+struct \mbox{\hyperlink{structs__render}{s\+\_\+render}}
+\item 
+struct \mbox{\hyperlink{structs__door}{s\+\_\+door}}
+\item 
+struct \mbox{\hyperlink{structs__enemy}{s\+\_\+enemy}}
+\item 
+struct \mbox{\hyperlink{structs__timer}{s\+\_\+timer}}
+\item 
+struct \mbox{\hyperlink{structs__fps}{s\+\_\+fps}}
+\item 
+struct \mbox{\hyperlink{structs__game}{s\+\_\+game}}
+\begin{DoxyCompactList}\small\item\em Struct for game data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_ae71449b1cc6e6250b91f539153a7a0d3}{M\+\_\+\+PI}}~3.\+14159265358979323846
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_aac3553b3932cbfeeac4526ce7ca0336b}{SPEED}}~0.\+1
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_af797deb393ee000f611058d415f67dfe}{ROTSPEED}}~0.\+05
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_a2045a607918116e7be9e1bf680b44650}{MSPEED}}~0.\+025
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_afab1d6380725d86a389fb84b888b091d}{FOV}}~90
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_a1711232abf72723b5216c206e6bbb175}{NORTH}}~0
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_af3830320fe6287f717dca9669f417950}{SOUTH}}~1
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_a072a1ef1143314441742097b799be322}{EAST}}~2
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_a755da365a2f771fdb9e15af22fee7d74}{WEST}}~3
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_aa19093eb0aa5c5af9c27464ae8f0d2de}{DOOR}}~4
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_aa921a3963c5308432ba66fa94c3fb493}{ENEM}}~5
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_a2cd109632a6dcccaa80b43561b1ab700}{SCREEN\+\_\+\+WIDTH}}~1920
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_a6974d08a74da681b3957b2fead2608b8}{SCREEN\+\_\+\+HEIGHT}}~945
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_a61d70e60d69256590ddae1e4d158affb}{NUM\+\_\+\+FRAME}}~7
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_a43bf3630caf398fc47b7eff40f5d78db}{FRAME\+\_\+\+DURATION}}~0.\+05
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_aeefcfdfcb89ceb2ef16a18c655c76c52}{DEATH\+\_\+\+FRAME\+\_\+\+DURATION}}~0.\+2
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_abe64fd786add8b712d71f4e2d04c6f35}{ATTACK\+\_\+\+FRAME\+\_\+\+DURATION}}~0.\+3
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_afae44ccfa337a5b2a34d011ef3e61ed3}{WEAPON\+\_\+\+NUM\+\_\+\+FRAME}}~3
+\item 
+\#define \mbox{\hyperlink{cub3d__bonus_8h_a6154b53d3b3833b1cfd19feeb6533f1c}{WEAPON\+\_\+\+FRAME\+\_\+\+DURATION}}~0.\+06
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{group__mandatory_gad8acf3cd529715d9fa841ce2b860bad8}{e\+\_\+error}} \mbox{\hyperlink{cub3d__bonus_8h_a3afa13b5cd1d40f4f5a9a96bf55368a2}{t\+\_\+error}}
+\item 
+typedef struct \mbox{\hyperlink{structs__img}{s\+\_\+img}} \mbox{\hyperlink{cub3d__bonus_8h_aa2823d71a465849891fd044a6371f982}{t\+\_\+img}}
+\item 
+typedef struct \mbox{\hyperlink{structs__textr}{s\+\_\+textr}} \mbox{\hyperlink{cub3d__bonus_8h_a9fecd72315917dc74b3a6a13d8e3c51e}{t\+\_\+textr}}
+\item 
+typedef struct \mbox{\hyperlink{structs__player}{s\+\_\+player}} \mbox{\hyperlink{cub3d__bonus_8h_aef4e2e456f5bf835fd3145850f889c4a}{t\+\_\+player}}
+\item 
+typedef struct \mbox{\hyperlink{structs__weapon}{s\+\_\+weapon}} \mbox{\hyperlink{cub3d__bonus_8h_adbcb9fcb7ecb76c57120d9b76b3c6a34}{t\+\_\+weapon}}
+\item 
+typedef struct \mbox{\hyperlink{structs__render}{s\+\_\+render}} \mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}}
+\item 
+typedef struct \mbox{\hyperlink{structs__door}{s\+\_\+door}} \mbox{\hyperlink{cub3d__bonus_8h_a540adf730786e330e6526c2552157e82}{t\+\_\+door}}
+\item 
+typedef struct \mbox{\hyperlink{structs__enemy}{s\+\_\+enemy}} \mbox{\hyperlink{cub3d__bonus_8h_aaabe059852166f7b2d4b4e78e090d264}{t\+\_\+enemy}}
+\item 
+typedef struct \mbox{\hyperlink{structs__timer}{s\+\_\+timer}} \mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}}
+\item 
+typedef struct \mbox{\hyperlink{structs__fps}{s\+\_\+fps}} \mbox{\hyperlink{cub3d__bonus_8h_a848c1794c634729465d73bf5ece80b28}{t\+\_\+fps}}
+\item 
+typedef struct \mbox{\hyperlink{structs__game}{s\+\_\+game}} \mbox{\hyperlink{cub3d__bonus_8h_a581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8}{e\+\_\+error}} \{ \newline
+\mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8a226b7e7fea143b2b17e4bff7bf8af155}{ERROR\+\_\+\+ARGS}}
+, \mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8a2ee7bfce4193ff815feb17f3b8b5a840}{ERROR\+\_\+\+FILE}}
+, \mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8ad898be8bbb8367e7a7cece0a4b16f495}{ERROR\+\_\+\+MAP}}
+, \mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8adeae60787c4112fc8ee63608d8bc84b5}{ERROR\+\_\+\+MALLOC}}
+, \newline
+\mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8a11c10d55bdc09be85ce3682a99e6b993}{ERROR\+\_\+\+COLOR}}
+, \mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8aece28bead4c2537f6076c1ed6b662a5f}{ERROR\+\_\+\+TEXTURE}}
+, \mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8aba5f370b92afd7ef70fb2f606102d4a2}{ERROR\+\_\+\+MLX}}
+, \mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8ab1334c3bcc3de7299a600e40d35b2a4e}{ERROR\+\_\+\+ORDER}}
+, \newline
+\mbox{\hyperlink{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8adec871eab5b37dc658a23dd05dff6d9d}{ERROR\+\_\+\+DUP}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__mandatory_ga56418b22479ed7d258b4759d6474b90e}{parse}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Parsing the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga93e1a6b7a1f41474d9f5075b540efc35}{check\+\_\+extension}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Check if the file has the correct extension. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gad3041b29958b42ef7a6ce0e9ab3d9f1f}{read\+\_\+map}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Read the map from the file and store it in the game struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga0f6f7a760f459fda68f48d0ca0028ae9}{check\+\_\+textures}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga89dd8ca4a7194440f333b24960ec04ae}{check\+\_\+map\+\_\+content}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the map content is valid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga8fc9d6f5c977b7b15c244939de0bfbde}{check\+\_\+file}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the file is a valid texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga226b0cae848546bb366be027d2525758}{check\+\_\+duplicate\+\_\+text}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the textures are duplicated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga027b0b805fb3e52b0f83595e6e82e481}{read\+\_\+textures}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Read the textures from the file. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__mandatory_gae3e035123c92328d156027efcc0ed057}{return\+\_\+no\+\_\+extra\+\_\+spaces}} (char \texorpdfstring{$\ast$}{*}tmp)
+\begin{DoxyCompactList}\small\item\em Return a string without extra spaces. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga3c4ecd19492000bc6e5314c1446a9659}{check\+\_\+text\+\_\+content}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int \texorpdfstring{$\ast$}{*}i)
+\begin{DoxyCompactList}\small\item\em Check if all textures are present. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga38b2ad6f111d42c8cf045f2dbfcd675f}{check\+\_\+rgb}} (char \texorpdfstring{$\ast$}{*}color, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int type)
+\begin{DoxyCompactList}\small\item\em Check if the color is valid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga50fe9429feaabfdb4b597ca3f606fdaa}{check\+\_\+colors}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the colors are valid. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga971f7d823d371859485d572c446b30da}{check\+\_\+order}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check the order of the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gae600fbcdf50884fe019499de9eef8673}{map\+\_\+content\+\_\+validation}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Map content validation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gafeea14b015e227d0fb70806e3c5c4198}{get\+\_\+map\+\_\+width}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Get the map width object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cub3d__bonus_8h_a23ab9875b1f0f484688e754e88ea2d17}{check\+\_\+dup\+\_\+arr}} (int \texorpdfstring{$\ast$}{*}arr, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\item 
+void \mbox{\hyperlink{cub3d__bonus_8h_a5bc97dce267d731d960ca407dcaeb353}{put\+\_\+textures}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, char \texorpdfstring{$\ast$}{*}tmp)
+\item 
+void \mbox{\hyperlink{group__bonus_gaefd047da2d4178312836ed04cf84ff5c}{check\+\_\+doors}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map)
+\begin{DoxyCompactList}\small\item\em Check if the doors are correctly placed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gae1d799641cf861cb2829e80f23f9a0b9}{init\+\_\+enemy}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the enemy structure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga5a9a45c7d73b4ce56ac8bff33fb85864}{init\+\_\+door}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the door structure. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga778e64579e207f4c4ad6ed53007ec450}{sepuku}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, enum \mbox{\hyperlink{group__mandatory_gad8acf3cd529715d9fa841ce2b860bad8}{e\+\_\+error}} i)
+\begin{DoxyCompactList}\small\item\em Exit the program with an error message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gad2ab9f963d22196c8f142ab51e4c8137}{free\+\_\+map}} (bool \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map)
+\begin{DoxyCompactList}\small\item\em Free the map allocated memory. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga403c73b47a6552da1a7e7f30d72a5e5c}{ft\+\_\+exit}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Exit the program. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga1588e2c91cc9e6bbc1b6dd97faadd180}{create\+\_\+rgb}} (int t, int r, int g, int b)
+\begin{DoxyCompactList}\small\item\em Create a rgb object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga021dbd35065828d0292707e82e15744e}{init\+\_\+raycasting}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x)
+\begin{DoxyCompactList}\small\item\em Initialize raycasting variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga972855b2916f9a6b384c023ddc03a39b}{init\+\_\+weapon}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the weapon. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cub3d__bonus_8h_a99e3745db534b7edbc682c86884fa363}{put\+\_\+pixel\+\_\+minimap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int color)
+\item 
+void \mbox{\hyperlink{cub3d__bonus_8h_ab2a6f538ca7f18c841d32335363f058f}{interact\+\_\+with\+\_\+door}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Check if the player is interacting with a door. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__mandatory_gab0420b4db5c1548fcee4aaeedf591db1}{files}} (int i, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Function to return the file path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga83da6c8723d2c609554d3df816dbcf02}{init\+\_\+minimap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the minimap image. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaf8bae02ab60dbe8fa5cbbcf0b855f1af}{initializations}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the game status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga559a761d13c6fbc3165d5d1a4c06e9e7}{xpm\+\_\+img}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Transform xpm file to image. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__mandatory_ga6c2e84ebbbb10d9687ce7bd8fe554c53}{error\+\_\+msg}} (enum \mbox{\hyperlink{group__mandatory_gad8acf3cd529715d9fa841ce2b860bad8}{e\+\_\+error}} i)
+\begin{DoxyCompactList}\small\item\em Error messages. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{cub3d__bonus_8h_a3287e43ff2ca2030ba974b0ac8642fc8}{wait\+\_\+and\+\_\+exit}} (void \texorpdfstring{$\ast$}{*}param)
+\item 
+void \mbox{\hyperlink{group__bonus_ga654f671540cab3b453b81120aea1086f}{init\+\_\+fog}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initialize the fog variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa7ca5508906eed4efd95e4e8e807f3ef}{init\+\_\+bitmap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the bitmap for the fps counter. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{cub3d__bonus_8h_aabab01277010a4907f6d7bfe0b048aaa}{is\+\_\+path\+\_\+clear}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i)
+\begin{DoxyCompactList}\small\item\em Check if the path is clear. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga8d2cb07356edb1c9f471a3c08728e786}{controls}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Controls the movement of the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga2293ef2b23c95e07eda30d66456f74f6}{init\+\_\+img}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the mlx images. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga2099492c85969a8dfc0c85b9d2cbd8df}{render}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga1d4d9338e056ee6875c6b89c1b796a40}{raycasting}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Raycasting function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga514f257d4e050c747eeb1fa1ba1eb2d1}{draw\+\_\+column}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x)
+\begin{DoxyCompactList}\small\item\em Draw the walls on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga5822fc7fb51dc3a230a69d92d0da7052}{define\+\_\+texture}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int start, int line\+\_\+height)
+\begin{DoxyCompactList}\small\item\em Define the texture of the wall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga65f098a7a1e6d2d17628771d173699c0}{draw}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int texture)
+\begin{DoxyCompactList}\small\item\em Draw the wall on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga6635e82bb5027128ac8e6faf415c5f69}{put\+\_\+pixel}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int color)
+\begin{DoxyCompactList}\small\item\em Put a pixel in the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_gad552898ca9de41dfa6939266f2243af9}{get\+\_\+color}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int i)
+\begin{DoxyCompactList}\small\item\em Get the color object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{cub3d__bonus_8h_a112608f7678422deccee0fa374094948}{handle\+\_\+mouse}} (int x, int y, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handle mouse movement event. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga0b8e0aec9d72f945d59175eade4c1254}{handle\+\_\+key\+\_\+release}} (int keycode, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handle key release events. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_gaf6a41c631a3c40c4234bde40d7829db5}{handle\+\_\+key\+\_\+press}} (int keycode, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handle key press events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gac75938311251c6d95ce3cb48ea4803d2}{rotate}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, double angle)
+\begin{DoxyCompactList}\small\item\em Rotates the player to the right. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_gaac3f01f4f696eb2974fff828aec89401}{move\+\_\+left}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, double next\+\_\+x, double next\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Move the player to the left. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_gafbf8c7179a42bc6356c4591135b4cbec}{move\+\_\+right}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, double next\+\_\+x, double next\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Move the player to the right. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_gad3d79c5f100efbde6ad00c65b9014cc0}{move\+\_\+down}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, double next\+\_\+x, double next\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Move the player down. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga238bf67346a64546adb870b7160e195e}{move\+\_\+up}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, double next\+\_\+x, double next\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Move the player up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga7bacc07b6b7cdfd407e2e32393c32243}{render\+\_\+fps}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render the FPS counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga5c5eaaeb2c55c0b16f528ff6e623e16a}{update\+\_\+fps}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Update the FPS counter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga62faecc7d378acb6f7f42dfc5da0b9ed}{render\+\_\+minimap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render the minimap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga56066c0382e12a51d44cc3e1f20fcf1e}{render\+\_\+player\+\_\+on\+\_\+minimap}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render the player on the minimap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga15546c5187f8665b8aa226a5f9db942a}{draw\+\_\+minimap\+\_\+square}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int color)
+\begin{DoxyCompactList}\small\item\em Draw a square to the minimap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{cub3d__bonus_8h_a8f3f41a501f0d54220ac39e27ef771e6}{draw\+\_\+minimap\+\_\+square\+\_\+death}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int color)
+\item 
+void \mbox{\hyperlink{group__bonus_ga8a3bfcd11623df8364fc6f9b51c43b81}{handle\+\_\+enemy}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handle the enemy logic. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gab0a90a99567c2fa3550f256d70c407d1}{update\+\_\+enemy\+\_\+frame}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, \mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}} \texorpdfstring{$\ast$}{*}timer, double curr\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Update enemy frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa9d056d78cf1ee852d801db651f4f597}{update\+\_\+enemy\+\_\+frame\+\_\+attack}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, \mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}} \texorpdfstring{$\ast$}{*}timer, double curr\+\_\+time, int i)
+\begin{DoxyCompactList}\small\item\em Update the enemy attack animation frames. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gab1625d7c9bc19d3d3c2bf1078247a60f}{enemy\+\_\+math}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i, \mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group__mandatory_ga2099492c85969a8dfc0c85b9d2cbd8df}{render}})
+\begin{DoxyCompactList}\small\item\em Enemy math calculations. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga2b5ee03e6933b0eb15afb671b9c5a962}{should\+\_\+render\+\_\+pixel}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int i, int x)
+\begin{DoxyCompactList}\small\item\em Check if the pixel should be rendered. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga1a95edd8acc442f75fdbe6fba4e2bbc9}{calculate\+\_\+tex\+\_\+x}} (\mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group__mandatory_ga2099492c85969a8dfc0c85b9d2cbd8df}{render}}, int x)
+\begin{DoxyCompactList}\small\item\em Calculate the x coordinate of the texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga3e0ea5e6d10160cfe33ee8f177f62e16}{calculate\+\_\+enemy\+\_\+tex}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, \mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group__mandatory_ga2099492c85969a8dfc0c85b9d2cbd8df}{render}}, int y, int i)
+\begin{DoxyCompactList}\small\item\em Calculate the textures of the enemy. \end{DoxyCompactList}\item 
+suseconds\+\_\+t \mbox{\hyperlink{cub3d__bonus_8h_aaa883ad5ca417b6effa58766d6c6304d}{ft\+\_\+get\+\_\+time}} (void)
+\item 
+void \mbox{\hyperlink{group__bonus_ga4fd7c444fbc9595037cf2e402f935982}{put\+\_\+player\+\_\+face}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Put the player face on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga1eddb5178c3a8914079fb30a464bb895}{render\+\_\+weapon}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the weapon on the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga0aaa1469cf1e9ac2ab5acebf480b5e10}{update\+\_\+weapon\+\_\+frame}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, \mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}} \texorpdfstring{$\ast$}{*}timer, double curr\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Update the weapon frame. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{cub3d__bonus_8h_acaffc34359760b2cd26782bc9179e78c}{handle\+\_\+mouse\+\_\+click}} (int button, int x, int y, void \texorpdfstring{$\ast$}{*}param)
+\begin{DoxyCompactList}\small\item\em Handle mouse click event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{cub3d__bonus_8h_abe64fd786add8b712d71f4e2d04c6f35}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ATTACK\_FRAME\_DURATION@{ATTACK\_FRAME\_DURATION}}
+\index{ATTACK\_FRAME\_DURATION@{ATTACK\_FRAME\_DURATION}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{ATTACK\_FRAME\_DURATION}{ATTACK\_FRAME\_DURATION}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_abe64fd786add8b712d71f4e2d04c6f35} 
+\#define ATTACK\+\_\+\+FRAME\+\_\+\+DURATION~0.\+3}
+
+\Hypertarget{cub3d__bonus_8h_aeefcfdfcb89ceb2ef16a18c655c76c52}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!DEATH\_FRAME\_DURATION@{DEATH\_FRAME\_DURATION}}
+\index{DEATH\_FRAME\_DURATION@{DEATH\_FRAME\_DURATION}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{DEATH\_FRAME\_DURATION}{DEATH\_FRAME\_DURATION}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_aeefcfdfcb89ceb2ef16a18c655c76c52} 
+\#define DEATH\+\_\+\+FRAME\+\_\+\+DURATION~0.\+2}
+
+\Hypertarget{cub3d__bonus_8h_aa19093eb0aa5c5af9c27464ae8f0d2de}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!DOOR@{DOOR}}
+\index{DOOR@{DOOR}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{DOOR}{DOOR}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_aa19093eb0aa5c5af9c27464ae8f0d2de} 
+\#define DOOR~4}
+
+\Hypertarget{cub3d__bonus_8h_a072a1ef1143314441742097b799be322}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!EAST@{EAST}}
+\index{EAST@{EAST}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{EAST}{EAST}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a072a1ef1143314441742097b799be322} 
+\#define EAST~2}
+
+\Hypertarget{cub3d__bonus_8h_aa921a3963c5308432ba66fa94c3fb493}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ENEM@{ENEM}}
+\index{ENEM@{ENEM}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{ENEM}{ENEM}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_aa921a3963c5308432ba66fa94c3fb493} 
+\#define ENEM~5}
+
+\Hypertarget{cub3d__bonus_8h_afab1d6380725d86a389fb84b888b091d}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!FOV@{FOV}}
+\index{FOV@{FOV}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{FOV}{FOV}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_afab1d6380725d86a389fb84b888b091d} 
+\#define FOV~90}
+
+\Hypertarget{cub3d__bonus_8h_a43bf3630caf398fc47b7eff40f5d78db}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!FRAME\_DURATION@{FRAME\_DURATION}}
+\index{FRAME\_DURATION@{FRAME\_DURATION}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{FRAME\_DURATION}{FRAME\_DURATION}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a43bf3630caf398fc47b7eff40f5d78db} 
+\#define FRAME\+\_\+\+DURATION~0.\+05}
+
+\Hypertarget{cub3d__bonus_8h_ae71449b1cc6e6250b91f539153a7a0d3}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!M\_PI@{M\_PI}}
+\index{M\_PI@{M\_PI}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{M\_PI}{M\_PI}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_ae71449b1cc6e6250b91f539153a7a0d3} 
+\#define M\+\_\+\+PI~3.\+14159265358979323846}
+
+\Hypertarget{cub3d__bonus_8h_a2045a607918116e7be9e1bf680b44650}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!MSPEED@{MSPEED}}
+\index{MSPEED@{MSPEED}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{MSPEED}{MSPEED}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a2045a607918116e7be9e1bf680b44650} 
+\#define MSPEED~0.\+025}
+
+\Hypertarget{cub3d__bonus_8h_a1711232abf72723b5216c206e6bbb175}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!NORTH@{NORTH}}
+\index{NORTH@{NORTH}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{NORTH}{NORTH}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a1711232abf72723b5216c206e6bbb175} 
+\#define NORTH~0}
+
+\Hypertarget{cub3d__bonus_8h_a61d70e60d69256590ddae1e4d158affb}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!NUM\_FRAME@{NUM\_FRAME}}
+\index{NUM\_FRAME@{NUM\_FRAME}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{NUM\_FRAME}{NUM\_FRAME}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a61d70e60d69256590ddae1e4d158affb} 
+\#define NUM\+\_\+\+FRAME~7}
+
+\Hypertarget{cub3d__bonus_8h_af797deb393ee000f611058d415f67dfe}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ROTSPEED@{ROTSPEED}}
+\index{ROTSPEED@{ROTSPEED}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{ROTSPEED}{ROTSPEED}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_af797deb393ee000f611058d415f67dfe} 
+\#define ROTSPEED~0.\+05}
+
+\Hypertarget{cub3d__bonus_8h_a6974d08a74da681b3957b2fead2608b8}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!SCREEN\_HEIGHT@{SCREEN\_HEIGHT}}
+\index{SCREEN\_HEIGHT@{SCREEN\_HEIGHT}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{SCREEN\_HEIGHT}{SCREEN\_HEIGHT}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a6974d08a74da681b3957b2fead2608b8} 
+\#define SCREEN\+\_\+\+HEIGHT~945}
+
+\Hypertarget{cub3d__bonus_8h_a2cd109632a6dcccaa80b43561b1ab700}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!SCREEN\_WIDTH@{SCREEN\_WIDTH}}
+\index{SCREEN\_WIDTH@{SCREEN\_WIDTH}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{SCREEN\_WIDTH}{SCREEN\_WIDTH}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a2cd109632a6dcccaa80b43561b1ab700} 
+\#define SCREEN\+\_\+\+WIDTH~1920}
+
+\Hypertarget{cub3d__bonus_8h_af3830320fe6287f717dca9669f417950}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!SOUTH@{SOUTH}}
+\index{SOUTH@{SOUTH}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{SOUTH}{SOUTH}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_af3830320fe6287f717dca9669f417950} 
+\#define SOUTH~1}
+
+\Hypertarget{cub3d__bonus_8h_aac3553b3932cbfeeac4526ce7ca0336b}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!SPEED@{SPEED}}
+\index{SPEED@{SPEED}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{SPEED}{SPEED}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_aac3553b3932cbfeeac4526ce7ca0336b} 
+\#define SPEED~0.\+1}
+
+\Hypertarget{cub3d__bonus_8h_a6154b53d3b3833b1cfd19feeb6533f1c}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!WEAPON\_FRAME\_DURATION@{WEAPON\_FRAME\_DURATION}}
+\index{WEAPON\_FRAME\_DURATION@{WEAPON\_FRAME\_DURATION}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{WEAPON\_FRAME\_DURATION}{WEAPON\_FRAME\_DURATION}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a6154b53d3b3833b1cfd19feeb6533f1c} 
+\#define WEAPON\+\_\+\+FRAME\+\_\+\+DURATION~0.\+06}
+
+\Hypertarget{cub3d__bonus_8h_afae44ccfa337a5b2a34d011ef3e61ed3}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!WEAPON\_NUM\_FRAME@{WEAPON\_NUM\_FRAME}}
+\index{WEAPON\_NUM\_FRAME@{WEAPON\_NUM\_FRAME}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{WEAPON\_NUM\_FRAME}{WEAPON\_NUM\_FRAME}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_afae44ccfa337a5b2a34d011ef3e61ed3} 
+\#define WEAPON\+\_\+\+NUM\+\_\+\+FRAME~3}
+
+\Hypertarget{cub3d__bonus_8h_a755da365a2f771fdb9e15af22fee7d74}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!WEST@{WEST}}
+\index{WEST@{WEST}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{WEST}{WEST}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a755da365a2f771fdb9e15af22fee7d74} 
+\#define WEST~3}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{cub3d__bonus_8h_a540adf730786e330e6526c2552157e82}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_door@{t\_door}}
+\index{t\_door@{t\_door}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_door}{t\_door}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a540adf730786e330e6526c2552157e82} 
+typedef struct \mbox{\hyperlink{structs__door}{s\+\_\+door}} \mbox{\hyperlink{cub3d__bonus_8h_a540adf730786e330e6526c2552157e82}{t\+\_\+door}}}
+
+\Hypertarget{cub3d__bonus_8h_aaabe059852166f7b2d4b4e78e090d264}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_enemy@{t\_enemy}}
+\index{t\_enemy@{t\_enemy}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_enemy}{t\_enemy}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_aaabe059852166f7b2d4b4e78e090d264} 
+typedef struct \mbox{\hyperlink{structs__enemy}{s\+\_\+enemy}} \mbox{\hyperlink{cub3d__bonus_8h_aaabe059852166f7b2d4b4e78e090d264}{t\+\_\+enemy}}}
+
+\Hypertarget{cub3d__bonus_8h_a3afa13b5cd1d40f4f5a9a96bf55368a2}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_error@{t\_error}}
+\index{t\_error@{t\_error}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_error}{t\_error}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a3afa13b5cd1d40f4f5a9a96bf55368a2} 
+typedef enum \mbox{\hyperlink{group__mandatory_gad8acf3cd529715d9fa841ce2b860bad8}{e\+\_\+error}} \mbox{\hyperlink{group__mandatory_ga3afa13b5cd1d40f4f5a9a96bf55368a2}{t\+\_\+error}}}
+
+\Hypertarget{cub3d__bonus_8h_a848c1794c634729465d73bf5ece80b28}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_fps@{t\_fps}}
+\index{t\_fps@{t\_fps}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_fps}{t\_fps}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a848c1794c634729465d73bf5ece80b28} 
+typedef struct \mbox{\hyperlink{structs__fps}{s\+\_\+fps}} \mbox{\hyperlink{cub3d__bonus_8h_a848c1794c634729465d73bf5ece80b28}{t\+\_\+fps}}}
+
+\Hypertarget{cub3d__bonus_8h_a581c914ca5b062bb811c5204f2bf58ff}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_game@{t\_game}}
+\index{t\_game@{t\_game}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_game}{t\_game}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a581c914ca5b062bb811c5204f2bf58ff} 
+typedef struct \mbox{\hyperlink{structs__game}{s\+\_\+game}} \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}}}
+
+\Hypertarget{cub3d__bonus_8h_aa2823d71a465849891fd044a6371f982}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_img@{t\_img}}
+\index{t\_img@{t\_img}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_img}{t\_img}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_aa2823d71a465849891fd044a6371f982} 
+typedef struct \mbox{\hyperlink{structs__img}{s\+\_\+img}} \mbox{\hyperlink{group__mandatory_gaa2823d71a465849891fd044a6371f982}{t\+\_\+img}}}
+
+\Hypertarget{cub3d__bonus_8h_aef4e2e456f5bf835fd3145850f889c4a}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_player@{t\_player}}
+\index{t\_player@{t\_player}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_player}{t\_player}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_aef4e2e456f5bf835fd3145850f889c4a} 
+typedef struct \mbox{\hyperlink{structs__player}{s\+\_\+player}} \mbox{\hyperlink{group__mandatory_gaef4e2e456f5bf835fd3145850f889c4a}{t\+\_\+player}}}
+
+\Hypertarget{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_render@{t\_render}}
+\index{t\_render@{t\_render}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_render}{t\_render}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a} 
+typedef struct \mbox{\hyperlink{structs__render}{s\+\_\+render}} \mbox{\hyperlink{cub3d__bonus_8h_a5f6db33d81303e7bd9bcbf0be60aca9a}{t\+\_\+render}}}
+
+\Hypertarget{cub3d__bonus_8h_a9fecd72315917dc74b3a6a13d8e3c51e}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_textr@{t\_textr}}
+\index{t\_textr@{t\_textr}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_textr}{t\_textr}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a9fecd72315917dc74b3a6a13d8e3c51e} 
+typedef struct \mbox{\hyperlink{structs__textr}{s\+\_\+textr}} \mbox{\hyperlink{group__mandatory_ga9fecd72315917dc74b3a6a13d8e3c51e}{t\+\_\+textr}}}
+
+\Hypertarget{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_timer@{t\_timer}}
+\index{t\_timer@{t\_timer}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_timer}{t\_timer}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c} 
+typedef struct \mbox{\hyperlink{structs__timer}{s\+\_\+timer}} \mbox{\hyperlink{cub3d__bonus_8h_a9796fcc803b8b5eae6b65700e4b51b4c}{t\+\_\+timer}}}
+
+\Hypertarget{cub3d__bonus_8h_adbcb9fcb7ecb76c57120d9b76b3c6a34}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!t\_weapon@{t\_weapon}}
+\index{t\_weapon@{t\_weapon}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_weapon}{t\_weapon}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_adbcb9fcb7ecb76c57120d9b76b3c6a34} 
+typedef struct \mbox{\hyperlink{structs__weapon}{s\+\_\+weapon}} \mbox{\hyperlink{cub3d__bonus_8h_adbcb9fcb7ecb76c57120d9b76b3c6a34}{t\+\_\+weapon}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!e\_error@{e\_error}}
+\index{e\_error@{e\_error}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{e\_error}{e\_error}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+enum \mbox{\hyperlink{group__mandatory_gad8acf3cd529715d9fa841ce2b860bad8}{e\+\_\+error}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_ARGS@{ERROR\_ARGS}!cub3d\_bonus.h@{cub3d\_bonus.h}}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ERROR\_ARGS@{ERROR\_ARGS}}}\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8a226b7e7fea143b2b17e4bff7bf8af155}\label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+ERROR\+\_\+\+ARGS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_FILE@{ERROR\_FILE}!cub3d\_bonus.h@{cub3d\_bonus.h}}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ERROR\_FILE@{ERROR\_FILE}}}\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8a2ee7bfce4193ff815feb17f3b8b5a840}\label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+ERROR\+\_\+\+FILE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_MAP@{ERROR\_MAP}!cub3d\_bonus.h@{cub3d\_bonus.h}}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ERROR\_MAP@{ERROR\_MAP}}}\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8ad898be8bbb8367e7a7cece0a4b16f495}\label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+ERROR\+\_\+\+MAP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_MALLOC@{ERROR\_MALLOC}!cub3d\_bonus.h@{cub3d\_bonus.h}}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ERROR\_MALLOC@{ERROR\_MALLOC}}}\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8adeae60787c4112fc8ee63608d8bc84b5}\label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+ERROR\+\_\+\+MALLOC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_COLOR@{ERROR\_COLOR}!cub3d\_bonus.h@{cub3d\_bonus.h}}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ERROR\_COLOR@{ERROR\_COLOR}}}\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8a11c10d55bdc09be85ce3682a99e6b993}\label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+ERROR\+\_\+\+COLOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_TEXTURE@{ERROR\_TEXTURE}!cub3d\_bonus.h@{cub3d\_bonus.h}}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ERROR\_TEXTURE@{ERROR\_TEXTURE}}}\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8aece28bead4c2537f6076c1ed6b662a5f}\label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+ERROR\+\_\+\+TEXTURE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_MLX@{ERROR\_MLX}!cub3d\_bonus.h@{cub3d\_bonus.h}}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ERROR\_MLX@{ERROR\_MLX}}}\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8aba5f370b92afd7ef70fb2f606102d4a2}\label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+ERROR\+\_\+\+MLX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_ORDER@{ERROR\_ORDER}!cub3d\_bonus.h@{cub3d\_bonus.h}}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ERROR\_ORDER@{ERROR\_ORDER}}}\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8ab1334c3bcc3de7299a600e40d35b2a4e}\label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+ERROR\+\_\+\+ORDER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_DUP@{ERROR\_DUP}!cub3d\_bonus.h@{cub3d\_bonus.h}}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ERROR\_DUP@{ERROR\_DUP}}}\Hypertarget{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8adec871eab5b37dc658a23dd05dff6d9d}\label{cub3d__bonus_8h_ad8acf3cd529715d9fa841ce2b860bad8} 
+ERROR\+\_\+\+DUP&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{cub3d__bonus_8h_a23ab9875b1f0f484688e754e88ea2d17}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!check\_dup\_arr@{check\_dup\_arr}}
+\index{check\_dup\_arr@{check\_dup\_arr}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{check\_dup\_arr()}{check\_dup\_arr()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a23ab9875b1f0f484688e754e88ea2d17} 
+void check\+\_\+dup\+\_\+arr (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\ast$}{*}}]{arr}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+\Hypertarget{cub3d__bonus_8h_a8f3f41a501f0d54220ac39e27ef771e6}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!draw\_minimap\_square\_death@{draw\_minimap\_square\_death}}
+\index{draw\_minimap\_square\_death@{draw\_minimap\_square\_death}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{draw\_minimap\_square\_death()}{draw\_minimap\_square\_death()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a8f3f41a501f0d54220ac39e27ef771e6} 
+void draw\+\_\+minimap\+\_\+square\+\_\+death (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+\Hypertarget{cub3d__bonus_8h_aaa883ad5ca417b6effa58766d6c6304d}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!ft\_get\_time@{ft\_get\_time}}
+\index{ft\_get\_time@{ft\_get\_time}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{ft\_get\_time()}{ft\_get\_time()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_aaa883ad5ca417b6effa58766d6c6304d} 
+suseconds\+\_\+t ft\+\_\+get\+\_\+time (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{cub3d__bonus_8h_a112608f7678422deccee0fa374094948}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!handle\_mouse@{handle\_mouse}}
+\index{handle\_mouse@{handle\_mouse}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{handle\_mouse()}{handle\_mouse()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a112608f7678422deccee0fa374094948} 
+int handle\+\_\+mouse (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Handle mouse movement event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+{\em game} & The game structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 
+\end{DoxyReturn}
+\Hypertarget{cub3d__bonus_8h_acaffc34359760b2cd26782bc9179e78c}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!handle\_mouse\_click@{handle\_mouse\_click}}
+\index{handle\_mouse\_click@{handle\_mouse\_click}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{handle\_mouse\_click()}{handle\_mouse\_click()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_acaffc34359760b2cd26782bc9179e78c} 
+int handle\+\_\+mouse\+\_\+click (\begin{DoxyParamCaption}\item[{int}]{button}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+
+
+Handle mouse click event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em button} & The button that was clicked \\
+\hline
+{\em x} & The x position of the mouse \\
+\hline
+{\em y} & The y position of the mouse \\
+\hline
+{\em param} & The game structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 0 
+\end{DoxyReturn}
+\Hypertarget{cub3d__bonus_8h_ab2a6f538ca7f18c841d32335363f058f}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!interact\_with\_door@{interact\_with\_door}}
+\index{interact\_with\_door@{interact\_with\_door}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{interact\_with\_door()}{interact\_with\_door()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_ab2a6f538ca7f18c841d32335363f058f} 
+void interact\+\_\+with\+\_\+door (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Check if the player is interacting with a door. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{cub3d__bonus_8h_aabab01277010a4907f6d7bfe0b048aaa}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!is\_path\_clear@{is\_path\_clear}}
+\index{is\_path\_clear@{is\_path\_clear}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{is\_path\_clear()}{is\_path\_clear()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_aabab01277010a4907f6d7bfe0b048aaa} 
+bool is\+\_\+path\+\_\+clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Check if the path is clear. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Pointer to the game structure \\
+\hline
+{\em i} & Index of the enemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Path is clear 
+
+false Path is not clear 
+\end{DoxyReturn}
+\Hypertarget{cub3d__bonus_8h_a99e3745db534b7edbc682c86884fa363}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!put\_pixel\_minimap@{put\_pixel\_minimap}}
+\index{put\_pixel\_minimap@{put\_pixel\_minimap}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{put\_pixel\_minimap()}{put\_pixel\_minimap()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a99e3745db534b7edbc682c86884fa363} 
+void put\+\_\+pixel\+\_\+minimap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{color}{}\end{DoxyParamCaption})}
+
+\Hypertarget{cub3d__bonus_8h_a5bc97dce267d731d960ca407dcaeb353}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!put\_textures@{put\_textures}}
+\index{put\_textures@{put\_textures}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{put\_textures()}{put\_textures()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a5bc97dce267d731d960ca407dcaeb353} 
+void put\+\_\+textures (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{tmp}{}\end{DoxyParamCaption})}
+
+\Hypertarget{cub3d__bonus_8h_a3287e43ff2ca2030ba974b0ac8642fc8}\index{cub3d\_bonus.h@{cub3d\_bonus.h}!wait\_and\_exit@{wait\_and\_exit}}
+\index{wait\_and\_exit@{wait\_and\_exit}!cub3d\_bonus.h@{cub3d\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{wait\_and\_exit()}{wait\_and\_exit()}}
+{\footnotesize\ttfamily \label{cub3d__bonus_8h_a3287e43ff2ca2030ba974b0ac8642fc8} 
+int wait\+\_\+and\+\_\+exit (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+

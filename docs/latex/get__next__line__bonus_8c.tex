@@ -1,0 +1,103 @@
+\doxysection{lib/libft/get\+\_\+next\+\_\+line/get\+\_\+next\+\_\+line\+\_\+bonus.c File Reference}
+\hypertarget{get__next__line__bonus_8c}{}\label{get__next__line__bonus_8c}\index{lib/libft/get\_next\_line/get\_next\_line\_bonus.c@{lib/libft/get\_next\_line/get\_next\_line\_bonus.c}}
+
+
+Reads a line from multiple file descriptor and returns it.  
+
+
+{\ttfamily \#include "{}../libft.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{get__next__line__bonus_8c_a7ab94d22619ad42574c3bd062eb61b39}{free\+\_\+data}} (char \texorpdfstring{$\ast$}{*}stash, char \texorpdfstring{$\ast$}{*}buffer)
+\begin{DoxyCompactList}\small\item\em Clears the data from buffer and static variable. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{get__next__line__bonus_8c_ad14a84f29a67edf3ce5f4893fbf1857a}{read\+\_\+from\+\_\+file}} (int fd, char \texorpdfstring{$\ast$}{*}stash)
+\begin{DoxyCompactList}\small\item\em Fills the buffer with the line read. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{get__next__line__bonus_8c_ae57d5ecbead2377051bc90da6addbc4d}{leftovers}} (char \texorpdfstring{$\ast$}{*}stash)
+\begin{DoxyCompactList}\small\item\em Handle the leftover from line. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{get__next__line__bonus_8c_a78d68a5f50a6eec0380ce25b4a1bd5b7}{get\+\_\+next\+\_\+line}} (int fd)
+\begin{DoxyCompactList}\small\item\em Main function to read a line from multiple file descriptors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reads a line from multiple file descriptor and returns it. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{get__next__line__bonus_8c_a7ab94d22619ad42574c3bd062eb61b39}\index{get\_next\_line\_bonus.c@{get\_next\_line\_bonus.c}!free\_data@{free\_data}}
+\index{free\_data@{free\_data}!get\_next\_line\_bonus.c@{get\_next\_line\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{free\_data()}{free\_data()}}
+{\footnotesize\ttfamily \label{get__next__line__bonus_8c_a7ab94d22619ad42574c3bd062eb61b39} 
+char \texorpdfstring{$\ast$}{*} free\+\_\+data (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{stash}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{buffer}{}\end{DoxyParamCaption})}
+
+
+
+Clears the data from buffer and static variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & Buffer \\
+\hline
+{\em stash} & Static variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char\texorpdfstring{$\ast$}{*} NULL 
+\end{DoxyReturn}
+\Hypertarget{get__next__line__bonus_8c_a78d68a5f50a6eec0380ce25b4a1bd5b7}\index{get\_next\_line\_bonus.c@{get\_next\_line\_bonus.c}!get\_next\_line@{get\_next\_line}}
+\index{get\_next\_line@{get\_next\_line}!get\_next\_line\_bonus.c@{get\_next\_line\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{get\_next\_line()}{get\_next\_line()}}
+{\footnotesize\ttfamily \label{get__next__line__bonus_8c_a78d68a5f50a6eec0380ce25b4a1bd5b7} 
+char \texorpdfstring{$\ast$}{*} get\+\_\+next\+\_\+line (\begin{DoxyParamCaption}\item[{int}]{fd}{}\end{DoxyParamCaption})}
+
+
+
+Main function to read a line from multiple file descriptors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File descriptor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char\texorpdfstring{$\ast$}{*} Line obtained 
+\end{DoxyReturn}
+\Hypertarget{get__next__line__bonus_8c_ae57d5ecbead2377051bc90da6addbc4d}\index{get\_next\_line\_bonus.c@{get\_next\_line\_bonus.c}!leftovers@{leftovers}}
+\index{leftovers@{leftovers}!get\_next\_line\_bonus.c@{get\_next\_line\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{leftovers()}{leftovers()}}
+{\footnotesize\ttfamily \label{get__next__line__bonus_8c_ae57d5ecbead2377051bc90da6addbc4d} 
+char \texorpdfstring{$\ast$}{*} leftovers (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{stash}{}\end{DoxyParamCaption})}
+
+
+
+Handle the leftover from line. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stash} & Static variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char\texorpdfstring{$\ast$}{*} Leftover 
+\end{DoxyReturn}
+\Hypertarget{get__next__line__bonus_8c_ad14a84f29a67edf3ce5f4893fbf1857a}\index{get\_next\_line\_bonus.c@{get\_next\_line\_bonus.c}!read\_from\_file@{read\_from\_file}}
+\index{read\_from\_file@{read\_from\_file}!get\_next\_line\_bonus.c@{get\_next\_line\_bonus.c}}
+\doxysubsubsection{\texorpdfstring{read\_from\_file()}{read\_from\_file()}}
+{\footnotesize\ttfamily \label{get__next__line__bonus_8c_ad14a84f29a67edf3ce5f4893fbf1857a} 
+char \texorpdfstring{$\ast$}{*} read\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{stash}{}\end{DoxyParamCaption})}
+
+
+
+Fills the buffer with the line read. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File descriptor \\
+\hline
+{\em stash} & Static variable \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char\texorpdfstring{$\ast$}{*} Line joined to stash 
+\end{DoxyReturn}

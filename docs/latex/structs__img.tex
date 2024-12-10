@@ -1,0 +1,124 @@
+\doxysection{s\+\_\+img Struct Reference}
+\hypertarget{structs__img}{}\label{structs__img}\index{s\_img@{s\_img}}
+
+
+Struct for image data.  
+
+
+
+
+{\ttfamily \#include $<$cub3d.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__mandatory_gac19702b7a8d30ca065022fa2196b65da}{mlx\+\_\+img}}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__mandatory_gafc0aec660cbce6a2889bc9a3bb432a3a}{addr}}
+\item 
+int \mbox{\hyperlink{group__mandatory_gad4f83302a8f09b18b7b70c94e80b6b77}{bpp}}
+\item 
+int \mbox{\hyperlink{group__mandatory_gabdf0cabb04048aa4f65939b7cda0de47}{line\+\_\+len}}
+\item 
+int \mbox{\hyperlink{group__mandatory_ga5f3f33ef048bfc56a773660dbf1aa2a9}{endian}}
+\item 
+int \mbox{\hyperlink{group__mandatory_ga7c8c39ef02abd2fae33a20749d23b97b}{width}}
+\item 
+int \mbox{\hyperlink{group__mandatory_gab3b33c4f1d3399614a21f7ec8a15a8c0}{height}}
+\item 
+XImage \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structs__img_a16860b43035e398143431f53b42ec89b}{image}}
+\item 
+Pixmap \mbox{\hyperlink{structs__img_a573a044976479a3d7d7e62c95cd3c713}{pix}}
+\item 
+GC \mbox{\hyperlink{structs__img_ae16c025aa32c9ecdd174631b6d9ea933}{gc}}
+\item 
+int \mbox{\hyperlink{structs__img_a35d0d6f880d48b406d2a76adff3d0a33}{size\+\_\+line}}
+\item 
+int \mbox{\hyperlink{structs__img_aa1cc860830b58c8d7d5a106ebc3125aa}{type}}
+\item 
+int \mbox{\hyperlink{structs__img_aa3737eb1e7cd8d1089d1897a908a3d40}{format}}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structs__img_a392633b08ef261593c868cf31c008db1}{data}}
+\item 
+XShm\+Segment\+Info \mbox{\hyperlink{structs__img_aee2ff6fe48990e8ca91c0140890de4c9}{shm}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct for image data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mlx\+\_\+img} & The mlx image pointer \\
+\hline
+{\em addr} & The address of the image \\
+\hline
+{\em bpp} & Bits per pixel \\
+\hline
+{\em line\+\_\+len} & Line length \\
+\hline
+{\em endian} & Endian \\
+\hline
+{\em width} & Image width \\
+\hline
+{\em height} & Image height \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structs__img_a392633b08ef261593c868cf31c008db1}\index{s\_img@{s\_img}!data@{data}}
+\index{data@{data}!s\_img@{s\_img}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{structs__img_a392633b08ef261593c868cf31c008db1} 
+char\texorpdfstring{$\ast$}{*} s\+\_\+img\+::data}
+
+\Hypertarget{structs__img_aa3737eb1e7cd8d1089d1897a908a3d40}\index{s\_img@{s\_img}!format@{format}}
+\index{format@{format}!s\_img@{s\_img}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily \label{structs__img_aa3737eb1e7cd8d1089d1897a908a3d40} 
+int s\+\_\+img\+::format}
+
+\Hypertarget{structs__img_ae16c025aa32c9ecdd174631b6d9ea933}\index{s\_img@{s\_img}!gc@{gc}}
+\index{gc@{gc}!s\_img@{s\_img}}
+\doxysubsubsection{\texorpdfstring{gc}{gc}}
+{\footnotesize\ttfamily \label{structs__img_ae16c025aa32c9ecdd174631b6d9ea933} 
+GC s\+\_\+img\+::gc}
+
+\Hypertarget{structs__img_a16860b43035e398143431f53b42ec89b}\index{s\_img@{s\_img}!image@{image}}
+\index{image@{image}!s\_img@{s\_img}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \label{structs__img_a16860b43035e398143431f53b42ec89b} 
+XImage\texorpdfstring{$\ast$}{*} s\+\_\+img\+::image}
+
+\Hypertarget{structs__img_a573a044976479a3d7d7e62c95cd3c713}\index{s\_img@{s\_img}!pix@{pix}}
+\index{pix@{pix}!s\_img@{s\_img}}
+\doxysubsubsection{\texorpdfstring{pix}{pix}}
+{\footnotesize\ttfamily \label{structs__img_a573a044976479a3d7d7e62c95cd3c713} 
+Pixmap s\+\_\+img\+::pix}
+
+\Hypertarget{structs__img_aee2ff6fe48990e8ca91c0140890de4c9}\index{s\_img@{s\_img}!shm@{shm}}
+\index{shm@{shm}!s\_img@{s\_img}}
+\doxysubsubsection{\texorpdfstring{shm}{shm}}
+{\footnotesize\ttfamily \label{structs__img_aee2ff6fe48990e8ca91c0140890de4c9} 
+XShm\+Segment\+Info s\+\_\+img\+::shm}
+
+\Hypertarget{structs__img_a35d0d6f880d48b406d2a76adff3d0a33}\index{s\_img@{s\_img}!size\_line@{size\_line}}
+\index{size\_line@{size\_line}!s\_img@{s\_img}}
+\doxysubsubsection{\texorpdfstring{size\_line}{size\_line}}
+{\footnotesize\ttfamily \label{structs__img_a35d0d6f880d48b406d2a76adff3d0a33} 
+int s\+\_\+img\+::size\+\_\+line}
+
+\Hypertarget{structs__img_aa1cc860830b58c8d7d5a106ebc3125aa}\index{s\_img@{s\_img}!type@{type}}
+\index{type@{type}!s\_img@{s\_img}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{structs__img_aa1cc860830b58c8d7d5a106ebc3125aa} 
+int s\+\_\+img\+::type}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+includes/\mbox{\hyperlink{cub3d_8h}{cub3d.\+h}}\item 
+includes/\mbox{\hyperlink{cub3d__bonus_8h}{cub3d\+\_\+bonus.\+h}}\item 
+lib/minilibx-\/linux/\mbox{\hyperlink{mlx__int_8h}{mlx\+\_\+int.\+h}}\end{DoxyCompactItemize}
