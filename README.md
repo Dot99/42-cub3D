@@ -12,10 +12,6 @@
 ![Gameplay Demo](https://github.com/user-attachments/assets/6c0a9dda-04c4-4b79-89df-dab8e27967e3)
 
 
-<div align="center">
-	<h1><a href="https://dot99.github.io/42-cub3D/">Subject</a></h1>
-</div>
-
 ---
 
 ## How to Play
